@@ -1,0 +1,46 @@
+#+TITLE: Publishing
+
+This wiki is published with emacs Org-mode and stored in a git
+repository.
+
+#+begin_src emacs-lisp
+  (defvar *root* "~/shared/wfiles/climate/vision/wiki/")
+
+  (defvar *vision-wiki-html*
+    `("vision-wiki-html"
+      :base-directory ,(expand-file-name (concat *root* "org/"))
+      :base-extension "org"
+      :publishing-directory ,(expand-file-name (concat *root* "published/html/"))
+      :publishing-function org-html-publish-to-html
+      :headline-levels 3
+      :section-numbers nil
+      :with-toc nil
+      :auto-sitemap t
+      :makeindex t
+      :html-head "<link rel=\"stylesheet\"
+                    href=\"../files/style.css\" type=\"text/css\"/>"
+      :html-preamble t))
+
+  (defvar *vision-wiki-files*
+    `("vision-wiki-files"
+      :base-directory ,(expand-file-name (concat *root* "files/"))
+      :base-extension "jpg\\|gif\\|png\\|pdf"
+      :publishing-directory ,(expand-file-name (concat *root* "published/files/"))
+      :publishing-function org-publish-attachment))
+
+  (defvar *vision-wiki-website* '("vision-wiki" :components ("vision-wiki-html" "vision-wiki-files")))
+
+  (defun register-vision-wiki ()
+    (interactive)
+    (let ((existing-html (find (first *vision-wiki-html*) org-publish-project-alist :key 'first :test 'equal))
+	  (existing-files (find (first *vision-wiki-files*) org-publish-project-alist :key 'first :test 'equal))
+	  (existing-website (find (first *vision-wiki-website*) org-publish-project-alist :key 'first :test 'equal)))
+      (setf org-publish-project-alist
+	    (append
+	     (remove existing-website
+		     (remove existing-files
+			     (remove existing-html org-publish-project-alist)))
+	     (list *vision-wiki-html*
+		   ,*vision-wiki-files*
+		   ,*vision-wiki-website*)))))
+#+end_src

@@ -1,0 +1,6 @@
+*/.notdeft-db/*
+*.inc
+sitemap.org
+theindex.org
+published/
+*~
