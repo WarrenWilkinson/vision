@@ -1,6 +1,6 @@
 #+TITLE: Index
 
-This is the index. I only have one page [[file:publishing.org][publishing]].
+This is the index. I have this page on [[file:coquitlam.org][Coquitlam]], and this page on [[file:publishing.org][publishing]].
 
 [[file:sitemap.org][Sitemap]]
 
