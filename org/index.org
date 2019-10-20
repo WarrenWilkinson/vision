@@ -1,0 +1,6 @@
+#+TITLE: Index
+
+This is the index. I only have one page [[file:publishing.org][publishing]].
+
+[[file:sitemap.org][Sitemap]]
+

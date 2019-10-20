@@ -28,7 +28,13 @@ Also, what's the region to target?
 
 Our history is a mill... before WW2 (and before Lougheed highway) it would have been more inward focused.
 
+* Test Index
+  #+INDEX: test
+
+This is a test index entry...
+
 * History
+
 
 Coquitlam
 By 1908, a mill town of 20 houses, a store, post office, hospital, office block, barber shop, pool hall and a Sikh temple[6] had grown around the mill. 

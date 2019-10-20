@@ -1,0 +1,6 @@
+#+TITLE: Sitemap for project vision-wiki-html
+
+   + [[file:coquitlam.org][Coquitlam]]
+   + [[file:theindex.org][Index]]
+   + [[file:index.org][Index]]
+   + [[file:publishing.org][Publishing]]

@@ -4,13 +4,13 @@ This wiki is published with emacs Org-mode and stored in a git
 repository.
 
 #+begin_src emacs-lisp
-  (defvar *root* "~/shared/wfiles/climate/vision/wiki/")
+  (setf *root* "~/shared/wfiles/climate/vision/wiki/")
 
-  (defvar *vision-wiki-html*
+  (setf *vision-wiki-html*
     `("vision-wiki-html"
       :base-directory ,(expand-file-name (concat *root* "org/"))
       :base-extension "org"
-      :publishing-directory ,(expand-file-name (concat *root* "published/html/"))
+      :publishing-directory ,(expand-file-name (concat *root* "docs/"))
       :publishing-function org-html-publish-to-html
       :headline-levels 3
       :section-numbers nil
@@ -21,14 +21,14 @@ repository.
                     href=\"../files/style.css\" type=\"text/css\"/>"
       :html-preamble t))
 
-  (defvar *vision-wiki-files*
+  (setf *vision-wiki-files*
     `("vision-wiki-files"
       :base-directory ,(expand-file-name (concat *root* "files/"))
       :base-extension "jpg\\|gif\\|png\\|pdf"
-      :publishing-directory ,(expand-file-name (concat *root* "published/files/"))
+      :publishing-directory ,(expand-file-name (concat *root* "docs/files/"))
       :publishing-function org-publish-attachment))
 
-  (defvar *vision-wiki-website* '("vision-wiki" :components ("vision-wiki-html" "vision-wiki-files")))
+  (setf *vision-wiki-website* '("vision-wiki" :components ("vision-wiki-html" "vision-wiki-files")))
 
   (defun register-vision-wiki ()
     (interactive)
