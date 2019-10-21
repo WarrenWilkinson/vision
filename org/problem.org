@@ -1,0 +1,87 @@
+#+TITLE: The Problem
+
+I think a story could be told around the scale of the
+problem... breaking it down into the sub parts...
+
+https://www.bcemissions.ca/go/city/Coquitlam/index.html
+https://www.bcemissions.ca/go/city/Port_Coquitlam/index.html
+https://www.bcemissions.ca/go/city/Port_Moody/index.html
+
+The above is a good starting point. Basically, I want to get the data
+on the populations (because per-capita is important).
+
+I also want to demonstrate land use, because this is the range of
+options we have for local food, expansion, etc.
+
+Then, breakdown into housing types.. because they have different energy profiles.
+ - Should be able to get exact numbers for this.
+
+Then, lets talk about the heating and electricity used... this varies with housing type.
+ - I can really only get BC averages for this.  That's probably reasonable. I don't think
+   any of the tri-cities is significantly better/worse efficiency ratings for houses than other places
+   in BC.
+ - This leads to an option for exploration -- what if we could change our housing profile?
+
+Then, commutes... what type, how far.
+ - Can't seem to get exact numbers -- have to let the user decide if we're more
+   like Vancouver, or more like Mission.
+ - This leads to an option -- what if we could increase the number of people living AND working in 
+   tri-cities.... 
+
+Then solid waste
+  - CO2 produced... what about the cost of transporting it?  How much is compost and where does that go?
+  - What about human body waste -- e.g. sewage... does this produce CO2?  What do we do with it at treatment?
+
+Then air quality
+  - How is our air?
+  - What happens if we have more electric cars or walking?
+
+* Populations
+
+https://www2.gov.bc.ca/gov/content/data/statistics/people-population-community/population
+
+
+* Land Use
+
+Agricultural Land Reserve
+https://www.alc.gov.bc.ca/alc/content/alr-maps/maps-and-gis
+
+* Housing types
+
+Not sure where to get this information.
+
+
+* Heating and Electricity
+Residential
+Commercial Small/Medium
+Large Industrial
+Wholesale?
+
+(For categories, Elec, Natural Gas, Heating Oil, Propane)
+
+http://oee.nrcan.gc.ca/corporate/statistics/neud/dpa/menus/trends/comprehensive_tables/list.cfm
+
+* Commuting
+
+The best I can do is Data tables, 2016 Census
+Main Mode of Commuting (20), Commuting Duration (7), Time Leaving for Work (7), Sex (3) and Age (11B) for the Employed Labour Force Aged 15 Years and Over Having a Usual Place of Work or No Fixed Workplace Address, in Private Households of Canada, Provinces and Territories, Census Metropolitan Areas and Census Agglomerations, 2016 Census - 25% Sample Data 
+
+I think if I sort of 'blend' the profiles for Vancouver and Mission/Abbotsford I can come up with some kind of reasonable guess.  This would have to be a slider.
+
+'Assuming Tri-Cities are more like Vancouver --- More like Abbotsford'
+
+https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm
+
+
+He showed it as a commute distance chart... 
+This data also varies with time... 2006 and 2016 we have.
+
+They also showed a chart of commute modes.
+
+* Solid Waste
+
+They explained solid waste produced and the CO2 generated from that solid waste.
+
+* Air Quality
+
+They showed fine particulate matter.

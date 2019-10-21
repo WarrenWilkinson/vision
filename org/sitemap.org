@@ -7,4 +7,5 @@
    + [[file:publishing.org][Publishing]]
    + [[file:requirements.org][Requirements]]
    + [[file:tactics.org][TACTICS]]
+   + [[file:problem.org][The Problem]]
    + [[file:urbanfood.org][Urban Food]]
