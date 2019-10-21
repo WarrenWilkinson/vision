@@ -44,3 +44,40 @@ repository.
 		   ,*vision-wiki-files*
 		   ,*vision-wiki-website*)))))
 #+end_src
+
+* Other Publishing Ideas
+
+** Website
+
+I think I'll just publish my DEFT collection as a project. Then it'll
+be up to date most of the time. Put a GIT repo on it and others can
+access it if they want too.
+
+** Reports
+
+Reports are harder. I like latex, but others probably don't so much.  Still,
+for what we're trying to do it might be valuable.
+
+** Presentations
+
+Harder still. Latex presentations are not wonderful and not interactive... might
+want to look at one of those website based presentation tools.
+
+reveal.js looks great.
+impress.js and hovercraft look great...
+
+How do newspapers do those interactive things?  It's called 'storytelling'.
+Google javascript storytelling library.
+
+https://geoviz.ceoas.oregonstate.edu/storymap/
+
+https://pudding.cool/process/how-to-implement-scrollytelling/demo/waypoints/
+
+https://pudding.cool/process/how-to-implement-scrollytelling/
+
+This one recommends a 'stepper'.
+https://eagereyes.org/blog/2016/the-scrollytelling-scourge
+
+** Videos
+
+To be determined.

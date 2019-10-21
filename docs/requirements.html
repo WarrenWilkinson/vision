@@ -6,7 +6,7 @@
 <!-- 2019-10-21 Mon 07:28 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Publishing</title>
+<title>Requirements</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="warren" />
 <style type="text/css">
@@ -230,123 +230,53 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Publishing</h1>
+<h1 class="title">Requirements</h1>
+
+<div id="outline-container-orgf911fd6" class="outline-2">
+<h2 id="orgf911fd6">What Goes into this Plan?</h2>
+<div class="outline-text-2" id="text-orgf911fd6">
 <p>
-This wiki is published with emacs Org-mode and stored in a git
-repository.
+A vision for the next many years.
 </p>
 
-<div class="org-src-container">
-<pre class="src src-emacs-lisp">(setf *root* "~/shared/wfiles/climate/vision/wiki/")
-
-(setf *vision-wiki-html*
-  `("vision-wiki-html"
-    :base-directory ,(expand-file-name (concat *root* "org/"))
-    :base-extension "org"
-    :publishing-directory ,(expand-file-name (concat *root* "docs/"))
-    :publishing-function org-html-publish-to-html
-    :headline-levels 3
-    :section-numbers nil
-    :with-toc nil
-    :auto-sitemap t
-    :makeindex t
-    :html-head "&lt;link rel=\"stylesheet\"
-		  href=\"../files/style.css\" type=\"text/css\"/&gt;"
-    :html-preamble t))
-
-(setf *vision-wiki-files*
-  `("vision-wiki-files"
-    :base-directory ,(expand-file-name (concat *root* "files/"))
-    :base-extension "jpg\\|gif\\|png\\|pdf"
-    :publishing-directory ,(expand-file-name (concat *root* "docs/files/"))
-    :publishing-function org-publish-attachment))
-
-(setf *vision-wiki-website* '("vision-wiki" :components ("vision-wiki-html" "vision-wiki-files")))
-
-(defun register-vision-wiki ()
-  (interactive)
-  (let ((existing-html (find (first *vision-wiki-html*) org-publish-project-alist :key 'first :test 'equal))
-	(existing-files (find (first *vision-wiki-files*) org-publish-project-alist :key 'first :test 'equal))
-	(existing-website (find (first *vision-wiki-website*) org-publish-project-alist :key 'first :test 'equal)))
-    (setf org-publish-project-alist
-	  (append
-	   (remove existing-website
-		   (remove existing-files
-			   (remove existing-html org-publish-project-alist)))
-	   (list *vision-wiki-html*
-		 *vision-wiki-files*
-		 *vision-wiki-website*)))))
-</pre>
-</div>
-
-<div id="outline-container-org6ad2bf4" class="outline-2">
-<h2 id="org6ad2bf4">Other Publishing Ideas</h2>
-<div class="outline-text-2" id="text-org6ad2bf4">
-</div><div id="outline-container-org4862932" class="outline-3">
-<h3 id="org4862932">Website</h3>
-<div class="outline-text-3" id="text-org4862932">
-<p>
-I think I'll just publish my DEFT collection as a project. Then it'll
-be up to date most of the time. Put a GIT repo on it and others can
-access it if they want too.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org0a5b29f" class="outline-3">
-<h3 id="org0a5b29f">Reports</h3>
-<div class="outline-text-3" id="text-org0a5b29f">
-<p>
-Reports are harder. I like latex, but others probably don't so much.  Still,
-for what we're trying to do it might be valuable.
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgbe55f35" class="outline-3">
-<h3 id="orgbe55f35">Presentations</h3>
-<div class="outline-text-3" id="text-orgbe55f35">
-<p>
-Harder still. Latex presentations are not wonderful and not interactive&#x2026; might
-want to look at one of those website based presentation tools.
-</p>
+<ul class="org-ul">
+<li>Integrating the City to reduce driving</li>
+<li>A transit plan</li>
+<li>Energy efficiency measures</li>
+<li>Zoning changes to encourage densification</li>
+<li>Green Spaces and stuff like that</li>
+<li>Ammenities, social housing, etc,</li>
+<li>Resilency via local committee efforts.</li>
+<li>ELECTRIFIED CITY FLEET (They spend 3,870,000 per year on fleet capital).</li>
+</ul>
 
 <p>
-reveal.js looks great.
-impress.js and hovercraft look great&#x2026;
+More ideas:
 </p>
 
-<p>
-How do newspapers do those interactive things?  It's called 'storytelling'.
-Google javascript storytelling library.
-</p>
+<ul class="org-ul">
+<li>Tech incubator for green tech (e.g. mist showers)</li>
+<li>Living wage regulation &#x2013; so Coq businesses must pay at least enough so that there
+workers can afford the live in Coq?</li>
+<li>Buyback of abandoned homes. Convert to neighborhood green spaces.
+(About $12 million a year is spent buying parklands&#x2026; so that's like twelve houses ;-)
+But why should some private individual make a million dollars on an abandoned home?</li>
+<li>Covered side walks (e.g. by trees) wider sidewalks.
+(Bicycle/Greenway Facilities Program in Coquitlam?)</li>
+<li>Zoning changes.</li>
+<li>Promoting eat local, buy local?</li>
+<li>Raise money via 'Bonds' &#x2013; city debt owned to city citizens and repayed to them,
+rather than to banks.</li>
+<li>Why are libraries public but gyms private?  Why are roads public
+but telecommunications private?  Why are buses public but taxis
+private?</li>
+</ul>
 
 <p>
-<a href="https://geoviz.ceoas.oregonstate.edu/storymap/">https://geoviz.ceoas.oregonstate.edu/storymap/</a>
+Civic facilities are expensive&#x2026; are they necessary? Is there a small
+sort of thing that could be done?  Like turning houses into libraries?
+Or library depots or something?
 </p>
-
-<p>
-<a href="https://pudding.cool/process/how-to-implement-scrollytelling/demo/waypoints/">https://pudding.cool/process/how-to-implement-scrollytelling/demo/waypoints/</a>
-</p>
-
-<p>
-<a href="https://pudding.cool/process/how-to-implement-scrollytelling/">https://pudding.cool/process/how-to-implement-scrollytelling/</a>
-</p>
-
-<p>
-This one recommends a 'stepper'.
-<a href="https://eagereyes.org/blog/2016/the-scrollytelling-scourge">https://eagereyes.org/blog/2016/the-scrollytelling-scourge</a>
-</p>
-</div>
-</div>
-
-<div id="outline-container-org37c059d" class="outline-3">
-<h3 id="org37c059d">Videos</h3>
-<div class="outline-text-3" id="text-org37c059d">
-<p>
-To be determined.
-</p>
-</div>
 </div>
 </div>
 </div>

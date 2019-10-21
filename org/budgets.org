@@ -1,0 +1,194 @@
+#+TITLE: Budgets
+
+
+* Where will the money come from?
+
+I've started looking at the budget...
+
+A few things:
+ - Do we have a problem with extractive rents? (e.g. companies that work here, but funnel
+   profits far out of the community? -- like people buying from Amazon)
+ - Can we make 'lateral' transfers?  Higher taxes that support services that lower cost of living
+   by an eqivalent amount?
+ - Are we charging a fair amount for taxes?  Are some groups getting an superb deal?
+
+ - If any groups are not expected to pay property taxes, are they providing some other social
+   benefit?
+
+ - Why does it cost so much to develop a park?  What are we talking about here?  Can we do
+   cheaper parks -- just let nature grow?   How about these sports facilities -- important,
+   do we have enough or too many?  Should they be centralized like this, or more dispersed?
+
+ - We shouldn't be afraid of having common property that eliminates some private businesses.
+   E.g. libraries, public gyms.  Having these things can make good sense (case by case). Lower cost of
+   living, and more integrated communities.  Is there a good rubric for deciding what things are
+   best public and what things are best private?   E.g. why are libraries public but gyms are not?
+   Why are roads public but telecommunications private?  Why are buses public but taxis private?
+
+* Budget Summary
+#+INDEX: budget
+
+How to best convey the money flow?
+
+* Current Port Moody Budget
+#+INDEX: budget!Port Moody
+
+ - [[https://www.portmoody.ca/en/city-hall/resources/Documents/2019-City-of-Port-Moody-Budget-Booklet.pdf][2019 Budget]]
+ - [[https://www.portmoody.ca/en/services/edocs.ashx?docnumber=454674][Five Year Plan]]
+
+Every year Port Moody accepts input on the budget... this could be a way to push through changes.
+
+What's in Community Charter and the Local Government Act?
+
+They say there are *provincially mandated tax caps on ports and other industries!* What are these?
+
+Of the budget 'operating costs' 62% are staff, and 12% are 'transfers to reserves' -- interesting.
+
+60% of income from taxes... 21% from utilitie fees... Is a utility fee a surcharge on power/gas or a user-fee
+on programs?
+
+Port Moodys cost per household is about $2,400 (without water, garbage or sewer). This is about $400 
+more than Coquitlam (fyi it's about 400 for water, 400 for
+garbage, and 350 for sewage similar in both places).
+
+And then on your tax bill, you have an extra $300 or so for schools,
+and $300 or so for provincial programs (200 of which is translink
+mainly).
+
+The average yearly tax bill is then about 4,200 per year, or $350 a month.  Then you'd probably add an extra $100 power bill per month and $100 fortis BC gas bill per month....
+
+So that means peoples bills are actually almost 50% energy...  City install solar might pay for itself if it was cheaper.  Insulation certainly does...
+Food is also expensive (a bigger part of the budget).
+
+Apparently, province and the fed have grown more and more taxes (since 1961 -- What are they using it for?).  Port moody Describes their breakdown:
+
+ - 12,000 houses (e.g. would require 24,000 acres to feed)
+ - 425 businesses
+ - 9 major industries
+  These make up 92% of the tax revenue.
+ - The port makes up 3%.
+
+
+Question -- do we need so many indoor sport spaces? 
+
+
+Port Moody does Debt financing... Coquitlam tries to save ahead of time. Neat.
+
+They say "Revenue opportunities are limited by the Community Charter". So take a look at that.
+
+(e.g. casinos, pay parking)
+
+Leverage developer contributions.
+
+Leverage Assets
+
+Special Levies
+
+
+Oh cool, cities can pool together for economies of scale.  Sharing services, etc.
+
+They point out that building new buildings increases the tax base and has other developer
+perks... but then those new residents require services.  So if you tax too low, new-comers
+either free-load or service levels drop.
+
+
+One way to increase city revenues would be to have more successful
+businesses.  So any cheap ideas towards that would probably be
+appreciated.  A city is only going to be as successful as it's
+residents are.
+
+There is an *asset management investment plan*... this is the schedule
+for aging buildings that will need replacement in the future.
+
+
+* Current Port Coquitlam Budget
+#+INDEX: budget!Port Coquitlam
+
+* Current Coquitlam City Budget
+#+INDEX: budget!Coquitlam
+
+
+The [[http://www.bclaws.ca/civix/document/id/complete/statreg/r15001_00][Local Government Act]] requires the [[file:coquitlam.org][City of Coquitlam]] to complete a
+Five-Year Financial Plan and Budget each year.
+
+** 2019-2023
+
+[[https://www.coquitlam.ca/docs/default-source/financial-services/2019-2023-financial-plan.pdf][Here it is]]
+
+Also, they did some special levy taxes... so they can do special levies
+and stuff.
+
+[[https://www.coquitlam.ca/docs/default-source/council-agenda-documents/citydocs--3323575-v1-regularcouncil_2019_05_06_-_item_6.pdf][Example Special Levy]]
+
+Okay, for 2019:
+Total Revenue: 432,439,000
+(page 52)
+
+Expenditure: 253,191,000
+
+Leaving: 179,248,000 for capital expenditures...
+
+We also have a breakdown of staff...
+
+50\% of revenue is from taxes.
+
+A home, in Coquitlam, is paying about $3000 in taxes, which seems
+extremely low (I pay $2000 a MONTH for rent).  If the city were
+to offer mortages at low rates, or if it invested in local jobs
+so that less gasoline were required, it could probably slurp up
+the difference as taxes and come out ahead.
+
+Most of that money goes towards sewer/police/fire ... but I'm not sure
+how they break that up, since all the money is pooled isn't it?
+Wouldn't that imply then that sewer/police/fire are the biggest budget
+items period?  Maybe they're just saying "Of the services a home
+receives..."  these are the big ticket items... so what are the things
+that the city pays for that are not regarded as services?
+
+
+Next they start saying sewer and water user revenue -- who are we selling
+these services too?  Businesses?  
+
+
+All in all, it looks like a well run ship.  The most likely source of
+new revenues would be higher taxes to support projects which
+ultimately lower the cost of living or raise life satisfaction.  These
+are sort of 'lateral' moves.
+
+
+Page 97:
+
+Over the next five years, the City will invest $457 million in capital infrastructure to improve transportation, enhance recreational opportunities and expand water, sewer and drainage infrastructure within Coquitlam. 
+
+We spend $22,513,000 a year maintaining roads.
+
+We spend a similar amount of parks and trails... but half of it's budget is acquiring parkland.
+
+
+There are sidewalk programs:
+ - Frontage Work Program on Haversley, Madore and Stewar
+ - Sidewalk Improvement Program
+
+I think this one is a mistake:
+ - Major Arterial Road improvements (Page 102)
+ - Road and Pathway improvement for the Lougheed greenway
+
+The document says it's for bicyclists, but I think that's a fib.  Changes to Brunette are
+being driven by a desire to support more car traffic, not more bikes:
+ https://engage.gov.bc.ca/govtogetherbc/impact/brunette-interchange-results/
+They also don't mention how much funds here.
+
+I also think it's a mistake to run your bike paths along side the
+highways.  It makes for a horrible biking experience (and discourages
+biking).
+
+
+We're also spending 84 million (over 5 years?) to develop natural land in order to bring
+it to market.  I would question the wisdom of this... as we need densification. For 
+the same amout of money, we could electrify the entire city fleet.  Besides, it's not
+like this land is going anywhere... we don't lose the opportunity and we don't need
+more car-only suburbs.
+
+
+
+

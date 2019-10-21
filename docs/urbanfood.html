@@ -6,7 +6,7 @@
 <!-- 2019-10-21 Mon 07:28 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Publishing</title>
+<title>Urban Food</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="warren" />
 <style type="text/css">
@@ -230,125 +230,41 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Publishing</h1>
+<h1 class="title">Urban Food</h1>
 <p>
-This wiki is published with emacs Org-mode and stored in a git
-repository.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-emacs-lisp">(setf *root* "~/shared/wfiles/climate/vision/wiki/")
-
-(setf *vision-wiki-html*
-  `("vision-wiki-html"
-    :base-directory ,(expand-file-name (concat *root* "org/"))
-    :base-extension "org"
-    :publishing-directory ,(expand-file-name (concat *root* "docs/"))
-    :publishing-function org-html-publish-to-html
-    :headline-levels 3
-    :section-numbers nil
-    :with-toc nil
-    :auto-sitemap t
-    :makeindex t
-    :html-head "&lt;link rel=\"stylesheet\"
-		  href=\"../files/style.css\" type=\"text/css\"/&gt;"
-    :html-preamble t))
-
-(setf *vision-wiki-files*
-  `("vision-wiki-files"
-    :base-directory ,(expand-file-name (concat *root* "files/"))
-    :base-extension "jpg\\|gif\\|png\\|pdf"
-    :publishing-directory ,(expand-file-name (concat *root* "docs/files/"))
-    :publishing-function org-publish-attachment))
-
-(setf *vision-wiki-website* '("vision-wiki" :components ("vision-wiki-html" "vision-wiki-files")))
-
-(defun register-vision-wiki ()
-  (interactive)
-  (let ((existing-html (find (first *vision-wiki-html*) org-publish-project-alist :key 'first :test 'equal))
-	(existing-files (find (first *vision-wiki-files*) org-publish-project-alist :key 'first :test 'equal))
-	(existing-website (find (first *vision-wiki-website*) org-publish-project-alist :key 'first :test 'equal)))
-    (setf org-publish-project-alist
-	  (append
-	   (remove existing-website
-		   (remove existing-files
-			   (remove existing-html org-publish-project-alist)))
-	   (list *vision-wiki-html*
-		 *vision-wiki-files*
-		 *vision-wiki-website*)))))
-</pre>
-</div>
-
-<div id="outline-container-org6ad2bf4" class="outline-2">
-<h2 id="org6ad2bf4">Other Publishing Ideas</h2>
-<div class="outline-text-2" id="text-org6ad2bf4">
-</div><div id="outline-container-org4862932" class="outline-3">
-<h3 id="org4862932">Website</h3>
-<div class="outline-text-3" id="text-org4862932">
-<p>
-I think I'll just publish my DEFT collection as a project. Then it'll
-be up to date most of the time. Put a GIT repo on it and others can
-access it if they want too.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org0a5b29f" class="outline-3">
-<h3 id="org0a5b29f">Reports</h3>
-<div class="outline-text-3" id="text-org0a5b29f">
-<p>
-Reports are harder. I like latex, but others probably don't so much.  Still,
-for what we're trying to do it might be valuable.
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgbe55f35" class="outline-3">
-<h3 id="orgbe55f35">Presentations</h3>
-<div class="outline-text-3" id="text-orgbe55f35">
-<p>
-Harder still. Latex presentations are not wonderful and not interactive&#x2026; might
-want to look at one of those website based presentation tools.
+<a href="https://www.sustainweb.org/publications/growing_food_in_cities_the_benefits/">https://www.sustainweb.org/publications/growing_food_in_cities_the_benefits/</a>
 </p>
 
 <p>
-reveal.js looks great.
-impress.js and hovercraft look great&#x2026;
+Is there a food tradeoff?  I've seen from books that you can grow food
+in a high-intensity kind of way. An Acre feeding 26 families (but not
+enough&#x2026; lets say 10 people to acre).  A rough ballpark (John Jevins
+method) says we can do 8 people on an Acre&#x2026; so two households.  But
+an Acre takes maybe the space of 20 homes. So to get this food, these
+two households would need to pay the tax equivalent of 20 * 2400 which
+is $2,000 a month and not feasible.
 </p>
 
 <p>
-How do newspapers do those interactive things?  It's called 'storytelling'.
-Google javascript storytelling library.
+We can't be growing food inside city limits&#x2026; but what land do we
+control?  Could we go back to having nearby farmland and reduce food
+miles?
 </p>
 
 <p>
-<a href="https://geoviz.ceoas.oregonstate.edu/storymap/">https://geoviz.ceoas.oregonstate.edu/storymap/</a>
+Another question &#x2013; can we compost near the cities and eliminate most
+garbage fees? It's basically $35 a month for garbage.  If people took
+their garbage to a neighborhood compost pile, and that was sold on to
+farms, could we eliminate this fee?  Note that this is what the
+compost trucks do &#x2013; but they go all the way to Delta, where the
+farmland is.  Could the farms be closer to eliminate fuel usage?
+Combine this with park space? 
 </p>
 
 <p>
-<a href="https://pudding.cool/process/how-to-implement-scrollytelling/demo/waypoints/">https://pudding.cool/process/how-to-implement-scrollytelling/demo/waypoints/</a>
+At the very least, can we grow food trees in cities?  If we drove electric,
+then the fruit wouldn't be poisoned by the roads.  Public apple orchards?
 </p>
-
-<p>
-<a href="https://pudding.cool/process/how-to-implement-scrollytelling/">https://pudding.cool/process/how-to-implement-scrollytelling/</a>
-</p>
-
-<p>
-This one recommends a 'stepper'.
-<a href="https://eagereyes.org/blog/2016/the-scrollytelling-scourge">https://eagereyes.org/blog/2016/the-scrollytelling-scourge</a>
-</p>
-</div>
-</div>
-
-<div id="outline-container-org37c059d" class="outline-3">
-<h3 id="org37c059d">Videos</h3>
-<div class="outline-text-3" id="text-org37c059d">
-<p>
-To be determined.
-</p>
-</div>
-</div>
-</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: warren</p>

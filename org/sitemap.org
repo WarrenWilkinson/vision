@@ -1,6 +1,10 @@
 #+TITLE: Sitemap for project vision-wiki-html
 
+   + [[file:budgets.org][Budgets]]
    + [[file:coquitlam.org][Coquitlam]]
    + [[file:theindex.org][Index]]
    + [[file:index.org][Index]]
    + [[file:publishing.org][Publishing]]
+   + [[file:requirements.org][Requirements]]
+   + [[file:tactics.org][TACTICS]]
+   + [[file:urbanfood.org][Urban Food]]

@@ -6,7 +6,7 @@
 <!-- 2019-10-21 Mon 07:28 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Publishing</title>
+<title>Budgets</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="warren" />
 <style type="text/css">
@@ -230,121 +230,308 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Publishing</h1>
+<h1 class="title">Budgets</h1>
+
+
+<div id="outline-container-org16c5a74" class="outline-2">
+<h2 id="org16c5a74">Where will the money come from?</h2>
+<div class="outline-text-2" id="text-org16c5a74">
 <p>
-This wiki is published with emacs Org-mode and stored in a git
-repository.
+I've started looking at the budget&#x2026;
 </p>
 
-<div class="org-src-container">
-<pre class="src src-emacs-lisp">(setf *root* "~/shared/wfiles/climate/vision/wiki/")
+<p>
+A few things:
+</p>
+<ul class="org-ul">
+<li>Do we have a problem with extractive rents? (e.g. companies that work here, but funnel
+profits far out of the community? &#x2013; like people buying from Amazon)</li>
+<li>Can we make 'lateral' transfers?  Higher taxes that support services that lower cost of living
+by an eqivalent amount?</li>
+<li>Are we charging a fair amount for taxes?  Are some groups getting an superb deal?</li>
 
-(setf *vision-wiki-html*
-  `("vision-wiki-html"
-    :base-directory ,(expand-file-name (concat *root* "org/"))
-    :base-extension "org"
-    :publishing-directory ,(expand-file-name (concat *root* "docs/"))
-    :publishing-function org-html-publish-to-html
-    :headline-levels 3
-    :section-numbers nil
-    :with-toc nil
-    :auto-sitemap t
-    :makeindex t
-    :html-head "&lt;link rel=\"stylesheet\"
-		  href=\"../files/style.css\" type=\"text/css\"/&gt;"
-    :html-preamble t))
+<li>If any groups are not expected to pay property taxes, are they providing some other social
+benefit?</li>
 
-(setf *vision-wiki-files*
-  `("vision-wiki-files"
-    :base-directory ,(expand-file-name (concat *root* "files/"))
-    :base-extension "jpg\\|gif\\|png\\|pdf"
-    :publishing-directory ,(expand-file-name (concat *root* "docs/files/"))
-    :publishing-function org-publish-attachment))
+<li>Why does it cost so much to develop a park?  What are we talking about here?  Can we do
+cheaper parks &#x2013; just let nature grow?   How about these sports facilities &#x2013; important,
+do we have enough or too many?  Should they be centralized like this, or more dispersed?</li>
 
-(setf *vision-wiki-website* '("vision-wiki" :components ("vision-wiki-html" "vision-wiki-files")))
-
-(defun register-vision-wiki ()
-  (interactive)
-  (let ((existing-html (find (first *vision-wiki-html*) org-publish-project-alist :key 'first :test 'equal))
-	(existing-files (find (first *vision-wiki-files*) org-publish-project-alist :key 'first :test 'equal))
-	(existing-website (find (first *vision-wiki-website*) org-publish-project-alist :key 'first :test 'equal)))
-    (setf org-publish-project-alist
-	  (append
-	   (remove existing-website
-		   (remove existing-files
-			   (remove existing-html org-publish-project-alist)))
-	   (list *vision-wiki-html*
-		 *vision-wiki-files*
-		 *vision-wiki-website*)))))
-</pre>
+<li>We shouldn't be afraid of having common property that eliminates some private businesses.
+E.g. libraries, public gyms.  Having these things can make good sense (case by case). Lower cost of
+living, and more integrated communities.  Is there a good rubric for deciding what things are
+best public and what things are best private?   E.g. why are libraries public but gyms are not?
+Why are roads public but telecommunications private?  Why are buses public but taxis private?</li>
+</ul>
+</div>
 </div>
 
-<div id="outline-container-org6ad2bf4" class="outline-2">
-<h2 id="org6ad2bf4">Other Publishing Ideas</h2>
-<div class="outline-text-2" id="text-org6ad2bf4">
-</div><div id="outline-container-org4862932" class="outline-3">
-<h3 id="org4862932">Website</h3>
-<div class="outline-text-3" id="text-org4862932">
+<div id="outline-container-orgc3e3128" class="outline-2">
+<h2 id="orgc3e3128">Budget Summary</h2>
+<div class="outline-text-2" id="text-orgc3e3128">
 <p>
-I think I'll just publish my DEFT collection as a project. Then it'll
-be up to date most of the time. Put a GIT repo on it and others can
-access it if they want too.
+How to best convey the money flow?
 </p>
 </div>
 </div>
 
-<div id="outline-container-org0a5b29f" class="outline-3">
-<h3 id="org0a5b29f">Reports</h3>
-<div class="outline-text-3" id="text-org0a5b29f">
+<div id="outline-container-org68d2760" class="outline-2">
+<h2 id="org68d2760">Current Port Moody Budget</h2>
+<div class="outline-text-2" id="text-org68d2760">
+<ul class="org-ul">
+<li><a href="https://www.portmoody.ca/en/city-hall/resources/Documents/2019-City-of-Port-Moody-Budget-Booklet.pdf">2019 Budget</a></li>
+<li><a href="https://www.portmoody.ca/en/services/edocs.ashx?docnumber=454674">Five Year Plan</a></li>
+</ul>
+
 <p>
-Reports are harder. I like latex, but others probably don't so much.  Still,
-for what we're trying to do it might be valuable.
+Every year Port Moody accepts input on the budget&#x2026; this could be a way to push through changes.
+</p>
+
+<p>
+What's in Community Charter and the Local Government Act?
+</p>
+
+<p>
+They say there are <b>provincially mandated tax caps on ports and other industries!</b> What are these?
+</p>
+
+<p>
+Of the budget 'operating costs' 62% are staff, and 12% are 'transfers to reserves' &#x2013; interesting.
+</p>
+
+<p>
+60% of income from taxes&#x2026; 21% from utilitie fees&#x2026; Is a utility fee a surcharge on power/gas or a user-fee
+on programs?
+</p>
+
+<p>
+Port Moodys cost per household is about $2,400 (without water, garbage or sewer). This is about $400 
+more than Coquitlam (fyi it's about 400 for water, 400 for
+garbage, and 350 for sewage similar in both places).
+</p>
+
+<p>
+And then on your tax bill, you have an extra $300 or so for schools,
+and $300 or so for provincial programs (200 of which is translink
+mainly).
+</p>
+
+<p>
+The average yearly tax bill is then about 4,200 per year, or $350 a month.  Then you'd probably add an extra $100 power bill per month and $100 fortis BC gas bill per month&#x2026;.
+</p>
+
+<p>
+So that means peoples bills are actually almost 50% energy&#x2026;  City install solar might pay for itself if it was cheaper.  Insulation certainly does&#x2026;
+Food is also expensive (a bigger part of the budget).
+</p>
+
+<p>
+Apparently, province and the fed have grown more and more taxes (since 1961 &#x2013; What are they using it for?).  Port moody Describes their breakdown:
+</p>
+
+<ul class="org-ul">
+<li>12,000 houses (e.g. would require 24,000 acres to feed)</li>
+<li>425 businesses</li>
+<li>9 major industries
+These make up 92% of the tax revenue.</li>
+<li>The port makes up 3%.</li>
+</ul>
+
+
+<p>
+Question &#x2013; do we need so many indoor sport spaces? 
+</p>
+
+
+<p>
+Port Moody does Debt financing&#x2026; Coquitlam tries to save ahead of time. Neat.
+</p>
+
+<p>
+They say "Revenue opportunities are limited by the Community Charter". So take a look at that.
+</p>
+
+<p>
+(e.g. casinos, pay parking)
+</p>
+
+<p>
+Leverage developer contributions.
+</p>
+
+<p>
+Leverage Assets
+</p>
+
+<p>
+Special Levies
+</p>
+
+
+<p>
+Oh cool, cities can pool together for economies of scale.  Sharing services, etc.
+</p>
+
+<p>
+They point out that building new buildings increases the tax base and has other developer
+perks&#x2026; but then those new residents require services.  So if you tax too low, new-comers
+either free-load or service levels drop.
+</p>
+
+
+<p>
+One way to increase city revenues would be to have more successful
+businesses.  So any cheap ideas towards that would probably be
+appreciated.  A city is only going to be as successful as it's
+residents are.
+</p>
+
+<p>
+There is an <b>asset management investment plan</b>&#x2026; this is the schedule
+for aging buildings that will need replacement in the future.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgbe55f35" class="outline-3">
-<h3 id="orgbe55f35">Presentations</h3>
-<div class="outline-text-3" id="text-orgbe55f35">
-<p>
-Harder still. Latex presentations are not wonderful and not interactive&#x2026; might
-want to look at one of those website based presentation tools.
-</p>
 
-<p>
-reveal.js looks great.
-impress.js and hovercraft look great&#x2026;
-</p>
-
-<p>
-How do newspapers do those interactive things?  It's called 'storytelling'.
-Google javascript storytelling library.
-</p>
-
-<p>
-<a href="https://geoviz.ceoas.oregonstate.edu/storymap/">https://geoviz.ceoas.oregonstate.edu/storymap/</a>
-</p>
-
-<p>
-<a href="https://pudding.cool/process/how-to-implement-scrollytelling/demo/waypoints/">https://pudding.cool/process/how-to-implement-scrollytelling/demo/waypoints/</a>
-</p>
-
-<p>
-<a href="https://pudding.cool/process/how-to-implement-scrollytelling/">https://pudding.cool/process/how-to-implement-scrollytelling/</a>
-</p>
-
-<p>
-This one recommends a 'stepper'.
-<a href="https://eagereyes.org/blog/2016/the-scrollytelling-scourge">https://eagereyes.org/blog/2016/the-scrollytelling-scourge</a>
-</p>
+<div id="outline-container-org4796edc" class="outline-2">
+<h2 id="org4796edc">Current Port Coquitlam Budget</h2>
+<div class="outline-text-2" id="text-org4796edc">
 </div>
 </div>
 
-<div id="outline-container-org37c059d" class="outline-3">
-<h3 id="org37c059d">Videos</h3>
-<div class="outline-text-3" id="text-org37c059d">
+<div id="outline-container-org441ef18" class="outline-2">
+<h2 id="org441ef18">Current Coquitlam City Budget</h2>
+<div class="outline-text-2" id="text-org441ef18">
 <p>
-To be determined.
+The <a href="http://www.bclaws.ca/civix/document/id/complete/statreg/r15001_00">Local Government Act</a> requires the <a href="coquitlam.html">City of Coquitlam</a> to complete a
+Five-Year Financial Plan and Budget each year.
+</p>
+</div>
+
+<div id="outline-container-orgcf1670e" class="outline-3">
+<h3 id="orgcf1670e">2019-2023</h3>
+<div class="outline-text-3" id="text-orgcf1670e">
+<p>
+<a href="https://www.coquitlam.ca/docs/default-source/financial-services/2019-2023-financial-plan.pdf">Here it is</a>
+</p>
+
+<p>
+Also, they did some special levy taxes&#x2026; so they can do special levies
+and stuff.
+</p>
+
+<p>
+<a href="https://www.coquitlam.ca/docs/default-source/council-agenda-documents/citydocs--3323575-v1-regularcouncil_2019_05_06_-_item_6.pdf">Example Special Levy</a>
+</p>
+
+<p>
+Okay, for 2019:
+Total Revenue: 432,439,000
+(page 52)
+</p>
+
+<p>
+Expenditure: 253,191,000
+</p>
+
+<p>
+Leaving: 179,248,000 for capital expenditures&#x2026;
+</p>
+
+<p>
+We also have a breakdown of staff&#x2026;
+</p>
+
+<p>
+50\% of revenue is from taxes.
+</p>
+
+<p>
+A home, in Coquitlam, is paying about $3000 in taxes, which seems
+extremely low (I pay $2000 a MONTH for rent).  If the city were
+to offer mortages at low rates, or if it invested in local jobs
+so that less gasoline were required, it could probably slurp up
+the difference as taxes and come out ahead.
+</p>
+
+<p>
+Most of that money goes towards sewer/police/fire &#x2026; but I'm not sure
+how they break that up, since all the money is pooled isn't it?
+Wouldn't that imply then that sewer/police/fire are the biggest budget
+items period?  Maybe they're just saying "Of the services a home
+receives&#x2026;"  these are the big ticket items&#x2026; so what are the things
+that the city pays for that are not regarded as services?
+</p>
+
+
+<p>
+Next they start saying sewer and water user revenue &#x2013; who are we selling
+these services too?  Businesses?  
+</p>
+
+
+<p>
+All in all, it looks like a well run ship.  The most likely source of
+new revenues would be higher taxes to support projects which
+ultimately lower the cost of living or raise life satisfaction.  These
+are sort of 'lateral' moves.
+</p>
+
+
+<p>
+Page 97:
+</p>
+
+<p>
+Over the next five years, the City will invest $457 million in capital infrastructure to improve transportation, enhance recreational opportunities and expand water, sewer and drainage infrastructure within Coquitlam. 
+</p>
+
+<p>
+We spend $22,513,000 a year maintaining roads.
+</p>
+
+<p>
+We spend a similar amount of parks and trails&#x2026; but half of it's budget is acquiring parkland.
+</p>
+
+
+<p>
+There are sidewalk programs:
+</p>
+<ul class="org-ul">
+<li>Frontage Work Program on Haversley, Madore and Stewar</li>
+<li>Sidewalk Improvement Program</li>
+</ul>
+
+<p>
+I think this one is a mistake:
+</p>
+<ul class="org-ul">
+<li>Major Arterial Road improvements (Page 102)</li>
+<li>Road and Pathway improvement for the Lougheed greenway</li>
+</ul>
+
+<p>
+The document says it's for bicyclists, but I think that's a fib.  Changes to Brunette are
+being driven by a desire to support more car traffic, not more bikes:
+ <a href="https://engage.gov.bc.ca/govtogetherbc/impact/brunette-interchange-results/">https://engage.gov.bc.ca/govtogetherbc/impact/brunette-interchange-results/</a>
+They also don't mention how much funds here.
+</p>
+
+<p>
+I also think it's a mistake to run your bike paths along side the
+highways.  It makes for a horrible biking experience (and discourages
+biking).
+</p>
+
+
+<p>
+We're also spending 84 million (over 5 years?) to develop natural land in order to bring
+it to market.  I would question the wisdom of this&#x2026; as we need densification. For 
+the same amout of money, we could electrify the entire city fleet.  Besides, it's not
+like this land is going anywhere&#x2026; we don't lose the opportunity and we don't need
+more car-only suburbs.
 </p>
 </div>
 </div>
