@@ -40,16 +40,47 @@ Then air quality
 
 https://www2.gov.bc.ca/gov/content/data/statistics/people-population-community/population
 
+| *Census Area*   | *Year* | *Count* |
+|-----------------+--------+---------|
+| Burnaby         |   2018 |   98789 |
+| Coquitlam       |   2018 |   96700 |
+| Maple Ridge     |   2018 |   43469 |
+| New Westminster |   2018 |   35746 |
+| Mission         |   2018 |   17627 |
+Source: Prepared by BC Stats, Ministry of Technology, Innovation and Citizens' Services
 
 * Land Use
 
 Agricultural Land Reserve
 https://www.alc.gov.bc.ca/alc/content/alr-maps/maps-and-gis
 
+
+
+
 * Housing types
 
 Not sure where to get this information.
 
+** COQUITLAM
+
+https://www.coquitlam.ca/planning-and-development/resources/community-profiles-demographics/census.aspx
+
+The XLS file has 'households'.
+
+| *Type*                                                     |       |
+|------------------------------------------------------------+-------|
+| Single-detached house                                      | 19785 |
+|------------------------------------------------------------+-------|
+| Apartment in a building that has five or more storeys      |  5915 |
+|------------------------------------------------------------+-------|
+| Other attached dwelling                                    | 25380 |
+| + Semi-detached house                                      |  1590 |
+| + Row house                                                |  4910 |
+| + Apartment or flat in a duplex                            |  7480 |
+| + Apartment in a building that has fewer than five storeys | 11380 |
+| + Other single-attached house                              |    15 |
+|------------------------------------------------------------+-------|
+| Movable dwelling                                           |   250 |
 
 * Heating and Electricity
 Residential
