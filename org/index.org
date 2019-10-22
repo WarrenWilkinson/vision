@@ -5,6 +5,7 @@ You should probably start with [[file:problem.org][The Problem.]]
  - I have this page on [[file:coquitlam.org][Coquitlam]], and [[file:budgets.org][budgets]], and this page on [[file:publishing.org][publishing]].
  - Also a few notes on [[file:urbanfood.org][Urban Food]], and [[file:tactics.org][tactics]].
  - A brief word on [[file:requirements.org][what we're trying to do]].
+ - A note on [[file:pace.org][PACE]].
 
 [[file:sitemap.org][Sitemap]]
 [[file:theindex.org][Index]]

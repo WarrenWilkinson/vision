@@ -4,6 +4,8 @@
    + [[file:coquitlam.org][Coquitlam]]
    + [[file:theindex.org][Index]]
    + [[file:index.org][Index]]
+   + [[file:pace.org][Pace]]
+   + [[file:provincial.org][Provincial]]
    + [[file:publishing.org][Publishing]]
    + [[file:requirements.org][Requirements]]
    + [[file:tactics.org][TACTICS]]
