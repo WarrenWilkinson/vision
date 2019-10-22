@@ -4,6 +4,7 @@
    + [[file:coquitlam.org][Coquitlam]]
    + [[file:theindex.org][Index]]
    + [[file:index.org][Index]]
+   + [[file:misc.org][Misc Ideas]]
    + [[file:pace.org][Pace]]
    + [[file:provincial.org][Provincial]]
    + [[file:publishing.org][Publishing]]

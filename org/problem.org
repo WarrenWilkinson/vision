@@ -56,10 +56,80 @@ https://www.alc.gov.bc.ca/alc/content/alr-maps/maps-and-gis
 
 
 
+* Commuting
+
+
+Best source is here. 2016 Census data:
+
+https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dt-td/Lp-eng.cfm
+
+In the long form, there is information about journey to work.
+
+98-400-X2016324 Mode, Duration, Exit Time, 
+98-400-X2016328 Mode, Duration, Distance, Exit Time
+98-400-X2016329 Destination, Mode   (Distination measures -- same census subdivision? same census division? same province?)
+98-400-X2016334 Mode, Industry
+
+I think if I sort of 'blend' the profiles for Vancouver and Mission/Abbotsford I can come up with some kind of reasonable guess.  This would have to be a slider.
+
+'Assuming Tri-Cities are more like Vancouver --- More like Abbotsford'
+
+https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm
+
+
+He showed it as a commute distance chart... 
+This data also varies with time... 2006 and 2016 we have.
+
+They also showed a chart of commute modes.
+
+
+
 
 * Housing types
 
-Not sure where to get this information.
+Best source is here. 2016 Census data:
+
+https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dt-td/Lp-eng.cfm
+
+Source 1 is 98-400-X2016017 - Structural type by household size
+Source 2 is 98-400-X2016015 - Structural type by age and sex.
+(there are also some income related ones broken out this way).
+
+
+** Old housing types data
+
+You can also get it from this data viewer:
+https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dv-vd/cpdv-vdpr/index-eng.cfm
+Census Program Data Viewer, 2016 Census
+
+
+Then focus on coquitlam and add comparisons to the other cities...
+
+| *City*         | *Single-detached home* | *Aps* | *Apt 5-* | *Apt Duplex or Flat* | *Apt 5+* |
+|----------------+------------------------+-------+----------+----------------------+----------|
+| Coquitlam      |                   38.5 |  48.3 |     22.2 |                 14.6 |     11.5 |
+| Port Moody     |                   30.3 |  46.1 |     22.9 |                  8.5 |     14.7 |
+| Port Coquitlam |                   38.5 |  42.7 |     25.1 |                 16.6 |        1 |
+| Anmore         |                   70.8 |  14.6 |        0 |                 14.6 |        0 |
+
+| *City*         | *Carpool* | *Public Transit* | *Active Transit* | *Car* |
+|----------------+-----------+------------------+------------------+-------|
+| Coquitlam      |      12.4 |             17.9 |              4.3 |  65.4 |
+| Port Moody     |      10.8 |             16.9 |              3.6 |  68.7 |
+| Port Coquitlam |      13.2 |             12.6 |              3.7 |  70.5 |
+| Anmore         |      10.8 |              7.7 |              1.4 |  80.1 |
+
+| *City*         | *Avg Commute* |
+|----------------+---------------|
+| Coquitlam      |          33.8 |
+| Port Moody     |            34 |
+| Port Coquitlam |          32.6 |
+| Anmore         |          32.5 |
+
+
+
+   
+https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dt-td/Ap-eng.cfm?LANG=E&APATH=3&DETAIL=0&DIM=0&FL=A&FREE=0&GC=0&GID=0&GK=0&GRP=1&PID=109534&PRID=10&PTYPE=109445&S=0&SHOWALL=0&SUB=0&Temporal=2016&THEME=116&VID=0&VNAMEE=&VNAMEF=
 
 ** COQUITLAM
 
@@ -82,6 +152,7 @@ The XLS file has 'households'.
 |------------------------------------------------------------+-------|
 | Movable dwelling                                           |   250 |
 
+
 * Heating and Electricity
 Residential
 Commercial Small/Medium
@@ -91,23 +162,6 @@ Wholesale?
 (For categories, Elec, Natural Gas, Heating Oil, Propane)
 
 http://oee.nrcan.gc.ca/corporate/statistics/neud/dpa/menus/trends/comprehensive_tables/list.cfm
-
-* Commuting
-
-The best I can do is Data tables, 2016 Census
-Main Mode of Commuting (20), Commuting Duration (7), Time Leaving for Work (7), Sex (3) and Age (11B) for the Employed Labour Force Aged 15 Years and Over Having a Usual Place of Work or No Fixed Workplace Address, in Private Households of Canada, Provinces and Territories, Census Metropolitan Areas and Census Agglomerations, 2016 Census - 25% Sample Data 
-
-I think if I sort of 'blend' the profiles for Vancouver and Mission/Abbotsford I can come up with some kind of reasonable guess.  This would have to be a slider.
-
-'Assuming Tri-Cities are more like Vancouver --- More like Abbotsford'
-
-https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm
-
-
-He showed it as a commute distance chart... 
-This data also varies with time... 2006 and 2016 we have.
-
-They also showed a chart of commute modes.
 
 * Solid Waste
 
