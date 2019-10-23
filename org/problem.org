@@ -47,6 +47,7 @@ https://www2.gov.bc.ca/gov/content/data/statistics/people-population-community/p
 | Maple Ridge     |   2018 |   43469 |
 | New Westminster |   2018 |   35746 |
 | Mission         |   2018 |   17627 |
+
 Source: Prepared by BC Stats, Ministry of Technology, Innovation and Citizens' Services
 
 * Land Use
@@ -89,11 +90,53 @@ They also showed a chart of commute modes.
 
 Best source is here. 2016 Census data:
 
+https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm
+
 https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dt-td/Lp-eng.cfm
 
 Source 1 is 98-400-X2016017 - Structural type by household size
 Source 2 is 98-400-X2016015 - Structural type by age and sex.
 (there are also some income related ones broken out this way).
+
+# Output the table... Sort so the total is last.
+
+#+begin_src R :session t :exports results :results table :colnames yes
+  library(dplyr)
+
+  df <- read.table(unz("../census2016/98-400-X2016017_ENG_CSV.ZIP", "98-400-X2016017_English_CSV_data.csv"), header=T, quote="\"", sep=",")
+
+  cities <- c('Coquitlam, CY',
+              'Belcarra, VL',
+              'Anmore, VL',
+              'Port Coquitlam, CY',
+              'Port Moody, CY')
+
+  df <- df %>%
+      filter(GEO_NAME %in% cities) %>%
+      select(GEO_NAME, DIM..Structural.type.of.dwelling..10.,
+             Dim..Household.size..8...Member.ID...1...Total...Household.size,
+             Dim..Household.size..8...Member.ID...2...1.person,
+             Dim..Household.size..8...Member.ID...3...2.persons,
+             Dim..Household.size..8...Member.ID...4...3.persons,
+             Dim..Household.size..8...Member.ID...5...4.persons,
+             Dim..Household.size..8...Member.ID...6...5.or.more.persons,
+             Dim..Household.size..8...Member.ID...7...Number.of.persons.in.private.households,
+             Dim..Household.size..8...Member.ID...8...Average.household.size)
+
+  names(df) <- c('city', 'type', 'total.houses',
+		 '1.person',
+		 '2.persons',
+		 '3.persons',
+		 '4.persons',
+		 '5.or.more.persons',
+		 'total.persons',
+		 'avergae.household.size')
+
+  options(width=300)
+  df
+#+end_src
+
+It looks like a lot of single family detached homes have just 1 or 2 people.
 
 
 ** Old housing types data
