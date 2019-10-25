@@ -84,19 +84,30 @@ This data also varies with time... 2006 and 2016 we have.
 They also showed a chart of commute modes.
 
 
+| *City*         | *Carpool* | *Public Transit* | *Active Transit* | *Car* |
+|----------------+-----------+------------------+------------------+-------|
+| Coquitlam      |      12.4 |             17.9 |              4.3 |  65.4 |
+| Port Moody     |      10.8 |             16.9 |              3.6 |  68.7 |
+| Port Coquitlam |      13.2 |             12.6 |              3.7 |  70.5 |
+| Anmore         |      10.8 |              7.7 |              1.4 |  80.1 |
 
+| *City*         | *Avg Commute* |
+|----------------+---------------|
+| Coquitlam      |          33.8 |
+| Port Moody     |            34 |
+| Port Coquitlam |          32.6 |
+| Anmore         |          32.5 |
 
 * Housing types
 
 Best source is here. 2016 Census data:
 
-https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm
+https://www12.statcan.gc.ca/
 
-https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dt-td/Lp-eng.cfm
+You basically have to go there and search for the product name and download the data table as CSV.
 
-Source 1 is 98-400-X2016017 - Structural type by household size
-Source 2 is 98-400-X2016015 - Structural type by age and sex.
-(there are also some income related ones broken out this way).
+** Source 1 is 98-400-X2016017 - Structural type by household size
+
 
 # Output the table... Sort so the total is last.
 
@@ -138,62 +149,76 @@ Source 2 is 98-400-X2016015 - Structural type by age and sex.
 
 It looks like a lot of single family detached homes have just 1 or 2 people.
 
+** Source 2 is 98-400-X2016015 - Structural type by age and sex.
 
-** Old housing types data
+#+begin_src R :session t :exports results :results table :colnames yes
+  library(dplyr)
 
-You can also get it from this data viewer:
-https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dv-vd/cpdv-vdpr/index-eng.cfm
-Census Program Data Viewer, 2016 Census
+  df <- read.table(unz("../census2016/98-400-X2016015_ENG_CSV.ZIP", "98-400-X2016015_English_CSV_data.csv"), header=T, quote="\"", sep=",")
 
+  cities <- c('Coquitlam, CY',
+              'Belcarra, VL',
+              'Anmore, VL',
+              'Port Coquitlam, CY',
+              'Port Moody, CY')
 
-Then focus on coquitlam and add comparisons to the other cities...
+  df <- df %>%
+      filter(GEO_NAME %in% cities, DIM..Sex..3. == 'Total - Sex') %>%
+      select(GEO_NAME, DIM..Structural.type.of.dwelling..10.,
+             Dim..Age..20...Member.ID...1...Total...Age,
+             Dim..Age..20...Member.ID...2...0.to.14.years,
+             Dim..Age..20...Member.ID...3...15.to.19.years,
+             Dim..Age..20...Member.ID...4...15.to.17.years,
+             Dim..Age..20...Member.ID...5...18.to.19.years,
+             Dim..Age..20...Member.ID...6...20.to.24.years,
+             Dim..Age..20...Member.ID...7...25.to.29.years,
+             Dim..Age..20...Member.ID...8...30.to.34.years,
+             Dim..Age..20...Member.ID...9...35.to.39.years,
+             Dim..Age..20...Member.ID...10...40.to.44.years,
+             Dim..Age..20...Member.ID...11...45.to.49.years,
+             Dim..Age..20...Member.ID...12...50.to.54.years,
+             Dim..Age..20...Member.ID...13...55.to.59.years,
+             Dim..Age..20...Member.ID...14...60.to.64.years,
+             Dim..Age..20...Member.ID...15...65.years.and.over,
+             Dim..Age..20...Member.ID...16...65.to.69.years,
+             Dim..Age..20...Member.ID...17...70.to.74.years,
+             Dim..Age..20...Member.ID...18...75.to.79.years,
+             Dim..Age..20...Member.ID...19...80.to.84.years,
+             Dim..Age..20...Member.ID...20...85.years.and.over)
 
-| *City*         | *Single-detached home* | *Aps* | *Apt 5-* | *Apt Duplex or Flat* | *Apt 5+* |
-|----------------+------------------------+-------+----------+----------------------+----------|
-| Coquitlam      |                   38.5 |  48.3 |     22.2 |                 14.6 |     11.5 |
-| Port Moody     |                   30.3 |  46.1 |     22.9 |                  8.5 |     14.7 |
-| Port Coquitlam |                   38.5 |  42.7 |     25.1 |                 16.6 |        1 |
-| Anmore         |                   70.8 |  14.6 |        0 |                 14.6 |        0 |
+  names(df) <- c('city', 'type',
+		 'total',
+		 '0.to.14',
+		 '15.to.19',
+		 '15.to.17',
+		 '18.to.19',
+		 '20.to.24',
+		 '25.to.29',
+		 '30.to.34',
+		 '35.to.39',
+		 '40.to.44',
+		 '45.to.49',
+		 '50.to.54',
+		 '55.to.59',
+		 '60.to.64',
+		 '65.and.over',
+		 '65.to.69',
+		 '70.to.74',
+		 '75.to.79',
+		 '80.to.84',
+		 '85.and.over')
 
-| *City*         | *Carpool* | *Public Transit* | *Active Transit* | *Car* |
-|----------------+-----------+------------------+------------------+-------|
-| Coquitlam      |      12.4 |             17.9 |              4.3 |  65.4 |
-| Port Moody     |      10.8 |             16.9 |              3.6 |  68.7 |
-| Port Coquitlam |      13.2 |             12.6 |              3.7 |  70.5 |
-| Anmore         |      10.8 |              7.7 |              1.4 |  80.1 |
+  options(width=300)
+  df
+#+end_src
 
-| *City*         | *Avg Commute* |
-|----------------+---------------|
-| Coquitlam      |          33.8 |
-| Port Moody     |            34 |
-| Port Coquitlam |          32.6 |
-| Anmore         |          32.5 |
+The total column doesn't always seem to add up to the other columns. I
+dropped the 'sex' attribute, because men and women seemed about the
+same.
 
-
-
-   
-https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dt-td/Ap-eng.cfm?LANG=E&APATH=3&DETAIL=0&DIM=0&FL=A&FREE=0&GC=0&GID=0&GK=0&GRP=1&PID=109534&PRID=10&PTYPE=109445&S=0&SHOWALL=0&SUB=0&Temporal=2016&THEME=116&VID=0&VNAMEE=&VNAMEF=
-
-** COQUITLAM
-
-https://www.coquitlam.ca/planning-and-development/resources/community-profiles-demographics/census.aspx
-
-The XLS file has 'households'.
-
-| *Type*                                                     |       |
-|------------------------------------------------------------+-------|
-| Single-detached house                                      | 19785 |
-|------------------------------------------------------------+-------|
-| Apartment in a building that has five or more storeys      |  5915 |
-|------------------------------------------------------------+-------|
-| Other attached dwelling                                    | 25380 |
-| + Semi-detached house                                      |  1590 |
-| + Row house                                                |  4910 |
-| + Apartment or flat in a duplex                            |  7480 |
-| + Apartment in a building that has fewer than five storeys | 11380 |
-| + Other single-attached house                              |    15 |
-|------------------------------------------------------------+-------|
-| Movable dwelling                                           |   250 |
+All ages seem equally likely to be in a single-detached with a dip in
+the 25 to 40 year old range. Maybe a trend, maybe affordability. They
+seem to be more in apartments, or maybe duplexes.
 
 
 * Heating and Electricity
