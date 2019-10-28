@@ -78,6 +78,8 @@ https://pudding.cool/process/how-to-implement-scrollytelling/
 This one recommends a 'stepper'.
 https://eagereyes.org/blog/2016/the-scrollytelling-scourge
 
+Another to look at is http://worrydream.com/ClimateChange/ ... he has a library that lets calculations be exposed to the user so they can play with the numbers themselves.
+
 ** Videos
 
 To be determined.

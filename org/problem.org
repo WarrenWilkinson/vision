@@ -81,8 +81,8 @@ be significant differences between men and womens commutes.
   df <- read.table(src98.400.X2016324(), col.names = names(df.row1), skip = start, nrow = end - start - 1, quote="\"", sep=",")
 
   cities <- c('Coquitlam, CY',
-              'Belcarra, VL',
-              'Anmore, VL',
+              ## 'Belcarra, VL',
+              ## 'Anmore, VL',
               'Port Coquitlam, CY',
               'Port Moody, CY')
 
@@ -174,8 +174,8 @@ You basically have to go there and search for the product name and download the 
   df <- read.table(src98.400.X2016017(), col.names = names(df.row1), skip = start, nrow = end - start - 1, quote="\"", sep=",")
 
   cities <- c('Coquitlam, CY',
-              'Belcarra, VL',
-              'Anmore, VL',
+              ## 'Belcarra, VL',
+              ## 'Anmore, VL',
               'Port Coquitlam, CY',
               'Port Moody, CY')
 
@@ -221,8 +221,8 @@ It looks like a lot of single family detached homes have just 1 or 2 people.
   df <- read.table(src98.400.X2016015(), col.names = names(df.row1), skip = start, nrow = end - start - 1, quote="\"", sep=",")
 
   cities <- c('Coquitlam, CY',
-              'Belcarra, VL',
-              'Anmore, VL',
+              ## 'Belcarra, VL',
+              ## 'Anmore, VL',
               'Port Coquitlam, CY',
               'Port Moody, CY')
 
