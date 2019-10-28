@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-10-25 Fri 12:35 -->
+<!-- 2019-10-28 Mon 08:08 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>The Problem</title>
 <meta name="generator" content="Org mode" />
-<meta name="author" content="Warren Wilkinson" />
+<meta name="author" content="warren" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -295,9 +295,9 @@ Then air quality
 <li>What happens if we have more electric cars or walking?</li>
 </ul>
 
-<div id="outline-container-org901116f" class="outline-2">
-<h2 id="org901116f">Populations</h2>
-<div class="outline-text-2" id="text-org901116f">
+<div id="outline-container-orgd4f7201" class="outline-2">
+<h2 id="orgd4f7201">Populations</h2>
+<div class="outline-text-2" id="text-orgd4f7201">
 <p>
 <a href="https://www2.gov.bc.ca/gov/content/data/statistics/people-population-community/population">https://www2.gov.bc.ca/gov/content/data/statistics/people-population-community/population</a>
 </p>
@@ -358,9 +358,9 @@ Source: Prepared by BC Stats, Ministry of Technology, Innovation and Citizens' S
 </div>
 </div>
 
-<div id="outline-container-orgb57da48" class="outline-2">
-<h2 id="orgb57da48">Land Use</h2>
-<div class="outline-text-2" id="text-orgb57da48">
+<div id="outline-container-org595030b" class="outline-2">
+<h2 id="org595030b">Land Use</h2>
+<div class="outline-text-2" id="text-org595030b">
 <p>
 Agricultural Land Reserve
 <a href="https://www.alc.gov.bc.ca/alc/content/alr-maps/maps-and-gis">https://www.alc.gov.bc.ca/alc/content/alr-maps/maps-and-gis</a>
@@ -369,18 +369,5314 @@ Agricultural Land Reserve
 </div>
 
 
-
-<div id="outline-container-org579fd20" class="outline-2">
-<h2 id="org579fd20">Commuting</h2>
-<div class="outline-text-2" id="text-org579fd20">
+<div id="outline-container-org18cfc3b" class="outline-2">
+<h2 id="org18cfc3b">Commuting</h2>
+<div class="outline-text-2" id="text-org18cfc3b">
 <p>
 Best source is here. 2016 Census data:
 </p>
 
 <p>
-<a href="https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dt-td/Lp-eng.cfm">https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dt-td/Lp-eng.cfm</a>
+<a href="https://www12.statcan.gc.ca/">https://www12.statcan.gc.ca/</a>
+</p>
+</div>
+
+<div id="outline-container-org2c585ad" class="outline-3">
+<h3 id="org2c585ad">Source 1 is 98-400-X2016324 - Main Mode of Commuting (10), Commuting Duration (7), Time Leaving for Work (7), Sex (3) and Age (5) for the Employed Labour Force Aged 15 Years and Over Having a Usual Place of Work or No Fixed Workplace Address</h3>
+<div class="outline-text-3" id="text-org2c585ad">
+<p>
+Huge amount of data here. Not sure the best way to visualizCe it. Here
+is just the totals (e.g. significantly reduced dataset). There look to
+be significant differences between men and womens commutes.
 </p>
 
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">city</th>
+<th scope="col" class="org-left">sex</th>
+<th scope="col" class="org-left">age</th>
+<th scope="col" class="org-left">leave</th>
+<th scope="col" class="org-left">mode</th>
+<th scope="col" class="org-right">total.duration</th>
+<th scope="col" class="org-right">lt15</th>
+<th scope="col" class="org-right">15to29</th>
+<th scope="col" class="org-right">30to44</th>
+<th scope="col" class="org-right">45to59</th>
+<th scope="col" class="org-right">gte60</th>
+<th scope="col" class="org-right">avergae.duration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">49470</td>
+<td class="org-right">9010</td>
+<td class="org-right">14165</td>
+<td class="org-right">13440</td>
+<td class="org-right">7050</td>
+<td class="org-right">5810</td>
+<td class="org-right">30.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">41465</td>
+<td class="org-right">7585</td>
+<td class="org-right">12165</td>
+<td class="org-right">11350</td>
+<td class="org-right">5780</td>
+<td class="org-right">4590</td>
+<td class="org-right">29.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">8000</td>
+<td class="org-right">1420</td>
+<td class="org-right">2000</td>
+<td class="org-right">2090</td>
+<td class="org-right">1275</td>
+<td class="org-right">1220</td>
+<td class="org-right">32.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">4520</td>
+<td class="org-right">510</td>
+<td class="org-right">1060</td>
+<td class="org-right">1295</td>
+<td class="org-right">820</td>
+<td class="org-right">840</td>
+<td class="org-right">35.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">3485</td>
+<td class="org-right">915</td>
+<td class="org-right">935</td>
+<td class="org-right">795</td>
+<td class="org-right">450</td>
+<td class="org-right">385</td>
+<td class="org-right">28</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">14280</td>
+<td class="org-right">1680</td>
+<td class="org-right">1975</td>
+<td class="org-right">2455</td>
+<td class="org-right">2645</td>
+<td class="org-right">5525</td>
+<td class="org-right">46</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">11540</td>
+<td class="org-right">300</td>
+<td class="org-right">1080</td>
+<td class="org-right">2165</td>
+<td class="org-right">2565</td>
+<td class="org-right">5425</td>
+<td class="org-right">53</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">2745</td>
+<td class="org-right">1375</td>
+<td class="org-right">895</td>
+<td class="org-right">295</td>
+<td class="org-right">75</td>
+<td class="org-right">100</td>
+<td class="org-right">16.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Other method</td>
+<td class="org-right">660</td>
+<td class="org-right">300</td>
+<td class="org-right">100</td>
+<td class="org-right">85</td>
+<td class="org-right">75</td>
+<td class="org-right">95</td>
+<td class="org-right">26.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">4485</td>
+<td class="org-right">435</td>
+<td class="org-right">1050</td>
+<td class="org-right">1240</td>
+<td class="org-right">775</td>
+<td class="org-right">990</td>
+<td class="org-right">38.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">3575</td>
+<td class="org-right">370</td>
+<td class="org-right">975</td>
+<td class="org-right">1110</td>
+<td class="org-right">605</td>
+<td class="org-right">510</td>
+<td class="org-right">34.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">3030</td>
+<td class="org-right">350</td>
+<td class="org-right">875</td>
+<td class="org-right">945</td>
+<td class="org-right">480</td>
+<td class="org-right">385</td>
+<td class="org-right">33.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">540</td>
+<td class="org-right">25</td>
+<td class="org-right">95</td>
+<td class="org-right">165</td>
+<td class="org-right">130</td>
+<td class="org-right">120</td>
+<td class="org-right">43.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">360</td>
+<td class="org-right">0</td>
+<td class="org-right">65</td>
+<td class="org-right">115</td>
+<td class="org-right">100</td>
+<td class="org-right">80</td>
+<td class="org-right">43.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">180</td>
+<td class="org-right">20</td>
+<td class="org-right">35</td>
+<td class="org-right">50</td>
+<td class="org-right">30</td>
+<td class="org-right">50</td>
+<td class="org-right">43.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">870</td>
+<td class="org-right">50</td>
+<td class="org-right">65</td>
+<td class="org-right">120</td>
+<td class="org-right">165</td>
+<td class="org-right">470</td>
+<td class="org-right">55.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">765</td>
+<td class="org-right">0</td>
+<td class="org-right">25</td>
+<td class="org-right">110</td>
+<td class="org-right">160</td>
+<td class="org-right">460</td>
+<td class="org-right">61.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">105</td>
+<td class="org-right">50</td>
+<td class="org-right">35</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">19.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">45</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">41.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">11490</td>
+<td class="org-right">1160</td>
+<td class="org-right">2545</td>
+<td class="org-right">2955</td>
+<td class="org-right">2115</td>
+<td class="org-right">2715</td>
+<td class="org-right">38.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">8830</td>
+<td class="org-right">980</td>
+<td class="org-right">2315</td>
+<td class="org-right">2605</td>
+<td class="org-right">1525</td>
+<td class="org-right">1410</td>
+<td class="org-right">34.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">7375</td>
+<td class="org-right">860</td>
+<td class="org-right">2010</td>
+<td class="org-right">2200</td>
+<td class="org-right">1250</td>
+<td class="org-right">1050</td>
+<td class="org-right">33.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">1455</td>
+<td class="org-right">120</td>
+<td class="org-right">305</td>
+<td class="org-right">405</td>
+<td class="org-right">275</td>
+<td class="org-right">355</td>
+<td class="org-right">39.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">880</td>
+<td class="org-right">45</td>
+<td class="org-right">145</td>
+<td class="org-right">250</td>
+<td class="org-right">175</td>
+<td class="org-right">265</td>
+<td class="org-right">43.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">575</td>
+<td class="org-right">70</td>
+<td class="org-right">155</td>
+<td class="org-right">155</td>
+<td class="org-right">100</td>
+<td class="org-right">90</td>
+<td class="org-right">33.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">2550</td>
+<td class="org-right">155</td>
+<td class="org-right">200</td>
+<td class="org-right">340</td>
+<td class="org-right">555</td>
+<td class="org-right">1295</td>
+<td class="org-right">53.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">2250</td>
+<td class="org-right">35</td>
+<td class="org-right">125</td>
+<td class="org-right">305</td>
+<td class="org-right">520</td>
+<td class="org-right">1265</td>
+<td class="org-right">57.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">305</td>
+<td class="org-right">125</td>
+<td class="org-right">75</td>
+<td class="org-right">45</td>
+<td class="org-right">35</td>
+<td class="org-right">30</td>
+<td class="org-right">23.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">105</td>
+<td class="org-right">30</td>
+<td class="org-right">30</td>
+<td class="org-right">0</td>
+<td class="org-right">30</td>
+<td class="org-right">10</td>
+<td class="org-right">29.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">16520</td>
+<td class="org-right">1945</td>
+<td class="org-right">3640</td>
+<td class="org-right">4150</td>
+<td class="org-right">2930</td>
+<td class="org-right">3855</td>
+<td class="org-right">37.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">12650</td>
+<td class="org-right">1735</td>
+<td class="org-right">3420</td>
+<td class="org-right">3565</td>
+<td class="org-right">2015</td>
+<td class="org-right">1910</td>
+<td class="org-right">32.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">10635</td>
+<td class="org-right">1585</td>
+<td class="org-right">2940</td>
+<td class="org-right">3005</td>
+<td class="org-right">1620</td>
+<td class="org-right">1490</td>
+<td class="org-right">32.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">2015</td>
+<td class="org-right">150</td>
+<td class="org-right">485</td>
+<td class="org-right">560</td>
+<td class="org-right">400</td>
+<td class="org-right">415</td>
+<td class="org-right">37.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">1255</td>
+<td class="org-right">70</td>
+<td class="org-right">280</td>
+<td class="org-right">380</td>
+<td class="org-right">270</td>
+<td class="org-right">260</td>
+<td class="org-right">38.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">755</td>
+<td class="org-right">85</td>
+<td class="org-right">200</td>
+<td class="org-right">180</td>
+<td class="org-right">135</td>
+<td class="org-right">160</td>
+<td class="org-right">35.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">3770</td>
+<td class="org-right">185</td>
+<td class="org-right">215</td>
+<td class="org-right">550</td>
+<td class="org-right">890</td>
+<td class="org-right">1925</td>
+<td class="org-right">54.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">3400</td>
+<td class="org-right">30</td>
+<td class="org-right">100</td>
+<td class="org-right">490</td>
+<td class="org-right">870</td>
+<td class="org-right">1905</td>
+<td class="org-right">58.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">375</td>
+<td class="org-right">155</td>
+<td class="org-right">115</td>
+<td class="org-right">65</td>
+<td class="org-right">15</td>
+<td class="org-right">20</td>
+<td class="org-right">20.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">100</td>
+<td class="org-right">20</td>
+<td class="org-right">0</td>
+<td class="org-right">25</td>
+<td class="org-right">20</td>
+<td class="org-right">20</td>
+<td class="org-right">37</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">12600</td>
+<td class="org-right">2415</td>
+<td class="org-right">3435</td>
+<td class="org-right">3075</td>
+<td class="org-right">1885</td>
+<td class="org-right">1795</td>
+<td class="org-right">31.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">10175</td>
+<td class="org-right">2010</td>
+<td class="org-right">3085</td>
+<td class="org-right">2610</td>
+<td class="org-right">1395</td>
+<td class="org-right">1070</td>
+<td class="org-right">29</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">8565</td>
+<td class="org-right">1740</td>
+<td class="org-right">2650</td>
+<td class="org-right">2225</td>
+<td class="org-right">1110</td>
+<td class="org-right">845</td>
+<td class="org-right">28.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">1610</td>
+<td class="org-right">270</td>
+<td class="org-right">440</td>
+<td class="org-right">385</td>
+<td class="org-right">285</td>
+<td class="org-right">225</td>
+<td class="org-right">31.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">930</td>
+<td class="org-right">115</td>
+<td class="org-right">285</td>
+<td class="org-right">200</td>
+<td class="org-right">155</td>
+<td class="org-right">160</td>
+<td class="org-right">33.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">680</td>
+<td class="org-right">155</td>
+<td class="org-right">155</td>
+<td class="org-right">185</td>
+<td class="org-right">125</td>
+<td class="org-right">60</td>
+<td class="org-right">29.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">2310</td>
+<td class="org-right">340</td>
+<td class="org-right">320</td>
+<td class="org-right">455</td>
+<td class="org-right">485</td>
+<td class="org-right">710</td>
+<td class="org-right">42.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">1750</td>
+<td class="org-right">30</td>
+<td class="org-right">135</td>
+<td class="org-right">410</td>
+<td class="org-right">470</td>
+<td class="org-right">705</td>
+<td class="org-right">51</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">560</td>
+<td class="org-right">315</td>
+<td class="org-right">185</td>
+<td class="org-right">40</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">14.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">115</td>
+<td class="org-right">65</td>
+<td class="org-right">25</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">23.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">9955</td>
+<td class="org-right">2625</td>
+<td class="org-right">2675</td>
+<td class="org-right">2440</td>
+<td class="org-right">1150</td>
+<td class="org-right">1060</td>
+<td class="org-right">27.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">7620</td>
+<td class="org-right">2100</td>
+<td class="org-right">2150</td>
+<td class="org-right">1940</td>
+<td class="org-right">875</td>
+<td class="org-right">560</td>
+<td class="org-right">25.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">6325</td>
+<td class="org-right">1660</td>
+<td class="org-right">1855</td>
+<td class="org-right">1575</td>
+<td class="org-right">740</td>
+<td class="org-right">495</td>
+<td class="org-right">26.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">1290</td>
+<td class="org-right">435</td>
+<td class="org-right">295</td>
+<td class="org-right">365</td>
+<td class="org-right">135</td>
+<td class="org-right">65</td>
+<td class="org-right">24.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">695</td>
+<td class="org-right">190</td>
+<td class="org-right">150</td>
+<td class="org-right">220</td>
+<td class="org-right">75</td>
+<td class="org-right">55</td>
+<td class="org-right">27.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">595</td>
+<td class="org-right">245</td>
+<td class="org-right">140</td>
+<td class="org-right">145</td>
+<td class="org-right">55</td>
+<td class="org-right">0</td>
+<td class="org-right">21.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">2150</td>
+<td class="org-right">430</td>
+<td class="org-right">505</td>
+<td class="org-right">485</td>
+<td class="org-right">265</td>
+<td class="org-right">470</td>
+<td class="org-right">34.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">1465</td>
+<td class="org-right">55</td>
+<td class="org-right">285</td>
+<td class="org-right">405</td>
+<td class="org-right">260</td>
+<td class="org-right">455</td>
+<td class="org-right">43.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">690</td>
+<td class="org-right">375</td>
+<td class="org-right">220</td>
+<td class="org-right">75</td>
+<td class="org-right">0</td>
+<td class="org-right">15</td>
+<td class="org-right">14.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">185</td>
+<td class="org-right">100</td>
+<td class="org-right">25</td>
+<td class="org-right">20</td>
+<td class="org-right">15</td>
+<td class="org-right">35</td>
+<td class="org-right">22.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">9365</td>
+<td class="org-right">2405</td>
+<td class="org-right">2895</td>
+<td class="org-right">2120</td>
+<td class="org-right">925</td>
+<td class="org-right">1025</td>
+<td class="org-right">27.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">6625</td>
+<td class="org-right">1815</td>
+<td class="org-right">2215</td>
+<td class="org-right">1600</td>
+<td class="org-right">635</td>
+<td class="org-right">355</td>
+<td class="org-right">24.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">5530</td>
+<td class="org-right">1390</td>
+<td class="org-right">1835</td>
+<td class="org-right">1405</td>
+<td class="org-right">585</td>
+<td class="org-right">320</td>
+<td class="org-right">25.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">1090</td>
+<td class="org-right">425</td>
+<td class="org-right">380</td>
+<td class="org-right">200</td>
+<td class="org-right">55</td>
+<td class="org-right">30</td>
+<td class="org-right">19.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">400</td>
+<td class="org-right">80</td>
+<td class="org-right">130</td>
+<td class="org-right">120</td>
+<td class="org-right">50</td>
+<td class="org-right">20</td>
+<td class="org-right">26.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">695</td>
+<td class="org-right">345</td>
+<td class="org-right">255</td>
+<td class="org-right">80</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">15.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">2630</td>
+<td class="org-right">515</td>
+<td class="org-right">670</td>
+<td class="org-right">505</td>
+<td class="org-right">285</td>
+<td class="org-right">660</td>
+<td class="org-right">36.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">1920</td>
+<td class="org-right">150</td>
+<td class="org-right">410</td>
+<td class="org-right">440</td>
+<td class="org-right">285</td>
+<td class="org-right">635</td>
+<td class="org-right">44.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">715</td>
+<td class="org-right">365</td>
+<td class="org-right">260</td>
+<td class="org-right">65</td>
+<td class="org-right">0</td>
+<td class="org-right">20</td>
+<td class="org-right">16.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">115</td>
+<td class="org-right">80</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">18.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">245</td>
+<td class="org-right">20</td>
+<td class="org-right">85</td>
+<td class="org-right">75</td>
+<td class="org-right">35</td>
+<td class="org-right">35</td>
+<td class="org-right">32.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">220</td>
+<td class="org-right">15</td>
+<td class="org-right">90</td>
+<td class="org-right">70</td>
+<td class="org-right">30</td>
+<td class="org-right">20</td>
+<td class="org-right">30.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">195</td>
+<td class="org-right">15</td>
+<td class="org-right">70</td>
+<td class="org-right">60</td>
+<td class="org-right">25</td>
+<td class="org-right">25</td>
+<td class="org-right">30.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">30</td>
+<td class="org-right">0</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">27.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">32.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">30</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">43.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">15</td>
+<td class="org-right">47.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Other method</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">65</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">20</td>
+<td class="org-right">15</td>
+<td class="org-right">15</td>
+<td class="org-right">39.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">50</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">25</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">36</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">40</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">33.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">65</td>
+<td class="org-right">0</td>
+<td class="org-right">25</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">35.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">60</td>
+<td class="org-right">0</td>
+<td class="org-right">25</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">31.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">55</td>
+<td class="org-right">10</td>
+<td class="org-right">25</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">31.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">55</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">20</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">29.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">45</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">33.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">45</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">20</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">30.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">35</td>
+<td class="org-right">0</td>
+<td class="org-right">25</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">25.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">30</td>
+<td class="org-right">0</td>
+<td class="org-right">25</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">24.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">25</td>
+<td class="org-right">0</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">26.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">20</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">30.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">18.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Belcarra, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">1050</td>
+<td class="org-right">140</td>
+<td class="org-right">310</td>
+<td class="org-right">280</td>
+<td class="org-right">175</td>
+<td class="org-right">135</td>
+<td class="org-right">32.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">945</td>
+<td class="org-right">135</td>
+<td class="org-right">300</td>
+<td class="org-right">265</td>
+<td class="org-right">155</td>
+<td class="org-right">90</td>
+<td class="org-right">30.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">775</td>
+<td class="org-right">120</td>
+<td class="org-right">275</td>
+<td class="org-right">180</td>
+<td class="org-right">130</td>
+<td class="org-right">65</td>
+<td class="org-right">29.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">175</td>
+<td class="org-right">15</td>
+<td class="org-right">25</td>
+<td class="org-right">85</td>
+<td class="org-right">25</td>
+<td class="org-right">15</td>
+<td class="org-right">34.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">105</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">60</td>
+<td class="org-right">15</td>
+<td class="org-right">20</td>
+<td class="org-right">39.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">65</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">30</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">26.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">100</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">50</td>
+<td class="org-right">50.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">85</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">15</td>
+<td class="org-right">45</td>
+<td class="org-right">52.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">20</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">39.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Other method</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">70</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">30</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">35.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">70</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">35</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">35.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">75</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">35</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">35.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">205</td>
+<td class="org-right">15</td>
+<td class="org-right">45</td>
+<td class="org-right">60</td>
+<td class="org-right">60</td>
+<td class="org-right">25</td>
+<td class="org-right">36.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">180</td>
+<td class="org-right">15</td>
+<td class="org-right">45</td>
+<td class="org-right">50</td>
+<td class="org-right">45</td>
+<td class="org-right">20</td>
+<td class="org-right">34</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">145</td>
+<td class="org-right">15</td>
+<td class="org-right">40</td>
+<td class="org-right">40</td>
+<td class="org-right">40</td>
+<td class="org-right">15</td>
+<td class="org-right">33.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">30</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">35.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">30</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">41.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">20</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">38.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">240</td>
+<td class="org-right">20</td>
+<td class="org-right">60</td>
+<td class="org-right">75</td>
+<td class="org-right">30</td>
+<td class="org-right">60</td>
+<td class="org-right">37.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">205</td>
+<td class="org-right">20</td>
+<td class="org-right">60</td>
+<td class="org-right">75</td>
+<td class="org-right">25</td>
+<td class="org-right">20</td>
+<td class="org-right">32.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">150</td>
+<td class="org-right">25</td>
+<td class="org-right">55</td>
+<td class="org-right">35</td>
+<td class="org-right">30</td>
+<td class="org-right">15</td>
+<td class="org-right">30.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">55</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">40</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">35.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">40</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">25</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">38.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">40</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">35</td>
+<td class="org-right">70.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">35</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">35</td>
+<td class="org-right">70.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">245</td>
+<td class="org-right">45</td>
+<td class="org-right">90</td>
+<td class="org-right">40</td>
+<td class="org-right">50</td>
+<td class="org-right">20</td>
+<td class="org-right">29.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">235</td>
+<td class="org-right">45</td>
+<td class="org-right">85</td>
+<td class="org-right">35</td>
+<td class="org-right">50</td>
+<td class="org-right">15</td>
+<td class="org-right">29.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">190</td>
+<td class="org-right">35</td>
+<td class="org-right">75</td>
+<td class="org-right">25</td>
+<td class="org-right">30</td>
+<td class="org-right">15</td>
+<td class="org-right">27.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">45</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">20</td>
+<td class="org-right">0</td>
+<td class="org-right">35.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">25</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">40.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">20</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">28.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">125</td>
+<td class="org-right">20</td>
+<td class="org-right">45</td>
+<td class="org-right">25</td>
+<td class="org-right">20</td>
+<td class="org-right">10</td>
+<td class="org-right">26.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">115</td>
+<td class="org-right">20</td>
+<td class="org-right">45</td>
+<td class="org-right">25</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">26</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">95</td>
+<td class="org-right">10</td>
+<td class="org-right">45</td>
+<td class="org-right">20</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">25.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">20</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">27.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">155</td>
+<td class="org-right">30</td>
+<td class="org-right">60</td>
+<td class="org-right">40</td>
+<td class="org-right">20</td>
+<td class="org-right">10</td>
+<td class="org-right">28</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">140</td>
+<td class="org-right">25</td>
+<td class="org-right">50</td>
+<td class="org-right">40</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+<td class="org-right">27.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">115</td>
+<td class="org-right">25</td>
+<td class="org-right">50</td>
+<td class="org-right">25</td>
+<td class="org-right">20</td>
+<td class="org-right">10</td>
+<td class="org-right">27.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">20</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">20</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">35.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">32.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">32</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anmore, VL</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">29770</td>
+<td class="org-right">5810</td>
+<td class="org-right">7945</td>
+<td class="org-right">6715</td>
+<td class="org-right">4205</td>
+<td class="org-right">5095</td>
+<td class="org-right">32.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">24575</td>
+<td class="org-right">4995</td>
+<td class="org-right">7110</td>
+<td class="org-right">5905</td>
+<td class="org-right">3540</td>
+<td class="org-right">3020</td>
+<td class="org-right">29.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">20660</td>
+<td class="org-right">4280</td>
+<td class="org-right">6165</td>
+<td class="org-right">4905</td>
+<td class="org-right">2920</td>
+<td class="org-right">2390</td>
+<td class="org-right">29.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">3915</td>
+<td class="org-right">715</td>
+<td class="org-right">945</td>
+<td class="org-right">1000</td>
+<td class="org-right">620</td>
+<td class="org-right">630</td>
+<td class="org-right">32.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">2350</td>
+<td class="org-right">335</td>
+<td class="org-right">500</td>
+<td class="org-right">640</td>
+<td class="org-right">410</td>
+<td class="org-right">460</td>
+<td class="org-right">35.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">1565</td>
+<td class="org-right">380</td>
+<td class="org-right">445</td>
+<td class="org-right">360</td>
+<td class="org-right">205</td>
+<td class="org-right">170</td>
+<td class="org-right">28</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">4855</td>
+<td class="org-right">625</td>
+<td class="org-right">805</td>
+<td class="org-right">750</td>
+<td class="org-right">635</td>
+<td class="org-right">2035</td>
+<td class="org-right">47</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">3760</td>
+<td class="org-right">125</td>
+<td class="org-right">420</td>
+<td class="org-right">595</td>
+<td class="org-right">600</td>
+<td class="org-right">2015</td>
+<td class="org-right">55.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">1095</td>
+<td class="org-right">500</td>
+<td class="org-right">385</td>
+<td class="org-right">160</td>
+<td class="org-right">40</td>
+<td class="org-right">20</td>
+<td class="org-right">17.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Other method</td>
+<td class="org-right">340</td>
+<td class="org-right">185</td>
+<td class="org-right">35</td>
+<td class="org-right">55</td>
+<td class="org-right">35</td>
+<td class="org-right">35</td>
+<td class="org-right">22.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">2795</td>
+<td class="org-right">370</td>
+<td class="org-right">625</td>
+<td class="org-right">785</td>
+<td class="org-right">395</td>
+<td class="org-right">625</td>
+<td class="org-right">37.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">2335</td>
+<td class="org-right">335</td>
+<td class="org-right">550</td>
+<td class="org-right">725</td>
+<td class="org-right">345</td>
+<td class="org-right">380</td>
+<td class="org-right">34</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">1930</td>
+<td class="org-right">290</td>
+<td class="org-right">490</td>
+<td class="org-right">585</td>
+<td class="org-right">290</td>
+<td class="org-right">275</td>
+<td class="org-right">32.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">410</td>
+<td class="org-right">45</td>
+<td class="org-right">60</td>
+<td class="org-right">140</td>
+<td class="org-right">55</td>
+<td class="org-right">110</td>
+<td class="org-right">39.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">265</td>
+<td class="org-right">10</td>
+<td class="org-right">35</td>
+<td class="org-right">80</td>
+<td class="org-right">50</td>
+<td class="org-right">90</td>
+<td class="org-right">45.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">145</td>
+<td class="org-right">35</td>
+<td class="org-right">25</td>
+<td class="org-right">55</td>
+<td class="org-right">0</td>
+<td class="org-right">20</td>
+<td class="org-right">29.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">425</td>
+<td class="org-right">25</td>
+<td class="org-right">70</td>
+<td class="org-right">50</td>
+<td class="org-right">40</td>
+<td class="org-right">245</td>
+<td class="org-right">59.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">370</td>
+<td class="org-right">15</td>
+<td class="org-right">35</td>
+<td class="org-right">40</td>
+<td class="org-right">35</td>
+<td class="org-right">240</td>
+<td class="org-right">65</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">60</td>
+<td class="org-right">10</td>
+<td class="org-right">35</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">19.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">30</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">20.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">6410</td>
+<td class="org-right">710</td>
+<td class="org-right">1340</td>
+<td class="org-right">1650</td>
+<td class="org-right">1145</td>
+<td class="org-right">1565</td>
+<td class="org-right">39.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">5225</td>
+<td class="org-right">630</td>
+<td class="org-right">1240</td>
+<td class="org-right">1530</td>
+<td class="org-right">925</td>
+<td class="org-right">895</td>
+<td class="org-right">35</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">4265</td>
+<td class="org-right">570</td>
+<td class="org-right">1070</td>
+<td class="org-right">1200</td>
+<td class="org-right">755</td>
+<td class="org-right">670</td>
+<td class="org-right">34.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">960</td>
+<td class="org-right">60</td>
+<td class="org-right">170</td>
+<td class="org-right">335</td>
+<td class="org-right">170</td>
+<td class="org-right">230</td>
+<td class="org-right">38.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">640</td>
+<td class="org-right">45</td>
+<td class="org-right">120</td>
+<td class="org-right">230</td>
+<td class="org-right">90</td>
+<td class="org-right">155</td>
+<td class="org-right">38.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">320</td>
+<td class="org-right">20</td>
+<td class="org-right">50</td>
+<td class="org-right">105</td>
+<td class="org-right">80</td>
+<td class="org-right">75</td>
+<td class="org-right">40.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">1145</td>
+<td class="org-right">65</td>
+<td class="org-right">90</td>
+<td class="org-right">115</td>
+<td class="org-right">215</td>
+<td class="org-right">660</td>
+<td class="org-right">58.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">1015</td>
+<td class="org-right">15</td>
+<td class="org-right">50</td>
+<td class="org-right">105</td>
+<td class="org-right">195</td>
+<td class="org-right">655</td>
+<td class="org-right">62.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">130</td>
+<td class="org-right">55</td>
+<td class="org-right">45</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+<td class="org-right">27.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">40</td>
+<td class="org-right">20</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">24.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">7765</td>
+<td class="org-right">1275</td>
+<td class="org-right">1735</td>
+<td class="org-right">1740</td>
+<td class="org-right">1400</td>
+<td class="org-right">1615</td>
+<td class="org-right">35.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">6390</td>
+<td class="org-right">1105</td>
+<td class="org-right">1635</td>
+<td class="org-right">1545</td>
+<td class="org-right">1180</td>
+<td class="org-right">930</td>
+<td class="org-right">32.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">5425</td>
+<td class="org-right">955</td>
+<td class="org-right">1500</td>
+<td class="org-right">1265</td>
+<td class="org-right">965</td>
+<td class="org-right">745</td>
+<td class="org-right">32.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">965</td>
+<td class="org-right">150</td>
+<td class="org-right">140</td>
+<td class="org-right">280</td>
+<td class="org-right">215</td>
+<td class="org-right">185</td>
+<td class="org-right">36.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">610</td>
+<td class="org-right">80</td>
+<td class="org-right">80</td>
+<td class="org-right">185</td>
+<td class="org-right">135</td>
+<td class="org-right">130</td>
+<td class="org-right">38.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">355</td>
+<td class="org-right">75</td>
+<td class="org-right">55</td>
+<td class="org-right">95</td>
+<td class="org-right">80</td>
+<td class="org-right">55</td>
+<td class="org-right">32.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">1290</td>
+<td class="org-right">115</td>
+<td class="org-right">105</td>
+<td class="org-right">180</td>
+<td class="org-right">210</td>
+<td class="org-right">680</td>
+<td class="org-right">52.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">1105</td>
+<td class="org-right">20</td>
+<td class="org-right">55</td>
+<td class="org-right">140</td>
+<td class="org-right">200</td>
+<td class="org-right">685</td>
+<td class="org-right">58.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">185</td>
+<td class="org-right">95</td>
+<td class="org-right">45</td>
+<td class="org-right">40</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">16.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">80</td>
+<td class="org-right">50</td>
+<td class="org-right">0</td>
+<td class="org-right">15</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">20.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">4760</td>
+<td class="org-right">1135</td>
+<td class="org-right">1655</td>
+<td class="org-right">865</td>
+<td class="org-right">515</td>
+<td class="org-right">600</td>
+<td class="org-right">27.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">4170</td>
+<td class="org-right">995</td>
+<td class="org-right">1525</td>
+<td class="org-right">755</td>
+<td class="org-right">455</td>
+<td class="org-right">445</td>
+<td class="org-right">26.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">3615</td>
+<td class="org-right">860</td>
+<td class="org-right">1320</td>
+<td class="org-right">675</td>
+<td class="org-right">390</td>
+<td class="org-right">375</td>
+<td class="org-right">26.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">550</td>
+<td class="org-right">135</td>
+<td class="org-right">210</td>
+<td class="org-right">80</td>
+<td class="org-right">60</td>
+<td class="org-right">70</td>
+<td class="org-right">27.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">360</td>
+<td class="org-right">100</td>
+<td class="org-right">130</td>
+<td class="org-right">40</td>
+<td class="org-right">45</td>
+<td class="org-right">50</td>
+<td class="org-right">27.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">185</td>
+<td class="org-right">40</td>
+<td class="org-right">75</td>
+<td class="org-right">35</td>
+<td class="org-right">20</td>
+<td class="org-right">20</td>
+<td class="org-right">27.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">545</td>
+<td class="org-right">110</td>
+<td class="org-right">130</td>
+<td class="org-right">100</td>
+<td class="org-right">60</td>
+<td class="org-right">155</td>
+<td class="org-right">36.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">335</td>
+<td class="org-right">10</td>
+<td class="org-right">70</td>
+<td class="org-right">55</td>
+<td class="org-right">60</td>
+<td class="org-right">140</td>
+<td class="org-right">48.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">220</td>
+<td class="org-right">100</td>
+<td class="org-right">60</td>
+<td class="org-right">45</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">17.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">45</td>
+<td class="org-right">30</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">16.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">3400</td>
+<td class="org-right">1030</td>
+<td class="org-right">1045</td>
+<td class="org-right">760</td>
+<td class="org-right">295</td>
+<td class="org-right">270</td>
+<td class="org-right">24.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">2735</td>
+<td class="org-right">835</td>
+<td class="org-right">875</td>
+<td class="org-right">620</td>
+<td class="org-right">255</td>
+<td class="org-right">145</td>
+<td class="org-right">23.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">2275</td>
+<td class="org-right">730</td>
+<td class="org-right">725</td>
+<td class="org-right">495</td>
+<td class="org-right">195</td>
+<td class="org-right">140</td>
+<td class="org-right">23.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">455</td>
+<td class="org-right">105</td>
+<td class="org-right">150</td>
+<td class="org-right">120</td>
+<td class="org-right">65</td>
+<td class="org-right">10</td>
+<td class="org-right">24.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">240</td>
+<td class="org-right">40</td>
+<td class="org-right">65</td>
+<td class="org-right">80</td>
+<td class="org-right">50</td>
+<td class="org-right">0</td>
+<td class="org-right">28</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">215</td>
+<td class="org-right">65</td>
+<td class="org-right">85</td>
+<td class="org-right">45</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">20.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">590</td>
+<td class="org-right">135</td>
+<td class="org-right">170</td>
+<td class="org-right">140</td>
+<td class="org-right">25</td>
+<td class="org-right">115</td>
+<td class="org-right">31.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">390</td>
+<td class="org-right">30</td>
+<td class="org-right">90</td>
+<td class="org-right">130</td>
+<td class="org-right">30</td>
+<td class="org-right">115</td>
+<td class="org-right">40.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">190</td>
+<td class="org-right">110</td>
+<td class="org-right">75</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">12</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">80</td>
+<td class="org-right">55</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">20.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">4645</td>
+<td class="org-right">1295</td>
+<td class="org-right">1545</td>
+<td class="org-right">915</td>
+<td class="org-right">465</td>
+<td class="org-right">420</td>
+<td class="org-right">26</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">3720</td>
+<td class="org-right">1095</td>
+<td class="org-right">1290</td>
+<td class="org-right">735</td>
+<td class="org-right">380</td>
+<td class="org-right">220</td>
+<td class="org-right">23.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">3145</td>
+<td class="org-right">880</td>
+<td class="org-right">1070</td>
+<td class="org-right">680</td>
+<td class="org-right">330</td>
+<td class="org-right">190</td>
+<td class="org-right">24.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">575</td>
+<td class="org-right">215</td>
+<td class="org-right">220</td>
+<td class="org-right">50</td>
+<td class="org-right">55</td>
+<td class="org-right">30</td>
+<td class="org-right">20.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">230</td>
+<td class="org-right">60</td>
+<td class="org-right">70</td>
+<td class="org-right">20</td>
+<td class="org-right">45</td>
+<td class="org-right">35</td>
+<td class="org-right">28.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">345</td>
+<td class="org-right">155</td>
+<td class="org-right">150</td>
+<td class="org-right">30</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">16</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">855</td>
+<td class="org-right">170</td>
+<td class="org-right">250</td>
+<td class="org-right">170</td>
+<td class="org-right">85</td>
+<td class="org-right">185</td>
+<td class="org-right">35</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">545</td>
+<td class="org-right">35</td>
+<td class="org-right">125</td>
+<td class="org-right">125</td>
+<td class="org-right">75</td>
+<td class="org-right">185</td>
+<td class="org-right">45.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">310</td>
+<td class="org-right">135</td>
+<td class="org-right">120</td>
+<td class="org-right">45</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">15.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">65</td>
+<td class="org-right">30</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">15</td>
+<td class="org-right">30.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">16360</td>
+<td class="org-right">2475</td>
+<td class="org-right">3985</td>
+<td class="org-right">4435</td>
+<td class="org-right">2875</td>
+<td class="org-right">2590</td>
+<td class="org-right">34</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">12810</td>
+<td class="org-right">1955</td>
+<td class="org-right">3600</td>
+<td class="org-right">3790</td>
+<td class="org-right">2105</td>
+<td class="org-right">1360</td>
+<td class="org-right">31.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">11035</td>
+<td class="org-right">1675</td>
+<td class="org-right">3190</td>
+<td class="org-right">3245</td>
+<td class="org-right">1750</td>
+<td class="org-right">1175</td>
+<td class="org-right">31</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">1775</td>
+<td class="org-right">280</td>
+<td class="org-right">410</td>
+<td class="org-right">540</td>
+<td class="org-right">355</td>
+<td class="org-right">185</td>
+<td class="org-right">32.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">1040</td>
+<td class="org-right">135</td>
+<td class="org-right">205</td>
+<td class="org-right">360</td>
+<td class="org-right">220</td>
+<td class="org-right">125</td>
+<td class="org-right">34.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">730</td>
+<td class="org-right">150</td>
+<td class="org-right">210</td>
+<td class="org-right">185</td>
+<td class="org-right">135</td>
+<td class="org-right">55</td>
+<td class="org-right">29.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">3350</td>
+<td class="org-right">425</td>
+<td class="org-right">345</td>
+<td class="org-right">625</td>
+<td class="org-right">760</td>
+<td class="org-right">1195</td>
+<td class="org-right">44.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">2770</td>
+<td class="org-right">55</td>
+<td class="org-right">245</td>
+<td class="org-right">565</td>
+<td class="org-right">735</td>
+<td class="org-right">1165</td>
+<td class="org-right">51.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">585</td>
+<td class="org-right">375</td>
+<td class="org-right">105</td>
+<td class="org-right">60</td>
+<td class="org-right">25</td>
+<td class="org-right">30</td>
+<td class="org-right">15.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Total - Time leaving for work</td>
+<td class="org-left">Other method</td>
+<td class="org-right">200</td>
+<td class="org-right">95</td>
+<td class="org-right">35</td>
+<td class="org-right">20</td>
+<td class="org-right">15</td>
+<td class="org-right">35</td>
+<td class="org-right">27.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">1015</td>
+<td class="org-right">105</td>
+<td class="org-right">180</td>
+<td class="org-right">375</td>
+<td class="org-right">175</td>
+<td class="org-right">180</td>
+<td class="org-right">37.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">810</td>
+<td class="org-right">75</td>
+<td class="org-right">165</td>
+<td class="org-right">355</td>
+<td class="org-right">120</td>
+<td class="org-right">95</td>
+<td class="org-right">34.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">690</td>
+<td class="org-right">70</td>
+<td class="org-right">150</td>
+<td class="org-right">310</td>
+<td class="org-right">85</td>
+<td class="org-right">75</td>
+<td class="org-right">33.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">120</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">45</td>
+<td class="org-right">35</td>
+<td class="org-right">20</td>
+<td class="org-right">41.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">90</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">40</td>
+<td class="org-right">25</td>
+<td class="org-right">15</td>
+<td class="org-right">40.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">30</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">44.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">195</td>
+<td class="org-right">30</td>
+<td class="org-right">10</td>
+<td class="org-right">20</td>
+<td class="org-right">55</td>
+<td class="org-right">85</td>
+<td class="org-right">49.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">150</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">15</td>
+<td class="org-right">50</td>
+<td class="org-right">80</td>
+<td class="org-right">58.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">40</td>
+<td class="org-right">20</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">21.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 5 a.m. and 5:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">3105</td>
+<td class="org-right">280</td>
+<td class="org-right">630</td>
+<td class="org-right">920</td>
+<td class="org-right">665</td>
+<td class="org-right">620</td>
+<td class="org-right">38.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">2350</td>
+<td class="org-right">190</td>
+<td class="org-right">580</td>
+<td class="org-right">835</td>
+<td class="org-right">450</td>
+<td class="org-right">295</td>
+<td class="org-right">35.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">2090</td>
+<td class="org-right">175</td>
+<td class="org-right">545</td>
+<td class="org-right">730</td>
+<td class="org-right">385</td>
+<td class="org-right">255</td>
+<td class="org-right">34.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">265</td>
+<td class="org-right">15</td>
+<td class="org-right">35</td>
+<td class="org-right">105</td>
+<td class="org-right">65</td>
+<td class="org-right">35</td>
+<td class="org-right">38</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">175</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">85</td>
+<td class="org-right">40</td>
+<td class="org-right">20</td>
+<td class="org-right">39.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">85</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">20</td>
+<td class="org-right">25</td>
+<td class="org-right">10</td>
+<td class="org-right">37.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">715</td>
+<td class="org-right">80</td>
+<td class="org-right">50</td>
+<td class="org-right">85</td>
+<td class="org-right">205</td>
+<td class="org-right">300</td>
+<td class="org-right">48.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">600</td>
+<td class="org-right">0</td>
+<td class="org-right">30</td>
+<td class="org-right">65</td>
+<td class="org-right">200</td>
+<td class="org-right">295</td>
+<td class="org-right">54.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">115</td>
+<td class="org-right">70</td>
+<td class="org-right">20</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">16.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 6 a.m. and 6:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">45</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">25</td>
+<td class="org-right">53.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">4810</td>
+<td class="org-right">460</td>
+<td class="org-right">975</td>
+<td class="org-right">1330</td>
+<td class="org-right">1100</td>
+<td class="org-right">940</td>
+<td class="org-right">38</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">3715</td>
+<td class="org-right">360</td>
+<td class="org-right">945</td>
+<td class="org-right">1110</td>
+<td class="org-right">775</td>
+<td class="org-right">525</td>
+<td class="org-right">34.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">3070</td>
+<td class="org-right">295</td>
+<td class="org-right">790</td>
+<td class="org-right">900</td>
+<td class="org-right">655</td>
+<td class="org-right">440</td>
+<td class="org-right">34.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">640</td>
+<td class="org-right">65</td>
+<td class="org-right">155</td>
+<td class="org-right">210</td>
+<td class="org-right">125</td>
+<td class="org-right">90</td>
+<td class="org-right">35.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">415</td>
+<td class="org-right">35</td>
+<td class="org-right">95</td>
+<td class="org-right">140</td>
+<td class="org-right">80</td>
+<td class="org-right">55</td>
+<td class="org-right">35.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">230</td>
+<td class="org-right">30</td>
+<td class="org-right">70</td>
+<td class="org-right">65</td>
+<td class="org-right">40</td>
+<td class="org-right">25</td>
+<td class="org-right">34.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">1060</td>
+<td class="org-right">85</td>
+<td class="org-right">20</td>
+<td class="org-right">215</td>
+<td class="org-right">320</td>
+<td class="org-right">420</td>
+<td class="org-right">49.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">940</td>
+<td class="org-right">15</td>
+<td class="org-right">15</td>
+<td class="org-right">190</td>
+<td class="org-right">315</td>
+<td class="org-right">415</td>
+<td class="org-right">52.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">125</td>
+<td class="org-right">75</td>
+<td class="org-right">10</td>
+<td class="org-right">25</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">19.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 7 a.m. and 7:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">35</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">17</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">3405</td>
+<td class="org-right">665</td>
+<td class="org-right">920</td>
+<td class="org-right">905</td>
+<td class="org-right">505</td>
+<td class="org-right">410</td>
+<td class="org-right">30.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">2805</td>
+<td class="org-right">540</td>
+<td class="org-right">845</td>
+<td class="org-right">760</td>
+<td class="org-right">420</td>
+<td class="org-right">235</td>
+<td class="org-right">28.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">2470</td>
+<td class="org-right">505</td>
+<td class="org-right">750</td>
+<td class="org-right">660</td>
+<td class="org-right">340</td>
+<td class="org-right">210</td>
+<td class="org-right">28.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">335</td>
+<td class="org-right">40</td>
+<td class="org-right">95</td>
+<td class="org-right">100</td>
+<td class="org-right">80</td>
+<td class="org-right">25</td>
+<td class="org-right">31.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">185</td>
+<td class="org-right">20</td>
+<td class="org-right">55</td>
+<td class="org-right">55</td>
+<td class="org-right">45</td>
+<td class="org-right">15</td>
+<td class="org-right">31.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">145</td>
+<td class="org-right">15</td>
+<td class="org-right">40</td>
+<td class="org-right">45</td>
+<td class="org-right">40</td>
+<td class="org-right">10</td>
+<td class="org-right">31.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">555</td>
+<td class="org-right">100</td>
+<td class="org-right">75</td>
+<td class="org-right">130</td>
+<td class="org-right">80</td>
+<td class="org-right">170</td>
+<td class="org-right">39</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">425</td>
+<td class="org-right">0</td>
+<td class="org-right">55</td>
+<td class="org-right">120</td>
+<td class="org-right">75</td>
+<td class="org-right">170</td>
+<td class="org-right">47.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">130</td>
+<td class="org-right">95</td>
+<td class="org-right">20</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">9.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 8 a.m. and 8:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">40</td>
+<td class="org-right">20</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">28.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">2045</td>
+<td class="org-right">500</td>
+<td class="org-right">640</td>
+<td class="org-right">450</td>
+<td class="org-right">260</td>
+<td class="org-right">195</td>
+<td class="org-right">27.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">1595</td>
+<td class="org-right">370</td>
+<td class="org-right">540</td>
+<td class="org-right">390</td>
+<td class="org-right">195</td>
+<td class="org-right">100</td>
+<td class="org-right">25.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">1375</td>
+<td class="org-right">305</td>
+<td class="org-right">485</td>
+<td class="org-right">335</td>
+<td class="org-right">170</td>
+<td class="org-right">80</td>
+<td class="org-right">25.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">215</td>
+<td class="org-right">65</td>
+<td class="org-right">60</td>
+<td class="org-right">50</td>
+<td class="org-right">25</td>
+<td class="org-right">15</td>
+<td class="org-right">24.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">135</td>
+<td class="org-right">45</td>
+<td class="org-right">35</td>
+<td class="org-right">25</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">25.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">85</td>
+<td class="org-right">20</td>
+<td class="org-right">25</td>
+<td class="org-right">25</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">24.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">400</td>
+<td class="org-right">95</td>
+<td class="org-right">85</td>
+<td class="org-right">60</td>
+<td class="org-right">60</td>
+<td class="org-right">95</td>
+<td class="org-right">36.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">265</td>
+<td class="org-right">10</td>
+<td class="org-right">50</td>
+<td class="org-right">50</td>
+<td class="org-right">60</td>
+<td class="org-right">85</td>
+<td class="org-right">47.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">135</td>
+<td class="org-right">85</td>
+<td class="org-right">35</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">14.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 9 a.m. and 11:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">55</td>
+<td class="org-right">35</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">9.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Total - Main mode of commuting</td>
+<td class="org-right">1985</td>
+<td class="org-right">470</td>
+<td class="org-right">640</td>
+<td class="org-right">460</td>
+<td class="org-right">180</td>
+<td class="org-right">245</td>
+<td class="org-right">28.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Car, truck or van</td>
+<td class="org-right">1535</td>
+<td class="org-right">415</td>
+<td class="org-right">530</td>
+<td class="org-right">340</td>
+<td class="org-right">140</td>
+<td class="org-right">115</td>
+<td class="org-right">25.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Driver, alone</td>
+<td class="org-right">1335</td>
+<td class="org-right">330</td>
+<td class="org-right">480</td>
+<td class="org-right">305</td>
+<td class="org-right">115</td>
+<td class="org-right">110</td>
+<td class="org-right">26</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">2 or more persons shared the ride to work</td>
+<td class="org-right">195</td>
+<td class="org-right">90</td>
+<td class="org-right">50</td>
+<td class="org-right">30</td>
+<td class="org-right">20</td>
+<td class="org-right">10</td>
+<td class="org-right">20.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Driver, with 1 or more passengers</td>
+<td class="org-right">50</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+<td class="org-right">31.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Passenger, 2 or more persons in the vehicle</td>
+<td class="org-right">145</td>
+<td class="org-right">75</td>
+<td class="org-right">45</td>
+<td class="org-right">25</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">16.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Sustainable transportation</td>
+<td class="org-right">435</td>
+<td class="org-right">40</td>
+<td class="org-right">110</td>
+<td class="org-right">120</td>
+<td class="org-right">40</td>
+<td class="org-right">125</td>
+<td class="org-right">41.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Public transit</td>
+<td class="org-right">390</td>
+<td class="org-right">15</td>
+<td class="org-right">95</td>
+<td class="org-right">115</td>
+<td class="org-right">35</td>
+<td class="org-right">125</td>
+<td class="org-right">44.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Active transport</td>
+<td class="org-right">45</td>
+<td class="org-right">25</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">13.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Age</td>
+<td class="org-left">Between 12 p.m. and 4:59 a.m.</td>
+<td class="org-left">Other method</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">35</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org11c9c65" class="outline-3">
+<h3 id="org11c9c65">Rest.</h3>
+<div class="outline-text-3" id="text-org11c9c65">
 <p>
 In the long form, there is information about journey to work.
 </p>
@@ -511,10 +5807,11 @@ They also showed a chart of commute modes.
 </table>
 </div>
 </div>
+</div>
 
-<div id="outline-container-org6b99f59" class="outline-2">
-<h2 id="org6b99f59">Housing types</h2>
-<div class="outline-text-2" id="text-org6b99f59">
+<div id="outline-container-org87a0338" class="outline-2">
+<h2 id="org87a0338">Housing types</h2>
+<div class="outline-text-2" id="text-org87a0338">
 <p>
 Best source is here. 2016 Census data:
 </p>
@@ -528,9 +5825,9 @@ You basically have to go there and search for the product name and download the 
 </p>
 </div>
 
-<div id="outline-container-orgae708c9" class="outline-3">
-<h3 id="orgae708c9">Source 1 is 98-400-X2016017 - Structural type by household size</h3>
-<div class="outline-text-3" id="text-orgae708c9">
+<div id="outline-container-org4e35648" class="outline-3">
+<h3 id="org4e35648">Source 1 is 98-400-X2016017 - Structural type by household size</h3>
+<div class="outline-text-3" id="text-org4e35648">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -570,19 +5867,6 @@ You basically have to go there and search for the product name and download the 
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="org-left">Coquitlam, CY</td>
-<td class="org-left">Total - Structural type of dwelling</td>
-<td class="org-right">51325</td>
-<td class="org-right">11415</td>
-<td class="org-right">15580</td>
-<td class="org-right">9895</td>
-<td class="org-right">9385</td>
-<td class="org-right">5055</td>
-<td class="org-right">138095</td>
-<td class="org-right">2.7</td>
-</tr>
-
 <tr>
 <td class="org-left">Coquitlam, CY</td>
 <td class="org-left">Single-detached house</td>
@@ -1228,9 +6512,9 @@ It looks like a lot of single family detached homes have just 1 or 2 people.
 </div>
 </div>
 
-<div id="outline-container-org1143e8c" class="outline-3">
-<h3 id="org1143e8c">Source 2 is 98-400-X2016015 - Structural type by age and sex.</h3>
-<div class="outline-text-3" id="text-org1143e8c">
+<div id="outline-container-org8fe7ab0" class="outline-3">
+<h3 id="org8fe7ab0">Source 2 is 98-400-X2016015 - Structural type by age and sex.</h3>
+<div class="outline-text-3" id="text-org8fe7ab0">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1306,31 +6590,6 @@ It looks like a lot of single family detached homes have just 1 or 2 people.
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="org-left">Coquitlam, CY</td>
-<td class="org-left">Total - Structural type of dwelling</td>
-<td class="org-right">138090</td>
-<td class="org-right">22215</td>
-<td class="org-right">9085</td>
-<td class="org-right">5305</td>
-<td class="org-right">3780</td>
-<td class="org-right">9680</td>
-<td class="org-right">8590</td>
-<td class="org-right">8900</td>
-<td class="org-right">8970</td>
-<td class="org-right">9805</td>
-<td class="org-right">11335</td>
-<td class="org-right">11605</td>
-<td class="org-right">10685</td>
-<td class="org-right">8715</td>
-<td class="org-right">18505</td>
-<td class="org-right">6770</td>
-<td class="org-right">4525</td>
-<td class="org-right">3375</td>
-<td class="org-right">2195</td>
-<td class="org-right">1640</td>
-</tr>
-
 <tr>
 <td class="org-left">Coquitlam, CY</td>
 <td class="org-left">Single-detached house</td>
@@ -2573,10 +7832,9 @@ seem to be more in apartments, or maybe duplexes.
 </div>
 </div>
 
-
-<div id="outline-container-org0f9e7d7" class="outline-2">
-<h2 id="org0f9e7d7">Heating and Electricity</h2>
-<div class="outline-text-2" id="text-org0f9e7d7">
+<div id="outline-container-org7405481" class="outline-2">
+<h2 id="org7405481">Heating and Electricity</h2>
+<div class="outline-text-2" id="text-org7405481">
 <p>
 Residential
 Commercial Small/Medium
@@ -2594,18 +7852,18 @@ Wholesale?
 </div>
 </div>
 
-<div id="outline-container-org5880c65" class="outline-2">
-<h2 id="org5880c65">Solid Waste</h2>
-<div class="outline-text-2" id="text-org5880c65">
+<div id="outline-container-org85445d1" class="outline-2">
+<h2 id="org85445d1">Solid Waste</h2>
+<div class="outline-text-2" id="text-org85445d1">
 <p>
 They explained solid waste produced and the CO2 generated from that solid waste.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgef1dcf0" class="outline-2">
-<h2 id="orgef1dcf0">Air Quality</h2>
-<div class="outline-text-2" id="text-orgef1dcf0">
+<div id="outline-container-org7be7c65" class="outline-2">
+<h2 id="org7be7c65">Air Quality</h2>
+<div class="outline-text-2" id="text-org7be7c65">
 <p>
 They showed fine particulate matter.
 </p>
@@ -2613,8 +7871,8 @@ They showed fine particulate matter.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: Warren Wilkinson</p>
-<p class="date">Created: 2019-10-25 Fri 12:35</p>
+<p class="author">Author: warren</p>
+<p class="date">Created: 2019-10-28 Mon 08:08</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

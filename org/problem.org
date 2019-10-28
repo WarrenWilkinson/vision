@@ -56,13 +56,63 @@ Agricultural Land Reserve
 https://www.alc.gov.bc.ca/alc/content/alr-maps/maps-and-gis
 
 
-
 * Commuting
 
 
 Best source is here. 2016 Census data:
 
-https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dt-td/Lp-eng.cfm
+https://www12.statcan.gc.ca/
+
+** Source 1 is 98-400-X2016324 - Main Mode of Commuting (10), Commuting Duration (7), Time Leaving for Work (7), Sex (3) and Age (5) for the Employed Labour Force Aged 15 Years and Over Having a Usual Place of Work or No Fixed Workplace Address
+
+Huge amount of data here. Not sure the best way to visualize it. Here
+is just the totals (e.g. significantly reduced dataset). There look to
+be significant differences between men and womens commutes.
+
+#+begin_src R :session t :exports results :results table :colnames yes
+  library(dplyr)
+  src98.400.X2016324 <- function () {
+      unz("../census2016/98-400-X2016324_ENG_CSV.ZIP", "98-400-X2016324_English_CSV_data.csv")
+  }
+
+  df.row1 <- read.table(src98.400.X2016324(), header=T, nrow=1, quote="\"", sep=",")
+  start <- 4553852 # Coquitlam Start
+  end <- 4559102 # North Van Start
+  df <- read.table(src98.400.X2016324(), col.names = names(df.row1), skip = start, nrow = end - start - 1, quote="\"", sep=",")
+
+  cities <- c('Coquitlam, CY',
+              'Belcarra, VL',
+              'Anmore, VL',
+              'Port Coquitlam, CY',
+              'Port Moody, CY')
+
+  df <- df %>%
+      filter(GEO_NAME %in% cities) %>%
+      select(GEO_NAME, DIM..Sex..3., DIM..Age..5., DIM..Time.leaving.for.work..7., DIM..Main.mode.of.commuting..10.,
+             Dim..Commuting.duration..7...Member.ID...1...Total...Commuting.duration,
+             Dim..Commuting.duration..7...Member.ID...2...Less.than.15.minutes,
+             Dim..Commuting.duration..7...Member.ID...3...15.to.29.minutes,
+             Dim..Commuting.duration..7...Member.ID...4...30.to.44.minutes,
+             Dim..Commuting.duration..7...Member.ID...5...45.to.59.minutes,
+             Dim..Commuting.duration..7...Member.ID...6...60.minutes.and.over,
+             Dim..Commuting.duration..7...Member.ID...7...Average.commuting.duration)
+
+  names(df) <- c('city', 'sex', 'age', 'leave', 'mode', 'total.duration',
+		 'lt15',
+		 '15to29',
+		 '30to44',
+		 '45to59',
+		 'gte60',
+		 'avergae.duration')
+
+  total <- df %>% filter(sex == 'Total - Sex', age == 'Total - Age')
+  options(width=300)
+  total
+#+end_src
+
+** Rest.
+
+
 
 In the long form, there is information about journey to work.
 
@@ -114,7 +164,14 @@ You basically have to go there and search for the product name and download the 
 #+begin_src R :session t :exports results :results table :colnames yes
   library(dplyr)
 
-  df <- read.table(unz("../census2016/98-400-X2016017_ENG_CSV.ZIP", "98-400-X2016017_English_CSV_data.csv"), header=T, quote="\"", sep=",")
+  src98.400.X2016017 <- function () {
+      unz("../census2016/98-400-X2016017_ENG_CSV.ZIP", "98-400-X2016017_English_CSV_data.csv")
+  }
+
+  df.row1 <- read.table(src98.400.X2016017(), header=T, nrow=1, quote="\"", sep=",")
+  start <- 43602 # Coquitlam Start
+  end <- 43652 # North Van Start
+  df <- read.table(src98.400.X2016017(), col.names = names(df.row1), skip = start, nrow = end - start - 1, quote="\"", sep=",")
 
   cities <- c('Coquitlam, CY',
               'Belcarra, VL',
@@ -154,7 +211,14 @@ It looks like a lot of single family detached homes have just 1 or 2 people.
 #+begin_src R :session t :exports results :results table :colnames yes
   library(dplyr)
 
-  df <- read.table(unz("../census2016/98-400-X2016015_ENG_CSV.ZIP", "98-400-X2016015_English_CSV_data.csv"), header=T, quote="\"", sep=",")
+  src98.400.X2016015 <- function () {
+      unz("../census2016/98-400-X2016015_ENG_CSV.ZIP", "98-400-X2016015_English_CSV_data.csv")
+  }
+
+  df.row1 <- read.table(src98.400.X2016015(), header=T, nrow=1, quote="\"", sep=",")
+  start <- 130802 # Coquitlam Start
+  end <- 130952 # North Van Start
+  df <- read.table(src98.400.X2016015(), col.names = names(df.row1), skip = start, nrow = end - start - 1, quote="\"", sep=",")
 
   cities <- c('Coquitlam, CY',
               'Belcarra, VL',
@@ -219,7 +283,6 @@ same.
 All ages seem equally likely to be in a single-detached with a dip in
 the 25 to 40 year old range. Maybe a trend, maybe affordability. They
 seem to be more in apartments, or maybe duplexes.
-
 
 * Heating and Electricity
 Residential
