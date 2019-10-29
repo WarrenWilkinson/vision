@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-10-28 Mon 08:18 -->
+<!-- 2019-10-29 Tue 08:56 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>The Problem</title>
 <meta name="generator" content="Org mode" />
-<meta name="author" content="warren" />
+<meta name="author" content="Warren Wilkinson" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -295,9 +295,9 @@ Then air quality
 <li>What happens if we have more electric cars or walking?</li>
 </ul>
 
-<div id="outline-container-orgd4f7201" class="outline-2">
-<h2 id="orgd4f7201">Populations</h2>
-<div class="outline-text-2" id="text-orgd4f7201">
+<div id="outline-container-org901116f" class="outline-2">
+<h2 id="org901116f">Populations</h2>
+<div class="outline-text-2" id="text-org901116f">
 <p>
 <a href="https://www2.gov.bc.ca/gov/content/data/statistics/people-population-community/population">https://www2.gov.bc.ca/gov/content/data/statistics/people-population-community/population</a>
 </p>
@@ -358,9 +358,9 @@ Source: Prepared by BC Stats, Ministry of Technology, Innovation and Citizens' S
 </div>
 </div>
 
-<div id="outline-container-org595030b" class="outline-2">
-<h2 id="org595030b">Land Use</h2>
-<div class="outline-text-2" id="text-org595030b">
+<div id="outline-container-orgb57da48" class="outline-2">
+<h2 id="orgb57da48">Land Use</h2>
+<div class="outline-text-2" id="text-orgb57da48">
 <p>
 Agricultural Land Reserve
 <a href="https://www.alc.gov.bc.ca/alc/content/alr-maps/maps-and-gis">https://www.alc.gov.bc.ca/alc/content/alr-maps/maps-and-gis</a>
@@ -369,9 +369,9 @@ Agricultural Land Reserve
 </div>
 
 
-<div id="outline-container-org18cfc3b" class="outline-2">
-<h2 id="org18cfc3b">Commuting</h2>
-<div class="outline-text-2" id="text-org18cfc3b">
+<div id="outline-container-org579fd20" class="outline-2">
+<h2 id="org579fd20">Commuting</h2>
+<div class="outline-text-2" id="text-org579fd20">
 <p>
 Best source is here. 2016 Census data:
 </p>
@@ -381,13 +381,17 @@ Best source is here. 2016 Census data:
 </p>
 </div>
 
-<div id="outline-container-org2c585ad" class="outline-3">
-<h3 id="org2c585ad">Source 1 is 98-400-X2016324 - Main Mode of Commuting (10), Commuting Duration (7), Time Leaving for Work (7), Sex (3) and Age (5) for the Employed Labour Force Aged 15 Years and Over Having a Usual Place of Work or No Fixed Workplace Address</h3>
-<div class="outline-text-3" id="text-org2c585ad">
+<div id="outline-container-org153bb3d" class="outline-3">
+<h3 id="org153bb3d">Source 1 is 98-400-X2016324 - Main Mode of Commuting (10), Commuting Duration (7), Time Leaving for Work (7), Sex (3) and Age (5) for the Employed Labour Force Aged 15 Years and Over Having a Usual Place of Work or No Fixed Workplace Address</h3>
+<div class="outline-text-3" id="text-org153bb3d">
 <p>
 Huge amount of data here. Not sure the best way to visualize it. Here
 is just the totals (e.g. significantly reduced dataset). There look to
 be significant differences between men and womens commutes.
+</p>
+
+<p>
+Seems about a 6:1 ratio of drivers to other forms of transportation.
 </p>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -3574,17 +3578,1129 @@ be significant differences between men and womens commutes.
 </div>
 </div>
 
-<div id="outline-container-org11c9c65" class="outline-3">
-<h3 id="org11c9c65">Rest.</h3>
-<div class="outline-text-3" id="text-org11c9c65">
+<div id="outline-container-org7b11ce2" class="outline-3">
+<h3 id="org7b11ce2">Source 2 is 98-400-X2016334 - Main Mode of Commuting (10), Industry - North American Industry Classification System (NAICS) 2012 (21), Occupation - National Occupational Classification (NOC) 2016 (11) and Sex (3) for the Employed Labour Force Aged 15 Years and Over Having a Usual Place of Work or No Fixed Workplace Address, in Private Households of Canada, Provinces and Territories, Census Divisions and Census Subdivisions, 2016 Census - 25% Sample Data</h3>
+<div class="outline-text-3" id="text-org7b11ce2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">city</th>
+<th scope="col" class="org-left">sex</th>
+<th scope="col" class="org-left">NOC</th>
+<th scope="col" class="org-left">NAICS</th>
+<th scope="col" class="org-right">mode.total</th>
+<th scope="col" class="org-right">Car..truck.or.van</th>
+<th scope="col" class="org-right">Driver..alone</th>
+<th scope="col" class="org-right">2.or.more.persons.shared.the.ride.to.work</th>
+<th scope="col" class="org-right">Driver..with.1.or.more.passengers</th>
+<th scope="col" class="org-right">Passenger..2.or.more.persons.in.the.vehicle</th>
+<th scope="col" class="org-right">Sustainable.transportation</th>
+<th scope="col" class="org-right">Public.transit</th>
+<th scope="col" class="org-right">Active.transport</th>
+<th scope="col" class="org-right">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">11 Agriculture, forestry, fishing and hunting</td>
+<td class="org-right">225</td>
+<td class="org-right">200</td>
+<td class="org-right">165</td>
+<td class="org-right">35</td>
+<td class="org-right">15</td>
+<td class="org-right">20</td>
+<td class="org-right">25</td>
+<td class="org-right">10</td>
+<td class="org-right">20</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">21 Mining, quarrying, and oil and gas extraction</td>
+<td class="org-right">185</td>
+<td class="org-right">110</td>
+<td class="org-right">85</td>
+<td class="org-right">30</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">65</td>
+<td class="org-right">65</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">22 Utilities</td>
+<td class="org-right">475</td>
+<td class="org-right">355</td>
+<td class="org-right">305</td>
+<td class="org-right">55</td>
+<td class="org-right">40</td>
+<td class="org-right">15</td>
+<td class="org-right">110</td>
+<td class="org-right">115</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">23 Construction</td>
+<td class="org-right">5480</td>
+<td class="org-right">4885</td>
+<td class="org-right">3985</td>
+<td class="org-right">900</td>
+<td class="org-right">605</td>
+<td class="org-right">295</td>
+<td class="org-right">560</td>
+<td class="org-right">505</td>
+<td class="org-right">50</td>
+<td class="org-right">40</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">31-33 Manufacturing</td>
+<td class="org-right">4240</td>
+<td class="org-right">3635</td>
+<td class="org-right">3185</td>
+<td class="org-right">450</td>
+<td class="org-right">300</td>
+<td class="org-right">150</td>
+<td class="org-right">580</td>
+<td class="org-right">485</td>
+<td class="org-right">95</td>
+<td class="org-right">25</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">41 Wholesale trade</td>
+<td class="org-right">2795</td>
+<td class="org-right">2520</td>
+<td class="org-right">2160</td>
+<td class="org-right">365</td>
+<td class="org-right">220</td>
+<td class="org-right">140</td>
+<td class="org-right">250</td>
+<td class="org-right">235</td>
+<td class="org-right">10</td>
+<td class="org-right">25</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">44-45 Retail trade</td>
+<td class="org-right">8265</td>
+<td class="org-right">5865</td>
+<td class="org-right">4940</td>
+<td class="org-right">915</td>
+<td class="org-right">400</td>
+<td class="org-right">520</td>
+<td class="org-right">2315</td>
+<td class="org-right">1675</td>
+<td class="org-right">640</td>
+<td class="org-right">85</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">48-49 Transportation and warehousing</td>
+<td class="org-right">3120</td>
+<td class="org-right">2740</td>
+<td class="org-right">2420</td>
+<td class="org-right">320</td>
+<td class="org-right">180</td>
+<td class="org-right">140</td>
+<td class="org-right">350</td>
+<td class="org-right">300</td>
+<td class="org-right">50</td>
+<td class="org-right">25</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">51 Information and cultural industries</td>
+<td class="org-right">2165</td>
+<td class="org-right">1525</td>
+<td class="org-right">1225</td>
+<td class="org-right">300</td>
+<td class="org-right">180</td>
+<td class="org-right">125</td>
+<td class="org-right">625</td>
+<td class="org-right">565</td>
+<td class="org-right">55</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">52 Finance and insurance</td>
+<td class="org-right">3275</td>
+<td class="org-right">2335</td>
+<td class="org-right">1960</td>
+<td class="org-right">370</td>
+<td class="org-right">225</td>
+<td class="org-right">150</td>
+<td class="org-right">920</td>
+<td class="org-right">870</td>
+<td class="org-right">60</td>
+<td class="org-right">15</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">53 Real estate and rental and leasing</td>
+<td class="org-right">1335</td>
+<td class="org-right">1035</td>
+<td class="org-right">930</td>
+<td class="org-right">105</td>
+<td class="org-right">65</td>
+<td class="org-right">45</td>
+<td class="org-right">290</td>
+<td class="org-right">235</td>
+<td class="org-right">50</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">54 Professional, scientific and technical services</td>
+<td class="org-right">5555</td>
+<td class="org-right">3650</td>
+<td class="org-right">3005</td>
+<td class="org-right">645</td>
+<td class="org-right">405</td>
+<td class="org-right">245</td>
+<td class="org-right">1815</td>
+<td class="org-right">1625</td>
+<td class="org-right">185</td>
+<td class="org-right">90</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">55 Management of companies and enterprises</td>
+<td class="org-right">110</td>
+<td class="org-right">60</td>
+<td class="org-right">55</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">45</td>
+<td class="org-right">40</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">56 Administrative and support, waste management and remediation services</td>
+<td class="org-right">2580</td>
+<td class="org-right">1920</td>
+<td class="org-right">1530</td>
+<td class="org-right">390</td>
+<td class="org-right">245</td>
+<td class="org-right">145</td>
+<td class="org-right">590</td>
+<td class="org-right">560</td>
+<td class="org-right">35</td>
+<td class="org-right">65</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">61 Educational services</td>
+<td class="org-right">4835</td>
+<td class="org-right">3900</td>
+<td class="org-right">3280</td>
+<td class="org-right">620</td>
+<td class="org-right">385</td>
+<td class="org-right">235</td>
+<td class="org-right">905</td>
+<td class="org-right">690</td>
+<td class="org-right">215</td>
+<td class="org-right">30</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">62 Health care and social assistance</td>
+<td class="org-right">6860</td>
+<td class="org-right">5580</td>
+<td class="org-right">4905</td>
+<td class="org-right">670</td>
+<td class="org-right">340</td>
+<td class="org-right">330</td>
+<td class="org-right">1210</td>
+<td class="org-right">940</td>
+<td class="org-right">270</td>
+<td class="org-right">70</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">71 Arts, entertainment and recreation</td>
+<td class="org-right">1255</td>
+<td class="org-right">950</td>
+<td class="org-right">830</td>
+<td class="org-right">120</td>
+<td class="org-right">50</td>
+<td class="org-right">75</td>
+<td class="org-right">295</td>
+<td class="org-right">210</td>
+<td class="org-right">80</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">72 Accommodation and food services</td>
+<td class="org-right">5525</td>
+<td class="org-right">3335</td>
+<td class="org-right">2385</td>
+<td class="org-right">940</td>
+<td class="org-right">355</td>
+<td class="org-right">590</td>
+<td class="org-right">2150</td>
+<td class="org-right">1530</td>
+<td class="org-right">620</td>
+<td class="org-right">45</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">81 Other services (except public administration)</td>
+<td class="org-right">2920</td>
+<td class="org-right">2310</td>
+<td class="org-right">1930</td>
+<td class="org-right">380</td>
+<td class="org-right">255</td>
+<td class="org-right">130</td>
+<td class="org-right">545</td>
+<td class="org-right">395</td>
+<td class="org-right">150</td>
+<td class="org-right">65</td>
+</tr>
+
+<tr>
+<td class="org-left">Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">91 Public administration</td>
+<td class="org-right">3225</td>
+<td class="org-right">2555</td>
+<td class="org-right">2180</td>
+<td class="org-right">375</td>
+<td class="org-right">260</td>
+<td class="org-right">115</td>
+<td class="org-right">645</td>
+<td class="org-right">500</td>
+<td class="org-right">140</td>
+<td class="org-right">25</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">Total - Industry - North American Industry Classification System (NAICS) 2012</td>
+<td class="org-right">29775</td>
+<td class="org-right">24580</td>
+<td class="org-right">20660</td>
+<td class="org-right">3915</td>
+<td class="org-right">2350</td>
+<td class="org-right">1565</td>
+<td class="org-right">4855</td>
+<td class="org-right">3760</td>
+<td class="org-right">1095</td>
+<td class="org-right">345</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">11 Agriculture, forestry, fishing and hunting</td>
+<td class="org-right">165</td>
+<td class="org-right">120</td>
+<td class="org-right">95</td>
+<td class="org-right">20</td>
+<td class="org-right">10</td>
+<td class="org-right">15</td>
+<td class="org-right">45</td>
+<td class="org-right">20</td>
+<td class="org-right">30</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">21 Mining, quarrying, and oil and gas extraction</td>
+<td class="org-right">55</td>
+<td class="org-right">25</td>
+<td class="org-right">25</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">20</td>
+<td class="org-right">20</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">22 Utilities</td>
+<td class="org-right">205</td>
+<td class="org-right">175</td>
+<td class="org-right">145</td>
+<td class="org-right">35</td>
+<td class="org-right">25</td>
+<td class="org-right">10</td>
+<td class="org-right">30</td>
+<td class="org-right">30</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">23 Construction</td>
+<td class="org-right">3025</td>
+<td class="org-right">2810</td>
+<td class="org-right">2190</td>
+<td class="org-right">620</td>
+<td class="org-right">435</td>
+<td class="org-right">175</td>
+<td class="org-right">185</td>
+<td class="org-right">150</td>
+<td class="org-right">35</td>
+<td class="org-right">35</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">31-33 Manufacturing</td>
+<td class="org-right">2300</td>
+<td class="org-right">2030</td>
+<td class="org-right">1690</td>
+<td class="org-right">340</td>
+<td class="org-right">205</td>
+<td class="org-right">135</td>
+<td class="org-right">250</td>
+<td class="org-right">145</td>
+<td class="org-right">105</td>
+<td class="org-right">15</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">41 Wholesale trade</td>
+<td class="org-right">1620</td>
+<td class="org-right">1410</td>
+<td class="org-right">1250</td>
+<td class="org-right">160</td>
+<td class="org-right">95</td>
+<td class="org-right">65</td>
+<td class="org-right">200</td>
+<td class="org-right">155</td>
+<td class="org-right">40</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">44-45 Retail trade</td>
+<td class="org-right">3680</td>
+<td class="org-right">2970</td>
+<td class="org-right">2555</td>
+<td class="org-right">415</td>
+<td class="org-right">140</td>
+<td class="org-right">270</td>
+<td class="org-right">690</td>
+<td class="org-right">470</td>
+<td class="org-right">225</td>
+<td class="org-right">20</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">48-49 Transportation and warehousing</td>
+<td class="org-right">1705</td>
+<td class="org-right">1500</td>
+<td class="org-right">1355</td>
+<td class="org-right">150</td>
+<td class="org-right">110</td>
+<td class="org-right">35</td>
+<td class="org-right">170</td>
+<td class="org-right">115</td>
+<td class="org-right">55</td>
+<td class="org-right">40</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">51 Information and cultural industries</td>
+<td class="org-right">905</td>
+<td class="org-right">715</td>
+<td class="org-right">620</td>
+<td class="org-right">100</td>
+<td class="org-right">65</td>
+<td class="org-right">35</td>
+<td class="org-right">165</td>
+<td class="org-right">155</td>
+<td class="org-right">20</td>
+<td class="org-right">25</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">52 Finance and insurance</td>
+<td class="org-right">1300</td>
+<td class="org-right">960</td>
+<td class="org-right">790</td>
+<td class="org-right">175</td>
+<td class="org-right">105</td>
+<td class="org-right">70</td>
+<td class="org-right">325</td>
+<td class="org-right">305</td>
+<td class="org-right">20</td>
+<td class="org-right">15</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">53 Real estate and rental and leasing</td>
+<td class="org-right">575</td>
+<td class="org-right">500</td>
+<td class="org-right">470</td>
+<td class="org-right">30</td>
+<td class="org-right">25</td>
+<td class="org-right">10</td>
+<td class="org-right">75</td>
+<td class="org-right">60</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">54 Professional, scientific and technical services</td>
+<td class="org-right">1880</td>
+<td class="org-right">1345</td>
+<td class="org-right">1110</td>
+<td class="org-right">240</td>
+<td class="org-right">180</td>
+<td class="org-right">60</td>
+<td class="org-right">505</td>
+<td class="org-right">470</td>
+<td class="org-right">30</td>
+<td class="org-right">30</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">55 Management of companies and enterprises</td>
+<td class="org-right">80</td>
+<td class="org-right">50</td>
+<td class="org-right">45</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">25</td>
+<td class="org-right">25</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">56 Administrative and support, waste management and remediation services</td>
+<td class="org-right">1345</td>
+<td class="org-right">1060</td>
+<td class="org-right">790</td>
+<td class="org-right">275</td>
+<td class="org-right">155</td>
+<td class="org-right">120</td>
+<td class="org-right">255</td>
+<td class="org-right">210</td>
+<td class="org-right">45</td>
+<td class="org-right">25</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">61 Educational services</td>
+<td class="org-right">2140</td>
+<td class="org-right">1860</td>
+<td class="org-right">1555</td>
+<td class="org-right">305</td>
+<td class="org-right">225</td>
+<td class="org-right">85</td>
+<td class="org-right">260</td>
+<td class="org-right">195</td>
+<td class="org-right">65</td>
+<td class="org-right">20</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">62 Health care and social assistance</td>
+<td class="org-right">3320</td>
+<td class="org-right">2825</td>
+<td class="org-right">2545</td>
+<td class="org-right">285</td>
+<td class="org-right">180</td>
+<td class="org-right">100</td>
+<td class="org-right">455</td>
+<td class="org-right">340</td>
+<td class="org-right">115</td>
+<td class="org-right">35</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">71 Arts, entertainment and recreation</td>
+<td class="org-right">530</td>
+<td class="org-right">470</td>
+<td class="org-right">390</td>
+<td class="org-right">75</td>
+<td class="org-right">35</td>
+<td class="org-right">45</td>
+<td class="org-right">55</td>
+<td class="org-right">60</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">72 Accommodation and food services</td>
+<td class="org-right">2090</td>
+<td class="org-right">1380</td>
+<td class="org-right">1045</td>
+<td class="org-right">340</td>
+<td class="org-right">110</td>
+<td class="org-right">225</td>
+<td class="org-right">690</td>
+<td class="org-right">480</td>
+<td class="org-right">205</td>
+<td class="org-right">20</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">81 Other services (except public administration)</td>
+<td class="org-right">1235</td>
+<td class="org-right">970</td>
+<td class="org-right">830</td>
+<td class="org-right">145</td>
+<td class="org-right">90</td>
+<td class="org-right">50</td>
+<td class="org-right">240</td>
+<td class="org-right">170</td>
+<td class="org-right">65</td>
+<td class="org-right">25</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Coquitlam, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">91 Public administration</td>
+<td class="org-right">1610</td>
+<td class="org-right">1395</td>
+<td class="org-right">1175</td>
+<td class="org-right">220</td>
+<td class="org-right">150</td>
+<td class="org-right">65</td>
+<td class="org-right">200</td>
+<td class="org-right">190</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">Total - Industry - North American Industry Classification System (NAICS) 2012</td>
+<td class="org-right">16365</td>
+<td class="org-right">12810</td>
+<td class="org-right">11035</td>
+<td class="org-right">1775</td>
+<td class="org-right">1040</td>
+<td class="org-right">730</td>
+<td class="org-right">3350</td>
+<td class="org-right">2765</td>
+<td class="org-right">585</td>
+<td class="org-right">200</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">11 Agriculture, forestry, fishing and hunting</td>
+<td class="org-right">70</td>
+<td class="org-right">60</td>
+<td class="org-right">40</td>
+<td class="org-right">20</td>
+<td class="org-right">0</td>
+<td class="org-right">15</td>
+<td class="org-right">15</td>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">21 Mining, quarrying, and oil and gas extraction</td>
+<td class="org-right">60</td>
+<td class="org-right">50</td>
+<td class="org-right">35</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">22 Utilities</td>
+<td class="org-right">185</td>
+<td class="org-right">145</td>
+<td class="org-right">135</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">35</td>
+<td class="org-right">35</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">23 Construction</td>
+<td class="org-right">1360</td>
+<td class="org-right">1235</td>
+<td class="org-right">1000</td>
+<td class="org-right">240</td>
+<td class="org-right">175</td>
+<td class="org-right">60</td>
+<td class="org-right">115</td>
+<td class="org-right">90</td>
+<td class="org-right">25</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">31-33 Manufacturing</td>
+<td class="org-right">770</td>
+<td class="org-right">660</td>
+<td class="org-right">590</td>
+<td class="org-right">65</td>
+<td class="org-right">50</td>
+<td class="org-right">15</td>
+<td class="org-right">95</td>
+<td class="org-right">85</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">41 Wholesale trade</td>
+<td class="org-right">760</td>
+<td class="org-right">660</td>
+<td class="org-right">540</td>
+<td class="org-right">120</td>
+<td class="org-right">70</td>
+<td class="org-right">50</td>
+<td class="org-right">85</td>
+<td class="org-right">85</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">44-45 Retail trade</td>
+<td class="org-right">1650</td>
+<td class="org-right">1240</td>
+<td class="org-right">1025</td>
+<td class="org-right">210</td>
+<td class="org-right">90</td>
+<td class="org-right">120</td>
+<td class="org-right">390</td>
+<td class="org-right">330</td>
+<td class="org-right">60</td>
+<td class="org-right">25</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">48-49 Transportation and warehousing</td>
+<td class="org-right">750</td>
+<td class="org-right">655</td>
+<td class="org-right">620</td>
+<td class="org-right">35</td>
+<td class="org-right">35</td>
+<td class="org-right">0</td>
+<td class="org-right">85</td>
+<td class="org-right">75</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">51 Information and cultural industries</td>
+<td class="org-right">695</td>
+<td class="org-right">530</td>
+<td class="org-right">460</td>
+<td class="org-right">65</td>
+<td class="org-right">40</td>
+<td class="org-right">25</td>
+<td class="org-right">160</td>
+<td class="org-right">140</td>
+<td class="org-right">20</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">52 Finance and insurance</td>
+<td class="org-right">755</td>
+<td class="org-right">495</td>
+<td class="org-right">425</td>
+<td class="org-right">70</td>
+<td class="org-right">40</td>
+<td class="org-right">35</td>
+<td class="org-right">245</td>
+<td class="org-right">235</td>
+<td class="org-right">15</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">53 Real estate and rental and leasing</td>
+<td class="org-right">410</td>
+<td class="org-right">300</td>
+<td class="org-right">275</td>
+<td class="org-right">30</td>
+<td class="org-right">30</td>
+<td class="org-right">10</td>
+<td class="org-right">100</td>
+<td class="org-right">80</td>
+<td class="org-right">20</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">54 Professional, scientific and technical services</td>
+<td class="org-right">1445</td>
+<td class="org-right">970</td>
+<td class="org-right">845</td>
+<td class="org-right">130</td>
+<td class="org-right">75</td>
+<td class="org-right">60</td>
+<td class="org-right">450</td>
+<td class="org-right">415</td>
+<td class="org-right">30</td>
+<td class="org-right">20</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">55 Management of companies and enterprises</td>
+<td class="org-right">20</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">56 Administrative and support, waste management and remediation services</td>
+<td class="org-right">525</td>
+<td class="org-right">385</td>
+<td class="org-right">320</td>
+<td class="org-right">65</td>
+<td class="org-right">35</td>
+<td class="org-right">30</td>
+<td class="org-right">135</td>
+<td class="org-right">120</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">61 Educational services</td>
+<td class="org-right">1745</td>
+<td class="org-right">1485</td>
+<td class="org-right">1295</td>
+<td class="org-right">190</td>
+<td class="org-right">135</td>
+<td class="org-right">55</td>
+<td class="org-right">255</td>
+<td class="org-right">190</td>
+<td class="org-right">65</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">62 Health care and social assistance</td>
+<td class="org-right">1750</td>
+<td class="org-right">1430</td>
+<td class="org-right">1310</td>
+<td class="org-right">120</td>
+<td class="org-right">70</td>
+<td class="org-right">50</td>
+<td class="org-right">310</td>
+<td class="org-right">210</td>
+<td class="org-right">100</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">71 Arts, entertainment and recreation</td>
+<td class="org-right">350</td>
+<td class="org-right">265</td>
+<td class="org-right">180</td>
+<td class="org-right">80</td>
+<td class="org-right">25</td>
+<td class="org-right">55</td>
+<td class="org-right">75</td>
+<td class="org-right">45</td>
+<td class="org-right">35</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">72 Accommodation and food services</td>
+<td class="org-right">1055</td>
+<td class="org-right">705</td>
+<td class="org-right">585</td>
+<td class="org-right">115</td>
+<td class="org-right">45</td>
+<td class="org-right">75</td>
+<td class="org-right">340</td>
+<td class="org-right">260</td>
+<td class="org-right">80</td>
+<td class="org-right">15</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">81 Other services (except public administration)</td>
+<td class="org-right">800</td>
+<td class="org-right">590</td>
+<td class="org-right">520</td>
+<td class="org-right">65</td>
+<td class="org-right">50</td>
+<td class="org-right">20</td>
+<td class="org-right">185</td>
+<td class="org-right">125</td>
+<td class="org-right">60</td>
+<td class="org-right">25</td>
+</tr>
+
+<tr>
+<td class="org-left">Port Moody, CY</td>
+<td class="org-left">Total - Sex</td>
+<td class="org-left">Total - Occupation - National Occupational Classification (NOC) 2016</td>
+<td class="org-left">91 Public administration</td>
+<td class="org-right">1235</td>
+<td class="org-right">950</td>
+<td class="org-right">825</td>
+<td class="org-right">125</td>
+<td class="org-right">75</td>
+<td class="org-right">45</td>
+<td class="org-right">270</td>
+<td class="org-right">220</td>
+<td class="org-right">55</td>
+<td class="org-right">10</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org4d42c14" class="outline-3">
+<h3 id="org4d42c14">Rest.</h3>
+<div class="outline-text-3" id="text-org4d42c14">
 <p>
 In the long form, there is information about journey to work.
 </p>
 
 <p>
 98-400-X2016324 Mode, Duration, Exit Time, 
-98-400-X2016328 Mode, Duration, Distance, Exit Time
-98-400-X2016329 Destination, Mode   (Distination measures &#x2013; same census subdivision? same census division? same province?)
+98-400-X2016328 Mode, Duration, Distance, Exit Time (25% sample)
+98-400-X2016329 Destination, Mode   (Distination measures &#x2013; same census subdivision? same census division? same province?) (25%)
 98-400-X2016334 Mode, Industry
 </p>
 
@@ -3709,9 +4825,9 @@ They also showed a chart of commute modes.
 </div>
 </div>
 
-<div id="outline-container-org87a0338" class="outline-2">
-<h2 id="org87a0338">Housing types</h2>
-<div class="outline-text-2" id="text-org87a0338">
+<div id="outline-container-org6b99f59" class="outline-2">
+<h2 id="org6b99f59">Housing types</h2>
+<div class="outline-text-2" id="text-org6b99f59">
 <p>
 Best source is here. 2016 Census data:
 </p>
@@ -3725,9 +4841,9 @@ You basically have to go there and search for the product name and download the 
 </p>
 </div>
 
-<div id="outline-container-org4e35648" class="outline-3">
-<h3 id="org4e35648">Source 1 is 98-400-X2016017 - Structural type by household size</h3>
-<div class="outline-text-3" id="text-org4e35648">
+<div id="outline-container-orgae708c9" class="outline-3">
+<h3 id="orgae708c9">Source 1 is 98-400-X2016017 - Structural type by household size</h3>
+<div class="outline-text-3" id="text-orgae708c9">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -4152,9 +5268,9 @@ It looks like a lot of single family detached homes have just 1 or 2 people.
 </div>
 </div>
 
-<div id="outline-container-org8fe7ab0" class="outline-3">
-<h3 id="org8fe7ab0">Source 2 is 98-400-X2016015 - Structural type by age and sex.</h3>
-<div class="outline-text-3" id="text-org8fe7ab0">
+<div id="outline-container-org1143e8c" class="outline-3">
+<h3 id="org1143e8c">Source 2 is 98-400-X2016015 - Structural type by age and sex.</h3>
+<div class="outline-text-3" id="text-org1143e8c">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -4972,9 +6088,9 @@ seem to be more in apartments, or maybe duplexes.
 </div>
 </div>
 
-<div id="outline-container-org7405481" class="outline-2">
-<h2 id="org7405481">Heating and Electricity</h2>
-<div class="outline-text-2" id="text-org7405481">
+<div id="outline-container-org0f9e7d7" class="outline-2">
+<h2 id="org0f9e7d7">Heating and Electricity</h2>
+<div class="outline-text-2" id="text-org0f9e7d7">
 <p>
 Residential
 Commercial Small/Medium
@@ -4992,18 +6108,18 @@ Wholesale?
 </div>
 </div>
 
-<div id="outline-container-org85445d1" class="outline-2">
-<h2 id="org85445d1">Solid Waste</h2>
-<div class="outline-text-2" id="text-org85445d1">
+<div id="outline-container-org5880c65" class="outline-2">
+<h2 id="org5880c65">Solid Waste</h2>
+<div class="outline-text-2" id="text-org5880c65">
 <p>
 They explained solid waste produced and the CO2 generated from that solid waste.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org7be7c65" class="outline-2">
-<h2 id="org7be7c65">Air Quality</h2>
-<div class="outline-text-2" id="text-org7be7c65">
+<div id="outline-container-orgef1dcf0" class="outline-2">
+<h2 id="orgef1dcf0">Air Quality</h2>
+<div class="outline-text-2" id="text-orgef1dcf0">
 <p>
 They showed fine particulate matter.
 </p>
@@ -5011,8 +6127,8 @@ They showed fine particulate matter.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: warren</p>
-<p class="date">Created: 2019-10-28 Mon 08:18</p>
+<p class="author">Author: Warren Wilkinson</p>
+<p class="date">Created: 2019-10-29 Tue 08:56</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
