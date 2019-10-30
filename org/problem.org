@@ -55,9 +55,7 @@ Source: Prepared by BC Stats, Ministry of Technology, Innovation and Citizens' S
 Agricultural Land Reserve
 https://www.alc.gov.bc.ca/alc/content/alr-maps/maps-and-gis
 
-
 * Commuting
-
 
 Best source is here. 2016 Census data:
 
@@ -114,6 +112,11 @@ Seems about a 6:1 ratio of drivers to other forms of transportation.
 
 ** Source 2 is 98-400-X2016334 - Main Mode of Commuting (10), Industry - North American Industry Classification System (NAICS) 2012 (21), Occupation - National Occupational Classification (NOC) 2016 (11) and Sex (3) for the Employed Labour Force Aged 15 Years and Over Having a Usual Place of Work or No Fixed Workplace Address, in Private Households of Canada, Provinces and Territories, Census Divisions and Census Subdivisions, 2016 Census - 25% Sample Data 
 
+Most common jobs seem to be  in construction, retail, science, health, and education.
+
+Driving alone is by far most common. Construction and health are like
+1/6th transit. Retail is about 1/2 transit. Others about 1/3 transit.
+
 #+begin_src R :session t :exports results :results table :colnames yes
   library(dplyr)
   src98.400.X2016334 <- function () {
@@ -163,14 +166,70 @@ Seems about a 6:1 ratio of drivers to other forms of transportation.
   total
 #+end_src
 
+** Source 3 is 98-400-X2016328 - Main Mode of Commuting (10), Commuting Duration (6), Distance from Home to Work (12) and Time Leaving for Work (7) for the Employed Labour Force Aged 15 Years and Over Having a Usual Place of Work, in Private Households of Canada, Provinces and Territories, Census Divisions and Census Subdivisions, 2016 Census - 25% Sample Data 
+
+#+begin_src R :session t :exports results :results table :colnames yes
+  library(dplyr)
+  src98.400.X2016328 <- function () {
+      unz("../census2016/98-400-X2016328_ENG_CSV.ZIP", "98-400-X2016328_English_CSV_data.csv")
+  }
+
+  df.row1 <- read.table(src98.400.X2016328(), header=T, nrow=1, quote="\"", sep=",")
+  start <- 1821542 # Coquitlam Start
+  end <- 1823642 # North Van Start
+  df <- read.table(src98.400.X2016328(), col.names = names(df.row1), skip = start, nrow = end - start - 1, quote="\"", sep=",")
+
+  cities <- c('Coquitlam, CY',
+              ## 'Belcarra, VL',
+              ## 'Anmore, VL',
+              'Port Coquitlam, CY',
+              'Port Moody, CY')
+
+  df <- df %>%
+      filter(GEO_NAME %in% cities) %>%
+      select(GEO_NAME,
+             DIM..Commuting.duration..6.,
+             DIM..Time.leaving.for.work..7.,
+             DIM..Main.mode.of.commuting..10.,
+             Dim..Distance.from.home.to.work..12...Member.ID...1...Total...Distance.from.home.to.work..Note..2.,
+             Dim..Distance.from.home.to.work..12...Member.ID...2...Less.than.1.km,
+             Dim..Distance.from.home.to.work..12...Member.ID...3...1.to.2.9.km,
+             Dim..Distance.from.home.to.work..12...Member.ID...4...3.to.4.9.km,
+             Dim..Distance.from.home.to.work..12...Member.ID...5...5.to.6.9.km,
+             Dim..Distance.from.home.to.work..12...Member.ID...6...7.to.9.9.km,
+             Dim..Distance.from.home.to.work..12...Member.ID...7...10.to.14.9.km,
+             Dim..Distance.from.home.to.work..12...Member.ID...8...15.to.19.9.km,
+             Dim..Distance.from.home.to.work..12...Member.ID...9...20.to.24.9.Km,
+             Dim..Distance.from.home.to.work..12...Member.ID...10...25.to.29.9.km,
+             Dim..Distance.from.home.to.work..12...Member.ID...11...30.to.34.9.km,
+             Dim..Distance.from.home.to.work..12...Member.ID...12...35.km.or.more)
+
+  names(df) <- c('city', 'dur', 'exit.time', 'mode',
+		 'total.dist',
+		 'Less.than.1.km',
+		 '1.to.2.9.km',
+		 '3.to.4.9.km',
+		 '5.to.6.9.km',
+		 '7.to.9.9.km',
+		 '10.to.14.9.km',
+		 '15.to.19.9.km',
+		 '20.to.24.9.km',
+		 '25.to.29.9.km',
+		 '30.to.34.9.km',
+		 '35.km.or.more')
+
+  total <- df %>% select(-exit.time) %>% group_by(city, mode) %>% summarize_each(sum, `total.dist`, `Less.than.1.km`, `1.to.2.9.km`, `3.to.4.9.km`, `5.to.6.9.km`, `7.to.9.9.km`, `10.to.14.9.km`, `15.to.19.9.km`, `20.to.24.9.Km`, `25.to.29.9.km`, `30.to.34.9.km`, `35.km.or.more`)
+
+  options(width=300)
+  total
+#+end_src
+
 ** Rest.
 
 In the long form, there is information about journey to work.
 
-98-400-X2016324 Mode, Duration, Exit Time, 
 98-400-X2016328 Mode, Duration, Distance, Exit Time (25% sample)
 98-400-X2016329 Destination, Mode   (Distination measures -- same census subdivision? same census division? same province?) (25%)
-98-400-X2016334 Mode, Industry
 
 I think if I sort of 'blend' the profiles for Vancouver and Mission/Abbotsford I can come up with some kind of reasonable guess.  This would have to be a slider.
 
