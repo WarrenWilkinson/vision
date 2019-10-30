@@ -61,6 +61,10 @@ Best source is here. 2016 Census data:
 
 https://www12.statcan.gc.ca/
 
+We can focus on switching people to different modes of transportation,
+or we can focus on switching the distance they travel to work, or we
+can focus on electrification of vehicles.
+
 ** Source 1 is 98-400-X2016324 - Main Mode of Commuting (10), Commuting Duration (7), Time Leaving for Work (7), Sex (3) and Age (5) for the Employed Labour Force Aged 15 Years and Over Having a Usual Place of Work or No Fixed Workplace Address
 
 Huge amount of data here. Not sure the best way to visualize it. Here
@@ -224,39 +228,52 @@ Driving alone is by far most common. Construction and health are like
   total
 #+end_src
 
-** Rest.
+** Source 4 is 98-400-X2016329 - Commuting Destination (5), Main Mode of Commuting (10), Sex (3) and Age (5) for the Employed Labour Force Aged 15 Years and Over Having a Usual Place of Work, in Private Households of Canada, Provinces and Territories, Census Divisions and Census Subdivisions, 2016 Census - 25% Sample Data
 
-In the long form, there is information about journey to work.
+#+begin_src R :session t :exports results :results table :colnames yes
 
-98-400-X2016328 Mode, Duration, Distance, Exit Time (25% sample)
-98-400-X2016329 Destination, Mode   (Distination measures -- same census subdivision? same census division? same province?) (25%)
+  library(dplyr)
+  src98.400.X2016329 <- function () {
+      unz("../census2016/98-400-X2016329_ENG_CSV.ZIP", "98-400-X2016329_English_CSV_data.csv")
+  }
 
-I think if I sort of 'blend' the profiles for Vancouver and Mission/Abbotsford I can come up with some kind of reasonable guess.  This would have to be a slider.
+  df.row1 <- read.table(src98.400.X2016329(), header=T, nrow=1, quote="\"", sep=",")
+  start <- 650552 # Coquitlam Start
+  end <- 651302 # North Van Start
+  df <- read.table(src98.400.X2016329(), col.names = names(df.row1), skip = start, nrow = end - start - 1, quote="\"", sep=",")
 
-'Assuming Tri-Cities are more like Vancouver --- More like Abbotsford'
+  cities <- c('Coquitlam',
+              ## 'Belcarra',
+              ## 'Anmore',
+              'Port Coquitlam',
+              'Port Moody')
 
-https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm
+  df <- df %>%
+      filter(GEO_NAME %in% cities) %>%
+      select(GEO_NAME,
+             DIM..Sex..3.,
+             DIM..Age..5.,
+             DIM..Main.mode.of.commuting..10.,
+             Dim..Commuting.destination..5...Member.ID...1...Total...Commuting.destination,
+             Dim..Commuting.destination..5...Member.ID...2...Commute.within.census.subdivision..CSD..of.residence,
+             Dim..Commuting.destination..5...Member.ID...3...Commute.to.a.different.census.subdivision..CSD..within.census.division..CD..of.residence,
+             Dim..Commuting.destination..5...Member.ID...4...Commute.to.a.different.census.subdivision..CSD..and.census.division..CD..within.province.or.territory.of.residence,
+             Dim..Commuting.destination..5...Member.ID...5...Commute.to.a.different.province.or.territory)
 
+  names(df) <- c('city',
+		 'sex',
+		 'age',
+		 'mode',
+		 'total',
+		 'within_subdivision',
+		 'within_census_division',
+		 'within_province',
+		 'other_province')
 
-He showed it as a commute distance chart... 
-This data also varies with time... 2006 and 2016 we have.
-
-They also showed a chart of commute modes.
-
-
-| *City*         | *Carpool* | *Public Transit* | *Active Transit* | *Car* |
-|----------------+-----------+------------------+------------------+-------|
-| Coquitlam      |      12.4 |             17.9 |              4.3 |  65.4 |
-| Port Moody     |      10.8 |             16.9 |              3.6 |  68.7 |
-| Port Coquitlam |      13.2 |             12.6 |              3.7 |  70.5 |
-| Anmore         |      10.8 |              7.7 |              1.4 |  80.1 |
-
-| *City*         | *Avg Commute* |
-|----------------+---------------|
-| Coquitlam      |          33.8 |
-| Port Moody     |            34 |
-| Port Coquitlam |          32.6 |
-| Anmore         |          32.5 |
+  total <- df %>% filter(sex == 'Total - Sex', age == 'Total - Age')
+  options(width=300)
+  total
+#+end_src
 
 * Housing types
 
