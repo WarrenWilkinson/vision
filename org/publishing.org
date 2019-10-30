@@ -45,23 +45,33 @@ repository.
 		   ,*vision-wiki-website*)))))
 #+end_src
 
-* Other Publishing Ideas
+* Products
 
-** Website
+I want to produce a series of interactive websites. Video,
+presentations, slide decks, and summary reports are lower priority,
+and would feature artifacts from the website.
 
-I think I'll just publish my DEFT collection as a project. Then it'll
-be up to date most of the time. Put a GIT repo on it and others can
-access it if they want too.
+The websites feature scrollytelling and data exploration. To guide the
+user through the problems and solutions of local climate crisis
+adaptation.
 
-** Reports
+For the websites, I would like to try using Elm. If that doesn't work,
+then there are many javascript libraries.
 
-Reports are harder. I like latex, but others probably don't so much.  Still,
-for what we're trying to do it might be valuable.
+** Production Process
 
-** Presentations
+ 1. Define the scope of interest -- the boundaries of the problem
+    space or the impacts and knock-on effects of a solution.
+ 2. Identify relevant data, favoring government sources
+ 3. Acquire the data and plot the highlights, Identify a few standout trends, if any.
+ 4. Mind map the scope and data. What relates to what, what data or models are missing?
+ 5. Timeline the lesson.  What is the right ordering for the concepts for the learner.
+ 6. Relate the mind map to the timeline.
+ 7. Story-board the website - What are we communicating. What data helps that. What visualization and calculators are best?
+ 8. Mock up the website. Brief sentences in place, logic, flow. Don't worry about making the text readable, nor the graphics best possible, nor the website complete.
+ 9. Polish continually. Get help editing the text. Get help from a designer to improve the website.  Test the website on users.
 
-Harder still. Latex presentations are not wonderful and not interactive... might
-want to look at one of those website based presentation tools.
+** References
 
 reveal.js looks great.
 impress.js and hovercraft look great...
@@ -80,6 +90,7 @@ https://eagereyes.org/blog/2016/the-scrollytelling-scourge
 
 Another to look at is http://worrydream.com/ClimateChange/ ... he has a library that lets calculations be exposed to the user so they can play with the numbers themselves.
 
-** Videos
-
-To be determined.
+Rather than use WorryDreams 'tangle' library... maybe Elm and
+https://github.com/preignition/multi-verse ... or elm and d3?  Elm is
+a reactive language, so that should make most of this reaction stuff
+come about pretty easily.  Alternatively, Bacon and d3 https://blog.scottlogic.com/2014/07/23/frp-with-bacon-and-d3.html
