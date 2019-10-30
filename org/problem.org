@@ -234,19 +234,18 @@ Driving alone is by far most common. Construction and health are like
   names(df) <- c('city', 'dur', 'exit.time', 'mode',
 		 'total.dist',
 		 'Less.than.1.km',
-		 '1.to.2.9.km',
-		 '3.to.4.9.km',
-		 '5.to.6.9.km',
-		 '7.to.9.9.km',
-		 '10.to.14.9.km',
-		 '15.to.19.9.km',
-		 '20.to.24.9.km',
-		 '25.to.29.9.km',
-		 '30.to.34.9.km',
+		 '1.to.2.km',
+		 '3.to.4.km',
+		 '5.to.6.km',
+		 '7.to.9.km',
+		 '10.to.14.km',
+		 '15.to.19.km',
+		 '20.to.24.km',
+		 '25.to.29.km',
+		 '30.to.34.km',
 		 '35.km.or.more')
 
-  total <- df %>% select(-exit.time) %>% group_by(city, mode) %>% summarize_each(sum, `total.dist`, `Less.than.1.km`, `1.to.2.9.km`, `3.to.4.9.km`, `5.to.6.9.km`, `7.to.9.9.km`, `10.to.14.9.km`, `15.to.19.9.km`, `20.to.24.9.Km`, `25.to.29.9.km`, `30.to.34.9.km`, `35.km.or.more`)
-
+  total <- df %>% select(-exit.time) %>% group_by(city, mode) %>% summarize_each(sum, `total.dist`, `Less.than.1.km`, `1.to.2.km`, `3.to.4.km`, `5.to.6.km`, `7.to.9.km`, `10.to.14.km`, `15.to.19.km`, `20.to.24.km`, `25.to.29.km`, `30.to.34.km`, `35.km.or.more`)
   options(width=300)
   total
 #+end_src
