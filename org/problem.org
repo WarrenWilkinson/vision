@@ -1,40 +1,17 @@
 #+TITLE: The Problem
 
-I think a story could be told around the scale of the
-problem... breaking it down into the sub parts...
+A story exists around our emissions. A good start is
+https://www.bcemissions.ca/go/city/Coquitlam/index.html.
 
-https://www.bcemissions.ca/go/city/Coquitlam/index.html
-https://www.bcemissions.ca/go/city/Port_Coquitlam/index.html
-https://www.bcemissions.ca/go/city/Port_Moody/index.html
+The census 2016 data, the Comprehensive Energy Use Database, and the
+Canadian Freight Analysis Framework provide the necessary data.  Using
+this I can tell the story of our housing, our commutes, our freight.
+By comparing BC-wide industrial/commercial impacts to population, I
+can make a suggestion as to the story of our industry/commercial
+sectors.
 
-The above is a good starting point. Basically, I want to get the data
-on the populations (because per-capita is important).
-
-I also want to demonstrate land use, because this is the range of
-options we have for local food, expansion, etc.
-
-Then, breakdown into housing types.. because they have different energy profiles.
- - Should be able to get exact numbers for this.
-
-Then, lets talk about the heating and electricity used... this varies with housing type.
- - I can really only get BC averages for this.  That's probably reasonable. I don't think
-   any of the tri-cities is significantly better/worse efficiency ratings for houses than other places
-   in BC.
- - This leads to an option for exploration -- what if we could change our housing profile?
-
-Then, commutes... what type, how far.
- - Can't seem to get exact numbers -- have to let the user decide if we're more
-   like Vancouver, or more like Mission.
- - This leads to an option -- what if we could increase the number of people living AND working in 
-   tri-cities.... 
-
-Then solid waste
-  - CO2 produced... what about the cost of transporting it?  How much is compost and where does that go?
-  - What about human body waste -- e.g. sewage... does this produce CO2?  What do we do with it at treatment?
-
-Then air quality
-  - How is our air?
-  - What happens if we have more electric cars or walking?
+ - I can't tell the story of our waste. I have no model nor data.
+ - I can't tell the story of our forests. I have no model nor data.
 
 * DONE Populations
 
@@ -78,6 +55,7 @@ Then air quality
 
   df
 #+end_src
+
 * DONE Commuting
 
 Best source is here. 2016 Census data:
@@ -133,6 +111,7 @@ Seems about a 6:1 ratio of drivers to other forms of transportation.
 		 'avergae.duration')
 
   total <- df %>% filter(sex == 'Total - Sex', age == 'Total - Age')
+  rm(df)
   options(width=300)
   total
 #+end_src
@@ -189,6 +168,7 @@ Driving alone is by far most common. Construction and health are like
 		 'Other')
 
   total <- df %>% filter(sex == 'Total - Sex', NOC == 'Total - Occupation - National Occupational Classification (NOC) 2016')
+  rm(df)
   options(width=300)
   total
 #+end_src
@@ -246,6 +226,7 @@ Driving alone is by far most common. Construction and health are like
 		 '35.km.or.more')
 
   total <- df %>% select(-exit.time) %>% group_by(city, mode) %>% summarize_each(sum, `total.dist`, `Less.than.1.km`, `1.to.2.km`, `3.to.4.km`, `5.to.6.km`, `7.to.9.km`, `10.to.14.km`, `15.to.19.km`, `20.to.24.km`, `25.to.29.km`, `30.to.34.km`, `35.km.or.more`)
+  rm(df)
   options(width=300)
   total
 #+end_src
@@ -293,6 +274,7 @@ Driving alone is by far most common. Construction and health are like
 		 'other_province')
 
   total <- df %>% filter(sex == 'Total - Sex', age == 'Total - Age')
+  rm(df)
   options(width=300)
   total
 #+end_src
@@ -433,12 +415,6 @@ All ages seem equally likely to be in a single-detached with a dip in
 the 25 to 40 year old range. Maybe a trend, maybe affordability. They
 seem to be more in apartments, or maybe duplexes.
 
-* TODO Land Use Map
-
-Agricultural Land Reserve
-https://www.alc.gov.bc.ca/alc/content/alr-maps/maps-and-gis
-
-The above isn't particularly useful...
 
 * Emissions
 
@@ -468,6 +444,10 @@ All the data, basically as provincial averages, is found in the above.
   - Commercial
     1. Unless I can figure out the floor space of businesses in Coquitlam, I cannot compute their emissions.
     2. I have emissions information per m^2 of floor space. So I need a map from which to compute the land areas of each type.
+       There is no map. Openstreet map has the best information, but it's unsound (metadata is not reliable/filled out).
+       This means a LOT of guess work.
+    3. I can compare the national energy used by residential to commercial.  Then I can figure out what percentage of residential is in
+       coquitlam, to make a rough guess as to the impact of commercial activities.
   - Waste
     1. I don't have any information on this.  I don't know if it's a significant CO2 source or not, nor if it's already accounted
        for in my industrial/commercial model.
