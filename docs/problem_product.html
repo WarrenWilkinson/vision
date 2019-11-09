@@ -6,7 +6,7 @@
 <!-- 2019-11-09 Sat 10:30 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Publishing</title>
+<title>Problem Product</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="warren" />
 <style type="text/css">
@@ -230,133 +230,253 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Publishing</h1>
+<h1 class="title">Problem Product</h1>
 <p>
-This wiki is published with emacs Org-mode and stored in a git
-repository.
+Earlier <a href="problem.html">I'd defined the problem space</a>. So, what can we communicate from it?
 </p>
 
-<div class="org-src-container">
-<pre class="src src-emacs-lisp">(setf *root* "~/shared/wfiles/climate/vision/wiki/")
-
-(setf *vision-wiki-html*
-  `("vision-wiki-html"
-    :base-directory ,(expand-file-name (concat *root* "org/"))
-    :base-extension "org"
-    :publishing-directory ,(expand-file-name (concat *root* "docs/"))
-    :publishing-function org-html-publish-to-html
-    :headline-levels 3
-    :section-numbers nil
-    :with-toc nil
-    :auto-sitemap t
-    :makeindex t
-    :html-head "&lt;link rel=\"stylesheet\"
-		  href=\"../files/style.css\" type=\"text/css\"/&gt;"
-    :html-preamble t))
-
-(setf *vision-wiki-files*
-  `("vision-wiki-files"
-    :base-directory ,(expand-file-name (concat *root* "files/"))
-    :base-extension "jpg\\|gif\\|png\\|pdf"
-    :publishing-directory ,(expand-file-name (concat *root* "docs/files/"))
-    :publishing-function org-publish-attachment))
-
-(setf *vision-wiki-website* '("vision-wiki" :components ("vision-wiki-html" "vision-wiki-files")))
-
-(defun register-vision-wiki ()
-  (interactive)
-  (let ((existing-html (find (first *vision-wiki-html*) org-publish-project-alist :key 'first :test 'equal))
-	(existing-files (find (first *vision-wiki-files*) org-publish-project-alist :key 'first :test 'equal))
-	(existing-website (find (first *vision-wiki-website*) org-publish-project-alist :key 'first :test 'equal)))
-    (setf org-publish-project-alist
-	  (append
-	   (remove existing-website
-		   (remove existing-files
-			   (remove existing-html org-publish-project-alist)))
-	   (list *vision-wiki-html*
-		 *vision-wiki-files*
-		 *vision-wiki-website*)))))
-</pre>
-</div>
-
-<div id="outline-container-org84547ad" class="outline-2">
-<h2 id="org84547ad">Products</h2>
-<div class="outline-text-2" id="text-org84547ad">
+<div id="outline-container-org7c206d9" class="outline-2">
+<h2 id="org7c206d9">The Data Models</h2>
+<div class="outline-text-2" id="text-org7c206d9">
 <p>
-I want to produce a series of interactive websites. Video,
-presentations, slide decks, and summary reports are lower priority,
-and would feature artifacts from the website.
+People 
 </p>
+<ul class="org-ul">
+<li>By age
+<ul class="org-ul">
+<li>Trends?</li>
+</ul></li>
+</ul>
 
 <p>
-The websites feature scrollytelling and data exploration. To guide the
-user through the problems and solutions of local climate crisis
-adaptation.
+Commute
 </p>
+<ul class="org-ul">
+<li>By mode, age, sex, duration and exit time</li>
+<li>by sex, occupation, industry and mode</li>
+<li>by duration, exit time, mode, and distance.</li>
+<li>by sex, age, mode, and destination
+<ul class="org-ul">
+<li>Trends?</li>
+</ul></li>
+</ul>
 
 <p>
-For the websites, I would like to try using Elm. If that doesn't work,
-then there are many javascript libraries.
+Housing
 </p>
-</div>
+<ul class="org-ul">
+<li>By type and household size</li>
+<li>By type and age, sex
+<ul class="org-ul">
+<li>Trends?</li>
+</ul></li>
+</ul>
 
-<div id="outline-container-orgf3aa1bd" class="outline-3">
-<h3 id="orgf3aa1bd">Production Process</h3>
-<div class="outline-text-3" id="text-orgf3aa1bd">
-<ol class="org-ol">
-<li>Define the scope of interest &#x2013; the boundaries of the problem
-space or the impacts and knock-on effects of a solution.</li>
-<li>Identify relevant data, favoring government sources</li>
-<li>Acquire the data and plot the highlights, Identify a few standout trends, if any.</li>
-<li>Mind map the scope and data. What relates to what, what data or models are missing?</li>
-<li>Timeline the lesson.  What is the right ordering for the concepts for the learner.</li>
-<li>Relate the mind map to the timeline.</li>
-<li>Story-board the website - What are we communicating. What data helps that. What visualization and calculators are best?</li>
-<li>Mock up the website. Brief sentences in place, logic, flow. Don't worry about making the text readable, nor the graphics best possible, nor the website complete.</li>
-<li>Polish continually. Get help editing the text. Get help from a designer to improve the website.  Test the website on users.</li>
-</ol>
+<p>
+Trade
+</p>
+<ul class="org-ul">
+<li>BC per-capita average (assuming a gaussian distribution of wealth &#x2013; which is bad assumption.)
+<ul class="org-ul">
+<li>Trends?</li>
+</ul></li>
+</ul>
+
+<p>
+Commercial
+</p>
+<ul class="org-ul">
+<li>BC average rate of energy used by commercial vs residential.</li>
+<li>Multiplied by coquitlams population.
+<ul class="org-ul">
+<li>And a few notes about which industries are more energy intensive.</li>
+</ul></li>
+</ul>
+
+<p>
+Emissions
+</p>
+<ul class="org-ul">
+<li>Per household, by type, energy and GHC usage</li>
+<li>Per passenger-kilometer, by type</li>
+<li>Per tonnage-kilometer, by road, rail, marine
+<ul class="org-ul">
+<li>Trends?</li>
+</ul></li>
+</ul>
 </div>
 </div>
 
-<div id="outline-container-orgbe5138c" class="outline-3">
-<h3 id="orgbe5138c">References</h3>
-<div class="outline-text-3" id="text-orgbe5138c">
+<div id="outline-container-org1470d64" class="outline-2">
+<h2 id="org1470d64">The Article</h2>
+<div class="outline-text-2" id="text-org1470d64">
+</div><div id="outline-container-org7724335" class="outline-3">
+<h3 id="org7724335">Introduction</h3>
+<div class="outline-text-3" id="text-org7724335">
 <p>
-reveal.js looks great.
-impress.js and hovercraft look great&#x2026;
+In 2018, half into the second year of my son's life, I investigated (sidebar: Beecher, at this age)
+the climate crisis for myself.  I did two things: (double check these ages and dates)
+</p>
+
+<ul class="org-ul">
+<li>I googled, "what do scientists say is the safe upper limit for CO2?". Answer: 350 ppm.</li>
+<li>I wikipedia-ed: "what is our current amount of CO2 in the atmosphere".  Answer: 390 ppm. (double check what it was back then).</li>
+</ul>
+
+<p>
+"Shit." I thought; I've been an environmentalist since. And I've been
+supported by many others (photos: force of nature, beecher extinction
+rebellion, city hall, GND townhall, all candidates debate).
 </p>
 
 <p>
-How do newspapers do those interactive things?  It's called 'storytelling'.
-Google javascript storytelling library.
+If we're going to reduce our CO2 emissions, we need to find them
+first.  I've got data to support what I think are the big three:
+Transportation, Housing, Trade.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8cc1227" class="outline-3">
+<h3 id="org8cc1227">Transportation</h3>
+<div class="outline-text-3" id="text-org8cc1227">
+<p>
+I take public transit to work; I like it, it gives me time to read.
+Before we moved to Coquitlam, I walked to work, and that was nice too.
 </p>
 
 <p>
-<a href="https://geoviz.ceoas.oregonstate.edu/storymap/">https://geoviz.ceoas.oregonstate.edu/storymap/</a>
+In coquitlam, the majority of commutes are by car and that's a big
+source of CO2 emissions. It's also a big chunk of household budgets,
+and a source of stress.
 </p>
 
 <p>
-<a href="https://pudding.cool/process/how-to-implement-scrollytelling/demo/waypoints/">https://pudding.cool/process/how-to-implement-scrollytelling/demo/waypoints/</a>
+The 2016 census can tell us a lot about commuting patterns:
+</p>
+
+<ul class="org-ul">
+<li>Plot title: "How do people get around?"</li>
+<li>It consists of four bars  - Passenger KM for Vehicles, Public Transit, Active Transit, SLACK.</li>
+<li>Below each bar label is "baseline" or "reduced to 95%" or "increased to 110%". Etc. These labels
+can be dragged to change how many KMs for each category.  If you decrease, the excess goes
+into the SLACK column.  If you increase, we take FROM the slack column. No column can ever be
+negative.</li>
+<li>Somewhere on the chart we say "This scenario creates XZY tonnes of GHG emissions".</li>
+<li><p>
+Below that is some text.
+"If we [keep KMs by cars at baseline], [keep KMs by transit at baseline], and [keep KMs by active transit at baseline]
+ and [keep the quantity of kilometers the same].  Then we will reduce our CO2 emission by
+ [0] Gigatonnes (a [0 percent] reduction in transportation GHCs and a [0 percent] reduction in
+ total GHCs reduction).
 </p>
 
 <p>
-<a href="https://pudding.cool/process/how-to-implement-scrollytelling/">https://pudding.cool/process/how-to-implement-scrollytelling/</a>
+This assumes that we have [1.1] people per car, that [50 percent] of public transit KMs are
+electric and [5 percent] of car KMs are electric.
 </p>
 
 <p>
-This one recommends a 'stepper'.
-<a href="https://eagereyes.org/blog/2016/the-scrollytelling-scourge">https://eagereyes.org/blog/2016/the-scrollytelling-scourge</a>
+[link to explore calculations]"
+</p></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc7d88b3" class="outline-3">
+<h3 id="orgc7d88b3">Housing</h3>
+<div class="outline-text-3" id="text-orgc7d88b3">
+<p>
+I live with my wife and son in a single family detached home.  We move
+a lot! In the past six years we've lived in a detached home, an
+apartment, a row house, and a condo.
 </p>
 
 <p>
-Another to look at is <a href="http://worrydream.com/ClimateChange/">http://worrydream.com/ClimateChange/</a> &#x2026; he has a library that lets calculations be exposed to the user so they can play with the numbers themselves.
+All homes use energy, most of it for heating space and water.  Newer
+homes use less energy than unimproved older homes. Smaller homes use
+less energy for space heating, but about the same for water heating.
+Water use grows as people are added to a home, but each additional
+person adds less and less.
 </p>
 
 <p>
-Rather than use WorryDreams 'tangle' library&#x2026; maybe Elm and
-<a href="https://github.com/preignition/multi-verse">https://github.com/preignition/multi-verse</a> &#x2026; or elm and d3?  Elm is
-a reactive language, so that should make most of this reaction stuff
-come about pretty easily.  Alternatively, Bacon and d3 <a href="https://blog.scottlogic.com/2014/07/23/frp-with-bacon-and-d3.html">https://blog.scottlogic.com/2014/07/23/frp-with-bacon-and-d3.html</a>
+The 2016 census data, combined with the national energy use database,
+gives us a picture of the energy use in the Tri-Cities:
+</p>
+
+<ul class="org-ul">
+<li>Plot title "Where do People Live?"</li>
+<li>Options (RESET, Limit to Cities: XYZ)</li>
+<li>It consists of five bars (which map to the categories from efficiency data)
+<ul class="org-ul">
+<li>Single Detached (Single-detached house in Census Data)</li>
+<li>Single Attached (Semi-detached house, Other attached dwelling, Other single-attached house, Row house in Census Data, Apartment or flat in a duplex from census data)</li>
+<li>Apartments (Apartment in a building that has five or more storeys, Apartment in a building that has fewer than five storeys from census data)</li>
+<li>Mobile Homes (Mobile Dwelling from census data)</li>
+<li>Slack/unhomed</li>
+</ul></li>
+<li>Below each bar is the housing-type title</li>
+<li>Below that is a '# of Occupants slider'</li>
+<li>And below that is a density slider (persons per home, fixed at 3.0 for the slack bar).</li>
+<li>Advanced Calculations are here:
+<ul class="org-ul">
+<li>TAB1; Energy Consumption
+<ul class="org-ul">
+<li>"Using electric space and water heating (as opposed to natural gas or other alternatives) reduces CO2 emissions."
+<ul class="org-ul">
+<li>AIR:  &lt;sliders for percent increase or decrease&gt;</li>
+<li>WATER:</li>
+</ul></li>
+<li>Overall, your changes will reduce CO2 emissions by [X] (see calculation). That's the equivalent of taking X gas cars off the road.</li>
+</ul></li>
+<li>TAB2: Infills and high efficiency Rebuilds
+<ul class="org-ul">
+<li>"Newer houses use less energy than older homes. This impacts energy consumption significantly."</li>
+<li>TABLE: (4 columns for the four types)
+<ul class="org-ul">
+<li>AVERAGE AGE:   &lt;slider for years newer or older&gt;</li>
+<li>PERCENT High Efficiency:   &lt;percentage slider&gt;</li>
+</ul></li>
+<li>Overall, your changes reduce electricity consumption by ??? (see calculation). That's the equivalent of XZY (a wind turbine, a coal power plant, a hydroelectric dam or something)</li>
+</ul></li>
+<li>TAB2: DENSITY CHANGES:
+<ul class="org-ul">
+<li>"You've [increased|decreased] density overall by [X]:
+<ul class="org-ul">
+<li>[You've freed X square meters|You'll need X square meters more housing]. That's the equivalent of X football fields.</li>
+<li>[You'll need X many more kms of roads, costing X amount of dollars]</li>
+<li>[You'll need X many more vehicles]</li>
+<li>[You'll need X more litres of water]</li>
+<li>Water use from here <a href="http://www.fsec.ucf.edu/en/publications/pdf/FSEC-PF-464-15.pdf">http://www.fsec.ucf.edu/en/publications/pdf/FSEC-PF-464-15.pdf</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Final Results
+<ul class="org-ul">
+<li>Your changes [increase|reduce] CO2 use by X amount of GHCs. (see calculations)</li>
+<li>Youre electricity use has [increaser|reduce] by X volts. If this is generated by clean power, it will produce X GHCs. (see calculations)</li>
+<li>Your overall GHC reduction is X. That's the equivalent of blah blah blah.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc31a075" class="outline-3">
+<h3 id="orgc31a075">Work</h3>
+<div class="outline-text-3" id="text-orgc31a075">
+<p>
+I have some statistics about occupations. I can't say too much about
+the GHCs generated here.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5048e5d" class="outline-3">
+<h3 id="org5048e5d">Trade</h3>
+<div class="outline-text-3" id="text-org5048e5d">
+<p>
+What to put here?
 </p>
 </div>
 </div>

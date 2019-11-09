@@ -6,7 +6,7 @@
 <!-- 2019-11-09 Sat 10:30 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Publishing</title>
+<title>Contacts</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="warren" />
 <style type="text/css">
@@ -230,137 +230,14 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Publishing</h1>
-<p>
-This wiki is published with emacs Org-mode and stored in a git
-repository.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-emacs-lisp">(setf *root* "~/shared/wfiles/climate/vision/wiki/")
-
-(setf *vision-wiki-html*
-  `("vision-wiki-html"
-    :base-directory ,(expand-file-name (concat *root* "org/"))
-    :base-extension "org"
-    :publishing-directory ,(expand-file-name (concat *root* "docs/"))
-    :publishing-function org-html-publish-to-html
-    :headline-levels 3
-    :section-numbers nil
-    :with-toc nil
-    :auto-sitemap t
-    :makeindex t
-    :html-head "&lt;link rel=\"stylesheet\"
-		  href=\"../files/style.css\" type=\"text/css\"/&gt;"
-    :html-preamble t))
-
-(setf *vision-wiki-files*
-  `("vision-wiki-files"
-    :base-directory ,(expand-file-name (concat *root* "files/"))
-    :base-extension "jpg\\|gif\\|png\\|pdf"
-    :publishing-directory ,(expand-file-name (concat *root* "docs/files/"))
-    :publishing-function org-publish-attachment))
-
-(setf *vision-wiki-website* '("vision-wiki" :components ("vision-wiki-html" "vision-wiki-files")))
-
-(defun register-vision-wiki ()
-  (interactive)
-  (let ((existing-html (find (first *vision-wiki-html*) org-publish-project-alist :key 'first :test 'equal))
-	(existing-files (find (first *vision-wiki-files*) org-publish-project-alist :key 'first :test 'equal))
-	(existing-website (find (first *vision-wiki-website*) org-publish-project-alist :key 'first :test 'equal)))
-    (setf org-publish-project-alist
-	  (append
-	   (remove existing-website
-		   (remove existing-files
-			   (remove existing-html org-publish-project-alist)))
-	   (list *vision-wiki-html*
-		 *vision-wiki-files*
-		 *vision-wiki-website*)))))
-</pre>
-</div>
-
-<div id="outline-container-org84547ad" class="outline-2">
-<h2 id="org84547ad">Products</h2>
-<div class="outline-text-2" id="text-org84547ad">
-<p>
-I want to produce a series of interactive websites. Video,
-presentations, slide decks, and summary reports are lower priority,
-and would feature artifacts from the website.
-</p>
+<h1 class="title">Contacts</h1>
+<ul class="org-ul">
+<li>Sev Ebadi - wrote <a href="https://www.tricitynews.com/opinion/columns/column-are-town-squares-the-answer-to-transportation-problems-1.23994359">https://www.tricitynews.com/opinion/columns/column-are-town-squares-the-answer-to-transportation-problems-1.23994359</a></li>
+</ul>
 
 <p>
-The websites feature scrollytelling and data exploration. To guide the
-user through the problems and solutions of local climate crisis
-adaptation.
+Hi might be interested in this when published.
 </p>
-
-<p>
-For the websites, I would like to try using Elm. If that doesn't work,
-then there are many javascript libraries.
-</p>
-</div>
-
-<div id="outline-container-orgf3aa1bd" class="outline-3">
-<h3 id="orgf3aa1bd">Production Process</h3>
-<div class="outline-text-3" id="text-orgf3aa1bd">
-<ol class="org-ol">
-<li>Define the scope of interest &#x2013; the boundaries of the problem
-space or the impacts and knock-on effects of a solution.</li>
-<li>Identify relevant data, favoring government sources</li>
-<li>Acquire the data and plot the highlights, Identify a few standout trends, if any.</li>
-<li>Mind map the scope and data. What relates to what, what data or models are missing?</li>
-<li>Timeline the lesson.  What is the right ordering for the concepts for the learner.</li>
-<li>Relate the mind map to the timeline.</li>
-<li>Story-board the website - What are we communicating. What data helps that. What visualization and calculators are best?</li>
-<li>Mock up the website. Brief sentences in place, logic, flow. Don't worry about making the text readable, nor the graphics best possible, nor the website complete.</li>
-<li>Polish continually. Get help editing the text. Get help from a designer to improve the website.  Test the website on users.</li>
-</ol>
-</div>
-</div>
-
-<div id="outline-container-orgbe5138c" class="outline-3">
-<h3 id="orgbe5138c">References</h3>
-<div class="outline-text-3" id="text-orgbe5138c">
-<p>
-reveal.js looks great.
-impress.js and hovercraft look great&#x2026;
-</p>
-
-<p>
-How do newspapers do those interactive things?  It's called 'storytelling'.
-Google javascript storytelling library.
-</p>
-
-<p>
-<a href="https://geoviz.ceoas.oregonstate.edu/storymap/">https://geoviz.ceoas.oregonstate.edu/storymap/</a>
-</p>
-
-<p>
-<a href="https://pudding.cool/process/how-to-implement-scrollytelling/demo/waypoints/">https://pudding.cool/process/how-to-implement-scrollytelling/demo/waypoints/</a>
-</p>
-
-<p>
-<a href="https://pudding.cool/process/how-to-implement-scrollytelling/">https://pudding.cool/process/how-to-implement-scrollytelling/</a>
-</p>
-
-<p>
-This one recommends a 'stepper'.
-<a href="https://eagereyes.org/blog/2016/the-scrollytelling-scourge">https://eagereyes.org/blog/2016/the-scrollytelling-scourge</a>
-</p>
-
-<p>
-Another to look at is <a href="http://worrydream.com/ClimateChange/">http://worrydream.com/ClimateChange/</a> &#x2026; he has a library that lets calculations be exposed to the user so they can play with the numbers themselves.
-</p>
-
-<p>
-Rather than use WorryDreams 'tangle' library&#x2026; maybe Elm and
-<a href="https://github.com/preignition/multi-verse">https://github.com/preignition/multi-verse</a> &#x2026; or elm and d3?  Elm is
-a reactive language, so that should make most of this reaction stuff
-come about pretty easily.  Alternatively, Bacon and d3 <a href="https://blog.scottlogic.com/2014/07/23/frp-with-bacon-and-d3.html">https://blog.scottlogic.com/2014/07/23/frp-with-bacon-and-d3.html</a>
-</p>
-</div>
-</div>
-</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: warren</p>

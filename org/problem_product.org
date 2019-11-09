@@ -1,0 +1,143 @@
+#+TITLE: Problem Product
+
+Earlier [[file:problem.org][I'd defined the problem space]]. So, what can we communicate from it?
+
+* The Data Models
+
+People 
+  - By age
+    - Trends?
+
+Commute
+  - By mode, age, sex, duration and exit time
+  - by sex, occupation, industry and mode
+  - by duration, exit time, mode, and distance.
+  - by sex, age, mode, and destination
+    - Trends?
+
+Housing
+  - By type and household size
+  - By type and age, sex
+    - Trends?
+
+Trade
+  - BC per-capita average (assuming a gaussian distribution of wealth -- which is bad assumption.)
+    - Trends?
+
+Commercial
+  - BC average rate of energy used by commercial vs residential.
+  - Multiplied by coquitlams population.
+    - And a few notes about which industries are more energy intensive.
+
+Emissions
+  - Per household, by type, energy and GHC usage
+  - Per passenger-kilometer, by type
+  - Per tonnage-kilometer, by road, rail, marine
+    - Trends?
+
+* The Article
+
+** Introduction
+
+In 2018, half into the second year of my son's life, I investigated (sidebar: Beecher, at this age)
+the climate crisis for myself.  I did two things: (double check these ages and dates)
+
+ - I googled, "what do scientists say is the safe upper limit for CO2?". Answer: 350 ppm.
+ - I wikipedia-ed: "what is our current amount of CO2 in the atmosphere".  Answer: 390 ppm. (double check what it was back then).
+
+"Shit." I thought; I've been an environmentalist since. And I've been
+supported by many others (photos: force of nature, beecher extinction
+rebellion, city hall, GND townhall, all candidates debate).
+
+If we're going to reduce our CO2 emissions, we need to find them
+first.  I've got data to support what I think are the big three:
+Transportation, Housing, Trade.
+
+** Transportation
+
+I take public transit to work; I like it, it gives me time to read.
+Before we moved to Coquitlam, I walked to work, and that was nice too.
+
+In coquitlam, the majority of commutes are by car and that's a big
+source of CO2 emissions. It's also a big chunk of household budgets,
+and a source of stress.
+
+The 2016 census can tell us a lot about commuting patterns:
+
+ - Plot title: "How do people get around?"
+ - It consists of four bars  - Passenger KM for Vehicles, Public Transit, Active Transit, SLACK.
+ - Below each bar label is "baseline" or "reduced to 95%" or "increased to 110%". Etc. These labels
+   can be dragged to change how many KMs for each category.  If you decrease, the excess goes
+   into the SLACK column.  If you increase, we take FROM the slack column. No column can ever be
+   negative.
+ - Somewhere on the chart we say "This scenario creates XZY tonnes of GHG emissions".
+ - Below that is some text.
+   "If we [keep KMs by cars at baseline], [keep KMs by transit at baseline], and [keep KMs by active transit at baseline]
+    and [keep the quantity of kilometers the same].  Then we will reduce our CO2 emission by
+    [0] Gigatonnes (a [0 percent] reduction in transportation GHCs and a [0 percent] reduction in
+    total GHCs reduction).
+
+    This assumes that we have [1.1] people per car, that [50 percent] of public transit KMs are
+    electric and [5 percent] of car KMs are electric.
+
+    [link to explore calculations]"
+
+** Housing
+
+I live with my wife and son in a single family detached home.  We move
+a lot! In the past six years we've lived in a detached home, an
+apartment, a row house, and a condo.
+
+All homes use energy, most of it for heating space and water.  Newer
+homes use less energy than unimproved older homes. Smaller homes use
+less energy for space heating, but about the same for water heating.
+Water use grows as people are added to a home, but each additional
+person adds less and less.
+
+The 2016 census data, combined with the national energy use database,
+gives us a picture of the energy use in the Tri-Cities:
+
+ - Plot title "Where do People Live?"
+ - Options (RESET, Limit to Cities: XYZ)
+ - It consists of five bars (which map to the categories from efficiency data)
+   - Single Detached (Single-detached house in Census Data)
+   - Single Attached (Semi-detached house, Other attached dwelling, Other single-attached house, Row house in Census Data, Apartment or flat in a duplex from census data)
+   - Apartments (Apartment in a building that has five or more storeys, Apartment in a building that has fewer than five storeys from census data)
+   - Mobile Homes (Mobile Dwelling from census data)
+   - Slack/unhomed
+ - Below each bar is the housing-type title
+ - Below that is a '# of Occupants slider' 
+ - And below that is a density slider (persons per home, fixed at 3.0 for the slack bar).
+ - Advanced Calculations are here:
+   - TAB1; Energy Consumption
+     - "Using electric space and water heating (as opposed to natural gas or other alternatives) reduces CO2 emissions."
+       - AIR:  <sliders for percent increase or decrease>
+       - WATER:
+     - Overall, your changes will reduce CO2 emissions by [X] (see calculation). That's the equivalent of taking X gas cars off the road.
+   - TAB2: Infills and high efficiency Rebuilds
+     - "Newer houses use less energy than older homes. This impacts energy consumption significantly."
+     - TABLE: (4 columns for the four types)
+       - AVERAGE AGE:   <slider for years newer or older>
+       - PERCENT High Efficiency:   <percentage slider>
+     - Overall, your changes reduce electricity consumption by ??? (see calculation). That's the equivalent of XZY (a wind turbine, a coal power plant, a hydroelectric dam or something)
+   - TAB2: DENSITY CHANGES:
+     - "You've [increased|decreased] density overall by [X]:
+         - [You've freed X square meters|You'll need X square meters more housing]. That's the equivalent of X football fields.
+         - [You'll need X many more kms of roads, costing X amount of dollars]
+         - [You'll need X many more vehicles]
+         - [You'll need X more litres of water]
+         - Water use from here http://www.fsec.ucf.edu/en/publications/pdf/FSEC-PF-464-15.pdf
+ - Final Results
+   - Your changes [increase|reduce] CO2 use by X amount of GHCs. (see calculations)
+   - Youre electricity use has [increaser|reduce] by X volts. If this is generated by clean power, it will produce X GHCs. (see calculations)
+   - Your overall GHC reduction is X. That's the equivalent of blah blah blah.
+
+** Work
+
+I have some statistics about occupations. I can't say too much about
+the GHCs generated here.
+
+** Trade
+
+What to put here?
+
