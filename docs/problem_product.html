@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-11-09 Sat 10:30 -->
+<!-- 2019-11-13 Wed 07:36 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Problem Product</title>
 <meta name="generator" content="Org mode" />
-<meta name="author" content="warren" />
+<meta name="author" content="Warren Wilkinson" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -465,10 +465,59 @@ gives us a picture of the energy use in the Tri-Cities:
 <div id="outline-container-orgc31a075" class="outline-3">
 <h3 id="orgc31a075">Work</h3>
 <div class="outline-text-3" id="text-orgc31a075">
-<p>
-I have some statistics about occupations. I can't say too much about
-the GHCs generated here.
+<ul class="org-ul">
+<li>Plot "Energy Use From Work"</li>
+<li>Many Bars
+<ul class="org-ul">
+<li>Wholesale Trade (NAIC 41)</li>
+<li>Retail Trade (NAIC 44-45)</li>
+<li>Transportation and Warehousing (NAIC 48-49)</li>
+<li>Information and Cultural (NAIC 51)</li>
+<li>Office (NAIC 52, 53, 54, 55, 56, 81, 91)</li>
+<li>Educational (NAIC 61)</li>
+<li>Health Care  (NAIC 62)</li>
+<li>Arts, Entertainment, Recreation (NAIC 71)</li>
+<li>Accomodation and Food Services (NAIC 72)</li>
+<li>Other (31-33 Manufacturing, 23 Constuction, 22 Utilities, 21 Mining Quary Gas, 11 Agriculture)</li>
+<li>SLACK</li>
+</ul></li>
+<li>The user has a slider to adjust which industries people work in and see the effect.</li>
+<li>The user can also adjust the industrys power ratio.</li>
+<li><p>
+Below that is some text.
+"If we take [X many people out of A] and move [X more people into Z], and make industry [L more effecient]. Then we will reduce our CO2 emission by
+ [0] Gigatonnes.
 </p>
+
+<p>
+[link to explore calculations]"
+</p></li>
+</ul>
+</div>
+
+<div id="outline-container-org46280e9" class="outline-4">
+<h4 id="org46280e9">How This Data Is Collected</h4>
+<div class="outline-text-4" id="text-org46280e9">
+<p>
+First, I need a way to guesstimate the industry in a region.
+</p>
+
+<ol class="org-ol">
+<li>Use table 98-400-X2016329 to establish P(Within Subdivision | TRANSPORTATION<sub>MODE</sub>).</li>
+<li>Use table 98-400-X2016334 to establish P(JOB | Within Subdivision).</li>
+<li>Use the product from #2 to establish ratios of known job-types within the subdivision.  This is my guesstimate for industry within the region.</li>
+<li>Multiply this by working age population (I'll say 20 to 65) to guesstimate the head count per industry.</li>
+</ol>
+
+<p>
+Next, compute intensity per head using NEUD data for all of BC.
+</p>
+
+<ol class="org-ol">
+<li>Use 98-400-X2016334 to establish totals of each job. This is my guesstimate for total industry within BC.</li>
+<li>Divide that by the industry energy use in NEUD to get a power-per-person-per-industry numbers.</li>
+</ol>
+</div>
 </div>
 </div>
 
@@ -483,8 +532,8 @@ What to put here?
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: warren</p>
-<p class="date">Created: 2019-11-09 Sat 10:30</p>
+<p class="author">Author: Warren Wilkinson</p>
+<p class="date">Created: 2019-11-13 Wed 07:36</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

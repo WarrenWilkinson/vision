@@ -134,8 +134,40 @@ gives us a picture of the energy use in the Tri-Cities:
 
 ** Work
 
-I have some statistics about occupations. I can't say too much about
-the GHCs generated here.
+ - Plot "Energy Use From Work"
+ - Many Bars
+   - Wholesale Trade (NAIC 41)
+   - Retail Trade (NAIC 44-45)
+   - Transportation and Warehousing (NAIC 48-49)
+   - Information and Cultural (NAIC 51)
+   - Office (NAIC 52, 53, 54, 55, 56, 81, 91)
+   - Educational (NAIC 61)
+   - Health Care  (NAIC 62)
+   - Arts, Entertainment, Recreation (NAIC 71)
+   - Accomodation and Food Services (NAIC 72)
+   - Other (31-33 Manufacturing, 23 Constuction, 22 Utilities, 21 Mining Quary Gas, 11 Agriculture)
+   - SLACK
+ - The user has a slider to adjust which industries people work in and see the effect.
+ - The user can also adjust the industrys power ratio.
+ - Below that is some text.
+   "If we take [X many people out of A] and move [X more people into Z], and make industry [L more effecient]. Then we will reduce our CO2 emission by
+    [0] Gigatonnes.
+
+    [link to explore calculations]"
+
+*** How This Data Is Collected
+
+First, I need a way to guesstimate the industry in a region.
+
+  1. Use table 98-400-X2016329 to establish P(Within Subdivision | TRANSPORTATION_MODE).
+  2. Use table 98-400-X2016334 to establish P(JOB | Within Subdivision).
+  3. Use the product from #2 to establish ratios of known job-types within the subdivision.  This is my guesstimate for industry within the region.
+  4. Multiply this by working age population (I'll say 20 to 65) to guesstimate the head count per industry.
+
+Next, compute intensity per head using NEUD data for all of BC.
+
+  5. Use 98-400-X2016334 to establish totals of each job. This is my guesstimate for total industry within BC.
+  6. Divide that by the industry energy use in NEUD to get a power-per-person-per-industry numbers.
 
 ** Trade
 
