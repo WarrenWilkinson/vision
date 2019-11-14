@@ -171,5 +171,23 @@ Next, compute intensity per head using NEUD data for all of BC.
 
 ** Trade
 
-What to put here?
+NOTE: This uses numbers from the NEUD transportation sector. I'll just
+divide them by the ratio of the population of the region vs all of
+BC. The (bad) assumption is that transportation networks aren't local.
+E.g. like Vancouver doesn't trade more by rail and sea than does, say
+Kamloops.
 
+ - Plot "Energy Use From Trade"
+ - 8 Bars
+   - Gas Trucks
+   - Diesel Trucks
+   - Electric Trucks
+   - Planes
+   - Rais
+   - Marine
+   - Slack
+ - The plot is in 'Ton KMs of Goods' The values are divided in half (because the other party is responsible also).
+ - The user can realloc trade to different segments and see the effect.
+ - Below is some text.
+   "By reducing overall shipping by X tonne/km, and specifically [reducing X by 10%... and increasing Y by 5%]. Then we will reduce our CO2
+    emissions by [2] gigatonnes."
